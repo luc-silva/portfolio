@@ -1,0 +1,139 @@
+/* misc */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: var(--subtitle);
+}
+:root{
+    --grey: rgb(80, 80, 80);
+    --green: rgb(7, 206, 7);
+    --shiftedGreen: rgb(92, 235, 10);
+    --white: rgb(255, 255, 255);
+    --transparentWhite: rgb(245, 243, 243);
+
+    --subtitle: 'Segoe UI', Tahoma, Geneva;
+}
+.container{
+    padding: 40px;
+}
+
+
+/* header */
+header {
+    position: sticky;
+    top: 0;
+
+    padding: 15px 40px 15px 40px;
+    background-color: var(--white);
+    outline: 1px solid rgb(218, 218, 218);
+    
+}
+#logo {
+    font-size: 2.2em;
+    color: var(--green);
+}
+a{
+
+    margin: 0 10px;
+    cursor: pointer;
+
+    font-size: 1.2em;
+    color: var(--grey);
+    text-align: center;
+    
+
+}
+a:active{
+    color: var(--green);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* body */
+#home{
+    background-image: url(background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 550px;
+    max-height: 550px;
+}
+#greetings{
+    align-self: flex-end;
+}
+h2{
+    font-size: 3em;
+}
+#about-me{
+    background-color:var(--transparentWhite);
+    height: 800px;
+
+}
+#career{
+    background-color: var(--grey);
+    height: 800px;
+}
+#projects{
+    background: linear-gradient(to right, var(--green), var(--shiftedGreen));
+    height: 600px;
+} 
+.project-item{
+    width: 30%;
+    height: 80%;
+    
+    border-radius: 10px;
+    outline: white solid 2px;
+    overflow: hidden;
+}
+#teste-apagardps{
+    width: 100%;
+    height: 40%;
+    background-color: black;
+}
+
+.subtitle{
+    font-weight: bold;
+    font-size: 2.5em;
+    padding: 20px 0;
+}
+
+
+
+.flex{
+    display: flex;
+}
+.row-space-between{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.align-item{
+    align-items: center;
+}
+.box{
+    width: 100%;
+    height: 100%;
+}
+.centered-text{
+    text-align: center;
+}
+.card{
+    width: 40%;
+    height: 20%;
+    background-color: white;
+}
+/* footer*/
+footer{
+    color: rgb(201, 201, 201);
+
+    padding: 20px 20px;
+
+    border-top: 4px rgb(27, 27, 27) solid;
+    background-color: rgb(44, 44, 44);
+}
+.rede{
+    width: 30px;
+    height: 30px;
+    margin: 0 15px;
+    background-color: blueviolet;
+}
