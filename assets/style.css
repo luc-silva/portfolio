@@ -1,0 +1,319 @@
+/* misc */
+@font-face{
+    font-family: OpenSans-Regular;
+    src: url(OpenSans/OpenSans-Regular.ttf);
+}
+:root{
+    --grey: rgb(44, 44, 44);
+    --green: rgb(7, 206, 7);
+    --lime: rgb(123, 250, 20);
+    --white: rgb(255, 255, 255);
+    --whitesmoke: rgb(247, 247, 247);
+    --darkerwhitesmoke: rgb(216, 216, 216);
+    --greenoutline: rgba(12, 243, 12, 0.534);
+
+    --portfoliologo: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* typography */
+h1{
+    font-family: var(--portfoliologo);
+    font-size: 2rem;
+    color: var(--green);
+}
+h2{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+#greetings > h2 {
+    color: var(--green);
+}
+h3{
+    text-align: center;
+    font-size: 1.6rem;
+
+    margin-bottom: 0.5rem;
+}
+h4{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+body{
+    font-family: OpenSans-Regular;
+}
+a{
+    color: var(--grey);
+}
+li{
+    list-style: square inside;
+
+    margin-bottom: 10px;
+}
+footer > p{
+    display: none;
+    font-size: 1rem;
+    color: var(--darkerwhitesmoke);
+}
+footer i{
+    color: rgb(148, 148, 148);
+    font-size: 1.5rem;
+}
+#about-me-technologies i{
+    font-size: 3.5rem;
+    color: var(--darkerwhitesmoke);
+    padding: 0;
+}
+#about-me-technologies p{
+    color: var(--green);
+}
+/* general styles */
+nav > a{
+    margin: 10px;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+}
+.course-card i {
+    padding-left: 0.5rem;
+}
+::selection{
+    background-color: var(--green);
+    color: var(--white);
+}
+
+/* structures */
+header{
+    background-color: var(--white);
+    outline: var(--darkerwhitesmoke) solid 1px;
+
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+section{
+    padding: 0 20px;
+}
+footer{
+    align-items: center;
+    justify-content: center;
+
+    outline: rgb(36, 36, 36) solid 3px;
+    background-color: var(--grey);
+}
+#nav{
+    display: none;
+}
+#portfolio-btn{
+    background-color: var(--grey);
+    width: 2rem;
+    height: 2rem;
+
+}
+#home{
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+}
+#greetings{
+    align-self: center;
+
+    text-align: center;
+    line-height: 160%;
+
+}
+#about-me{
+    background-color: var(--whitesmoke);
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
+    
+}
+#about-me > div{
+    flex-direction: column;
+}
+#about-me-technologies{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    row-gap: 2rem;
+}
+#career{
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
+    height: 80vh;
+    background-image: linear-gradient(to right, var(--green), var(--lime));
+}
+#career h3{
+    color: var(--white);
+}
+#projects{
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
+    background-color: var(--white);
+}
+
+/* -- classes -- */
+.container{
+    padding: 10px 20px;
+}
+.flexrow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.flexcolumn{
+    display: flex;
+    flex-direction: column;
+}
+.large-screen-text{
+    display: none;
+}
+.course-card{
+    margin: 15px 0px;
+    padding: 1rem;
+
+    outline: var(--darkerwhitesmoke) solid 1px;
+    border-radius: 10px;
+}
+.card-text{
+    font-size: 0.9rem;
+    margin: 0.5rem 0 0 1rem;
+}
+.portfolio-detail{
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-right: 0.5rem;
+    background-color: var(--green);
+}
+.about-me-titles{
+    margin: 20px 0 10px 0;
+
+    box-shadow: 0 2px var(--darkerwhitesmoke);
+}
+.career-card{
+    text-align: center;
+    padding: 4rem;
+
+    color: var(--white);
+    outline: var(--white) solid 2px;
+}
+.project-card{
+    padding: 10px;
+    margin: 15px 0;
+    height: 10rem;
+
+    border-radius: 5px;
+    outline: var(--darkerwhitesmoke) solid 1px;
+}
+.footer-icon{
+    margin: 5px;
+    cursor: pointer;
+}
+/* responsivity*/
+
+@media (min-width: 600px) {
+    #nav{
+        display: block;
+    }
+    #home{
+        height: 90vh;
+        justify-content: left;
+
+        outline: var(--darkerwhitesmoke) solid 1px;
+    }
+    #greetings{
+        text-align: left;
+        align-self: flex-end;
+        margin: 0 80px;
+
+        padding-bottom: 2rem;
+    }
+    #portfolio-btn{
+        display: none;
+    }
+    #email-icon{
+        display: none;
+    }
+    #about-me-technologies i{
+    font-size: 4.5rem;
+    }
+    #about-me-technologies{
+        grid-template-columns: auto auto auto;
+        row-gap: 2rem;
+    }
+
+    p{
+        font-size: 1.1rem;
+    }
+    strong{
+        font-size: 1.1rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    h4{
+        font-size: 1.3rem;
+        text-align: left;
+    }
+    footer{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer > p{
+        display: block;
+    }
+    footer i{
+        font-size: 2rem;
+        text-align: center;
+    }
+    section{
+        padding: 0;
+    }
+
+    .margin-auto{
+        width: 70%;
+        margin: auto;
+    }
+    .project-card{
+        width:42%;
+    }
+    .large-screen-text{
+        display: block;
+    }
+    .small-screen-text{
+        display: none;
+    }
+    .container{
+        padding: 10px 40px;
+    }
+    .card-text{
+        font-size: 1rem;
+        margin: 0.7rem 0 0 1rem;
+    }
+    .project-area{
+        padding: 0;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+}
