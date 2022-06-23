@@ -18,16 +18,16 @@
             <a href="#career">Carreira</a>
             <a href="#projects">Projetos</a>
         </nav>
-        <div id="portfolio-btn"></div>
+        <div id="portfolio-btn" role="button"></div>
     </header>
 
-    <section id="home">
+    <section id="home" class="flexcolumn">
         <div id="greetings">
             <p>Olá, me chamo</p>
             <h2 class="large-screen-text">Lucas da Silva Santos</h2>
             <h2 class="small-screen-text">Lucas Santos</h2>
-
         </div>
+            <a href="resume.pdf" download="resume">Meu curriculo<i class="fa-solid fa-file-export"></i></a>
     </section>
 
     <section  id="about-me">
@@ -122,12 +122,27 @@
             <h3>Projetos</h3>
             <div class="project-area">
                 <div class="project-card">
-                    <strong>Portfolio</strong>
-                    <p>Desenvolvido com apenas CSS e HTML, foi um de meus primeiros projetos.</p>
+                    <div class="project-picture">
+
+                    </div>                    
+                    <div class="project-details">
+                        <strong>Portfolio</strong>
+                        <p>Desenvolvido com apenas CSS e HTML, foi um de meus primeiros projetos.</p>
+                    </div>
                 </div>
                 <div class="project-card">
-                    <strong>Social (CRUD)</strong>
-                    <p>Mini projeto de rede social criado com CSS/HTML e JavaScript utilizando um banco de dados SQL e local.</p>
+                    <div class="project-picture">
+
+                    </div>
+                    <div class="project-details">
+                        <div>
+                            <strong>Social (CRUD)</strong>
+                            <p>Mini projeto de rede social criado com CSS/HTML e JavaScript utilizando um banco de dados SQL e local.</p>
+                        </div>
+                        <div>
+                            <a> Disponivel Aqui<i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -137,10 +152,10 @@
     <footer class="container flexrow">
         <p>lucas.silva1203@outlook.com</p>
         <div class="flexrow">
-            <a class="footer-icon" href="_blank" target="_blank"><i class="fa-regular fa-file"></i></a>
-            <a class="footer-icon" href="_blank" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-            <a class="footer-icon" href="_blank" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a class="footer-icon" href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a class="footer-icon" href="resume.pdf" download="resume" rel="Currículo" target="_blank"><i class="fa-regular fa-file"></i></a>
+            <a class="footer-icon" href="" rel="Email" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            <a class="footer-icon" href="" rel="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a class="footer-icon" href="" rel="LinkedIn" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         </div>
     </footer>
 </body>

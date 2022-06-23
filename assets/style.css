@@ -30,8 +30,13 @@ h2{
     font-size: 2rem;
     font-weight: bolder;
 }
-#greetings > h2 {
+#greetings h2 {
     color: var(--green);
+}
+#home a {
+    color: var(--green);
+    margin-top: 0.5rem;
+    text-align: center;
 }
 h3{
     text-align: center;
@@ -72,6 +77,9 @@ footer i{
 #about-me-technologies p{
     color: var(--green);
 }
+i {
+    padding-left: 0.5rem;
+}
 /* general styles */
 nav > a{
     margin: 10px;
@@ -80,14 +88,10 @@ nav > a{
     display: flex;
     flex-direction: column;
 }
-.course-card i {
-    padding-left: 0.5rem;
-}
 ::selection{
     background-color: var(--green);
     color: var(--white);
 }
-
 /* structures */
 header{
     background-color: var(--white);
@@ -115,19 +119,15 @@ footer{
     background-color: var(--grey);
     width: 2rem;
     height: 2rem;
-
 }
 #home{
     height: 95vh;
-    display: flex;
     justify-content: center;
+    outline: var(--darkerwhitesmoke) solid 1px;
 }
 #greetings{
-    align-self: center;
-
     text-align: center;
     line-height: 160%;
-
 }
 #about-me{
     background-color: var(--whitesmoke);
@@ -213,35 +213,47 @@ footer{
     outline: var(--white) solid 2px;
 }
 .project-card{
-    padding: 10px;
     margin: 15px 0;
-    height: 10rem;
-
+    height: 18rem;
     border-radius: 5px;
     outline: var(--darkerwhitesmoke) solid 1px;
+}
+.project-picture{
+    height: 10rem;
+    background-color: black;
+}
+.project-details{
+    align-content: space-between;
+    margin: 10px;
 }
 .footer-icon{
     margin: 5px;
     cursor: pointer;
 }
-/* responsivity*/
 
+/* responsivity*/
 @media (min-width: 600px) {
     #nav{
         display: block;
     }
     #home{
         height: 90vh;
-        justify-content: left;
+    }
+    #home a {
+        text-align: left;
+        font-size: 1.3rem;
+        
+        border-radius: 5px;
+        outline: var(--green) solid 1px;
+        color: var(--green);
 
-        outline: var(--darkerwhitesmoke) solid 1px;
+        margin-top: 1.5rem;
+        margin-left: 80px;
     }
     #greetings{
         text-align: left;
-        align-self: flex-end;
+        line-height: 200%;
         margin: 0 80px;
-
-        padding-bottom: 2rem;
     }
     #portfolio-btn{
         display: none;
@@ -250,21 +262,19 @@ footer{
         display: none;
     }
     #about-me-technologies i{
-    font-size: 4.5rem;
+        font-size: 4.5rem;
     }
     #about-me-technologies{
         grid-template-columns: auto auto auto;
         row-gap: 2rem;
     }
 
-    p{
+    p, strong{
         font-size: 1.1rem;
     }
-    strong{
-        font-size: 1.1rem;
-    }
+
     h2{
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
     h3{
         font-size: 2rem;
@@ -292,9 +302,6 @@ footer{
         width: 70%;
         margin: auto;
     }
-    .project-card{
-        width:42%;
-    }
     .large-screen-text{
         display: block;
     }
@@ -310,10 +317,28 @@ footer{
     }
     .project-area{
         padding: 0;
-
+    }
+    .project-card{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        align-content: space-between;
+        overflow: hidden;
     }
-    
+    .project-picture{
+        height: 100%;
+        width: 50%;
+        background-color: black;
+    }
+    .project-details{
+        align-self: flex-start;
+        width: 50%;
+    }
+    .project-details strong{
+        margin-bottom: 0.5rem;
+    }
+    .project-details a, .project-details i {
+        font-size: 1.2rem;
+        color: var(--green);
+        padding-top: 0.5rem;
+    }
 }
