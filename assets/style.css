@@ -71,15 +71,20 @@ footer i{
 }
 #about-me-technologies i{
     font-size: 3.5rem;
-    color: var(--darkerwhitesmoke);
+    color: var(--green);
     padding: 0;
 }
 #about-me-technologies p{
-    color: var(--green);
+    color: black;
+    font-size: 1.3rem;
 }
 i {
     padding-left: 0.5rem;
 }
+#description p{
+    margin-bottom: 0.5rem;
+}
+
 /* general styles */
 nav > a{
     margin: 10px;
@@ -124,13 +129,14 @@ footer{
     height: 95vh;
     justify-content: center;
     outline: var(--darkerwhitesmoke) solid 1px;
+    z-index: -1;
 }
 #greetings{
     text-align: center;
     line-height: 160%;
 }
 #about-me{
-    background-color: var(--whitesmoke);
+    
     display: flex;
     flex-direction: column;
     text-align: justify;
@@ -141,6 +147,12 @@ footer{
 }
 #about-me > div{
     flex-direction: column;
+}
+#description{
+    text-indent: 1rem;
+}
+#about-me-description-extra{
+    display: none;
 }
 #about-me-technologies{
     margin-top: 2rem;
@@ -189,6 +201,7 @@ footer{
 
     outline: var(--darkerwhitesmoke) solid 1px;
     border-radius: 10px;
+    box-shadow: 0.05rem 0.05rem 0.2rem rgba(0, 0, 0, 0.281);
 }
 .card-text{
     font-size: 0.9rem;
@@ -242,11 +255,13 @@ footer{
     #home a {
         text-align: left;
         font-size: 1.3rem;
+        color: var(--green);
         
+        width: fit-content;
         border-radius: 5px;
         outline: var(--green) solid 1px;
-        color: var(--green);
 
+        padding: 0.5rem;
         margin-top: 1.5rem;
         margin-left: 80px;
     }
@@ -267,6 +282,15 @@ footer{
     #about-me-technologies{
         grid-template-columns: auto auto auto;
         row-gap: 2rem;
+    }
+    #description{
+        width: 70%;
+        text-indent: 1rem;
+    }
+    #about-me-description-extra{
+        width: 30%;
+        align-self: flex-start;
+        display: block;
     }
 
     p, strong{
