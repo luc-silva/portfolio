@@ -8,8 +8,8 @@
     --green: rgb(7, 206, 7);
     --lime: rgb(123, 250, 20);
     --white: rgb(255, 255, 255);
-    --whitesmoke: rgb(247, 247, 247);
-    --darkerwhitesmoke: rgb(216, 216, 216);
+    --whitesmoke: rgb(243, 242, 242);
+    --darkerwhitesmoke: rgb(209, 209, 209);
     --greenoutline: rgba(12, 243, 12, 0.534);
 
     --portfoliologo: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -42,7 +42,7 @@ h3{
     text-align: center;
     font-size: 1.6rem;
 
-    margin-bottom: 0.5rem;
+    margin-bottom: 3rem;
 }
 h4{
     text-align: center;
@@ -80,8 +80,9 @@ footer i{
 }
 i {
     padding-left: 0.5rem;
+    display: inline;
 }
-#description p{
+#about p{
     margin-bottom: 0.5rem;
 }
 
@@ -89,13 +90,15 @@ i {
 nav > a{
     margin: 10px;
 }
-#about{
-    display: flex;
-    flex-direction: column;
-}
 ::selection{
     background-color: var(--green);
     color: var(--white);
+}
+.gradient{
+    background: linear-gradient(118deg, var(--green), var(--lime));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 /* structures */
 header{
@@ -114,8 +117,8 @@ footer{
     align-items: center;
     justify-content: center;
 
-    outline: rgb(36, 36, 36) solid 3px;
-    background-color: var(--grey);
+    outline: var(--grey) solid 3px;
+    background-color: rgb(36, 36, 36);
 }
 #nav{
     display: none;
@@ -148,11 +151,8 @@ footer{
 #about-me > div{
     flex-direction: column;
 }
-#description{
-    text-indent: 1rem;
-}
-#about-me-description-extra{
-    display: none;
+#about{
+    text-indent: 2rem;
 }
 #about-me-technologies{
     margin-top: 2rem;
@@ -162,7 +162,17 @@ footer{
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
-    row-gap: 2rem;
+    row-gap: 4rem;
+}
+#certifications{
+    outline: var(--darkerwhitesmoke) solid 1px;
+    background-color: var(--whitesmoke);
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
+}
+#technologies{
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
 }
 #career{
     padding-top: 4.8rem;
@@ -172,6 +182,11 @@ footer{
 }
 #career h3{
     color: var(--white);
+}
+#career-timeline{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
 }
 #projects{
     padding-top: 4.8rem;
@@ -198,30 +213,18 @@ footer{
 .course-card{
     margin: 15px 0px;
     padding: 1rem;
-
+    background-color: var(--white);
     outline: var(--darkerwhitesmoke) solid 1px;
     border-radius: 10px;
-    box-shadow: 0.05rem 0.05rem 0.2rem rgba(0, 0, 0, 0.281);
 }
 .card-text{
     font-size: 0.9rem;
     margin: 0.5rem 0 0 1rem;
 }
-.portfolio-detail{
-    width: 0.8rem;
-    height: 0.8rem;
-    margin-right: 0.5rem;
-    background-color: var(--green);
-}
-.about-me-titles{
-    margin: 20px 0 10px 0;
-
-    box-shadow: 0 2px var(--darkerwhitesmoke);
-}
 .career-card{
     text-align: center;
     padding: 4rem;
-
+    width: 100%;
     color: var(--white);
     outline: var(--white) solid 2px;
 }
@@ -243,6 +246,8 @@ footer{
     margin: 5px;
     cursor: pointer;
 }
+
+
 
 /* responsivity*/
 @media (min-width: 600px) {
@@ -280,17 +285,11 @@ footer{
         font-size: 4.5rem;
     }
     #about-me-technologies{
-        grid-template-columns: auto auto auto;
-        row-gap: 2rem;
+        grid-template-columns: 33% 33% 33%;
+        justify-content: space-between;
     }
-    #description{
-        width: 70%;
+    #about{
         text-indent: 1rem;
-    }
-    #about-me-description-extra{
-        width: 30%;
-        align-self: flex-start;
-        display: block;
     }
 
     p, strong{
