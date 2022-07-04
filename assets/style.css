@@ -177,16 +177,11 @@ footer{
 #career{
     padding-top: 4.8rem;
     padding-bottom: 4.8rem;
-    height: 80vh;
+
     background-image: linear-gradient(to right, var(--green), var(--lime));
 }
 #career h3{
     color: var(--white);
-}
-#career-timeline{
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
 }
 #projects{
     padding-top: 4.8rem;
@@ -223,10 +218,14 @@ footer{
 }
 .career-card{
     text-align: center;
-    padding: 4rem;
-    width: 100%;
-    color: var(--white);
+    color: white;
+    align-self: center;
     outline: var(--white) solid 2px;
+    padding: 3rem 1.3rem;
+}
+#career-timeline{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 .project-card{
     margin: 15px 0;
@@ -289,7 +288,11 @@ footer{
         justify-content: space-between;
     }
     #about{
-        text-indent: 1rem;
+        text-indent: 4rem;
+    }
+    #career-timeline{
+        padding-top: 20vh;
+        padding-bottom: 20vh;
     }
 
     p, strong{

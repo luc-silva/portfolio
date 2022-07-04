@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="assets/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/2bdf9ec8e5.js" crossorigin="anonymous"></script>
+    <script>
+        function openNav() {
+            let navgation = document.getElementById('nav')
+            navgation.display = "none"
+            console.log(navgation.display)
+        }
+    </script>
 </head>
 <body>
     <header class="container flexrow">
@@ -18,7 +25,7 @@
             <a href="#career">Carreira</a>
             <a href="#projects">Projetos</a>
         </nav>
-        <div id="portfolio-btn" role="button"></div>
+        <div id="portfolio-btn" role="button" onclick="openNav()"></div>
     </header>
 
     <section id="home" class="flexcolumn">
@@ -35,7 +42,7 @@
             <h3>Sobre</h3>
             <div class="flexcolumn" >
                     <div id="about">
-                        <p>Meu primeiro contato com a programação foi em um curso livre de desenvolvimento de games o qual fiz em uma unidade de ensino local. Apesar do curso não ter sido realmente voltado a area, tive aulas de lógica e o contato com o desenvolvimento web com PHP e Dreamweaver e até mesmo com o Flashplayer e ActionScript</p>
+                        <p>Meu primeiro contato com a programação foi em um curso livre de desenvolvimento de games o qual fiz em uma unidade de ensino local. Apesar do curso não ter sido realmente voltado a área, tive aulas de lógica e o contato com o desenvolvimento web com PHP,  Dreamweaver e Flashplayer.</p>
                         <p>Atualmente cursando o segundo semestre de Engenharia de Software, estou à procura de uma oportunidade de estágio e assim melhorar minhas skills como dev!</p>
                     </div>
             </div>
@@ -59,7 +66,7 @@
                 <div class="course-card">
                     <div class="flexrow">
                         <strong>Desenvolvimento de Sistemas Web</strong> 
-                        <i class="fa-solid fa-up-right-from-square"></i>
+                        <i class="fa-solid fa-up-right-from-square"><a href="" target="_blank" rel=""></a></i>
                     </div>
                     <p>Certificação Emitida por Recode.org</p>
                     <div class="card-text">
@@ -115,7 +122,7 @@
             <h3>Carreira</h3>
             <div id="career-timeline">
                 <div class="career-card">
-                    <p>Sem experiencia disponível até o momento.</p>
+                    <p>Sem experiência disponível no momento.</p>
                 </div>
             </div>
         </div>
