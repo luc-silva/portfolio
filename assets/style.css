@@ -178,6 +178,10 @@ footer{
 #career h3{
     color: var(--white);
 }
+#career-timeline{
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+}
 #projects{
     padding-top: 4.8rem;
     padding-bottom: 4.8rem;
@@ -217,10 +221,6 @@ footer{
     align-self: center;
     outline: var(--white) solid 2px;
     padding: 10rem 1.3rem;
-}
-#career-timeline{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
 }
 .project-card{
     margin: 15px 0;
