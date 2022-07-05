@@ -94,12 +94,7 @@ nav > a{
     background-color: var(--green);
     color: var(--white);
 }
-.gradient{
-    background: linear-gradient(118deg, var(--green), var(--lime));
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-}
+
 /* structures */
 header{
     background-color: var(--white);
