@@ -225,7 +225,7 @@ footer{
 }
 .project-card{
     margin: 15px 0;
-    height: 18rem;
+    height: 20rem;
     border-radius: 5px;
     outline: var(--darkerwhitesmoke) solid 1px;
 }
