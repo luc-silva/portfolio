@@ -220,7 +220,8 @@ footer{
     color: white;
     align-self: center;
     outline: var(--white) solid 2px;
-    padding: 10rem 1.3rem;
+
+    padding: 6rem 1.3rem;
 }
 .project-card{
     margin: 15px 0;
@@ -335,6 +336,9 @@ footer{
     .card-text{
         font-size: 1rem;
         margin: 0.7rem 0 0 1rem;
+    }
+    .career-card{
+        padding: 10rem 1.3rem;
     }
     .project-area{
         padding: 0;
