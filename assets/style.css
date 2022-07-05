@@ -33,7 +33,7 @@ h2{
 #greetings h2 {
     color: var(--green);
 }
-#home a {
+#home a{
     color: var(--green);
     margin-top: 0.5rem;
     text-align: center;
