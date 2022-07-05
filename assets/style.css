@@ -216,7 +216,7 @@ footer{
     color: white;
     align-self: center;
     outline: var(--white) solid 2px;
-    padding: 3rem 1.3rem;
+    padding: 10rem 1.3rem;
 }
 #career-timeline{
     padding-top: 10vh;
