@@ -2,7 +2,7 @@ import styles from "./Contact.module.css"
 
 export const Contact = () => {
     return (
-        <section id="contact">
+        <section id="contact" className={styles["portfolio-contact"]}>
             <div>
                 <h2>Contact</h2>
             </div>

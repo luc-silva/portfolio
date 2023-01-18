@@ -1,6 +1,25 @@
 .portfolio-skills{
+    justify-content: flex-start;
     gap: 1.5rem;
+    background-color: var(--gray-700);
+}
+.portfolio-skills h3 {
+    color: var(--green-500);
+    font-size: 2rem;
+    font-weight: 100;
 }
 .skills-title{
-    
+    text-align: center;
+    color: var(--green-500);
+}
+.skills-container{
+    color: var(--white);
+}
+.list-container li{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+.item-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
