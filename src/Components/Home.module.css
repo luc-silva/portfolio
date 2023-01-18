@@ -1,0 +1,16 @@
+.portfolio-home{
+    display: flex;
+    flex-direction: column-reverse;
+    box-sizing: border-box;
+    height: 90vh;
+    padding: 2rem;
+
+    background-image: url("../Images/home-image-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.home-greetings{
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--white);
+}
