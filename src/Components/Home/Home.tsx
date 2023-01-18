@@ -5,14 +5,25 @@ export const Home = () => {
     return (
         <section id="home" className={styles["portfolio-home"]}>
             <div className={styles["home-greetings"]}>
-                Ola, me chamo lucas!
+                <div className={styles["greetings-title"]}>
+                    <strong>Hello there!</strong>
+                    <h2>My name is Lucas Santos</h2>
+                    <p>Software Engineering Student</p>
+                </div>
+
                 <div className={styles["greetings-buttons"]}>
-                    <button className={styles["project-button"]}>
-                        See my projects<ArrowRight size={18} />
-                    </button>
-                    <button className={styles["curriculum-button"]}>
-                        Download CV<FileArrowDown size={18} />
-                    </button>
+                    <a className={styles["project-button"]} href="#projects">
+                        See my projects
+                        <ArrowRight size={18} />
+                    </a>
+                    <a
+                        className={styles["curriculum-button"]}
+                        href=""
+                        download="Curriculum Vitae.pdf"
+                    >
+                        Download CV
+                        <FileArrowDown size={18} />
+                    </a>
                 </div>
             </div>
         </section>

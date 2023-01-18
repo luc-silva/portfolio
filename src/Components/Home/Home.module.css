@@ -4,23 +4,61 @@
     box-sizing: border-box;
     height: 90vh;
 
-    background-image: url("../Images/home-image-2.jpg");
+    background-image: url("../../Images/home-image-2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 .home-greetings{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
     font-size: 3rem;
-    font-weight: bolder;
     color: var(--white);
 }
+.greetings-title{
+    line-height: 2rem;
+}
+.greetings-title strong {
+    font-size: 2rem;
+    font-weight: 100;
+    color: var(--green-500);
+}
+.greetings-title h2{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.greetings-title p{
+    font-size: 1rem;
+}
+
+
 .greetings-buttons{
     display: flex;
     flex-direction: row;
     gap: 1rem;
 }
+.project-button, .curriculum-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    line-height: 0;
+    font-size: 0.8rem;
+    padding: 0.5rem 2rem;
+
+    color: var(--white);
+    border: 1px solid var(--green-500);
+    background-color: transparent;
+}
 .project-button{
     background-color: var(--green-700);
 }
-.curriculum-button{
+.curriculum-button, .curriculum-button:visited{
     color: var(--green-500);
+}
+.project-button:visited{
+    color: var(--white);
 }
