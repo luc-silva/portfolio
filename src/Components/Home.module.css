@@ -3,7 +3,6 @@
     flex-direction: column-reverse;
     box-sizing: border-box;
     height: 90vh;
-    padding: 2rem;
 
     background-image: url("../Images/home-image-2.jpg");
     background-size: cover;
@@ -13,4 +12,15 @@
     font-size: 3rem;
     font-weight: bolder;
     color: var(--white);
+}
+.greetings-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.project-button{
+    background-color: var(--green-700);
+}
+.curriculum-button{
+    color: var(--green-500);
 }

@@ -24,11 +24,23 @@ a {
 }
 
 header,
+section,
 footer {
-    padding: 0 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+button {
+    padding: 0.5rem 2rem;
+    border: 1px solid var(--green-500);
+    background-color: transparent;
+    color: var(--white);
 }
 
-.icon-container {
+.icon-container, button {
     display: flex;
     flex-direction: row;
     justify-content: center;
