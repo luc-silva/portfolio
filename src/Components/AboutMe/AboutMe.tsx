@@ -1,26 +1,30 @@
-import styles from "./AboutMe.module.css"
+import styles from "./AboutMe.module.css";
 
 export const AboutMe = () => {
     return (
         <section id="about-me" className={styles["portfolio-aboutme"]}>
             <div className={styles["aboutme-title"]}>
                 <h2>About Me</h2>
+                <p></p>
             </div>
-            <div>
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                blanditiis praesentium voluptatum deleniti atque corrupti quos
-                dolores et quas molestias excepturi sint occaecati cupiditate
-                non provident, similique sunt in culpa qui officia deserunt
-                mollitia animi, id est laborum et dolorum fuga. Et harum quidem
-                rerum facilis est et expedita distinctio. Nam libero tempore,
-                cum soluta nobis est eligendi optio cumque nihil impedit quo
-                minus id quod maxime placeat facere possimus, omnis voluptas
-                assumenda est, omnis dolor repellendus. Temporibus autem
-                quibusdam et aut officiis debitis aut rerum necessitatibus saepe
-                eveniet ut et voluptates repudiandae sint et molestiae non
-                recusandae. Itaque earum rerum hic tenetur a sapiente delectus,
-                ut aut reiciendis voluptatibus maiores alias consequatur aut
-                perferendis doloribus asperiores repellat.
+            <div className={styles["aboutme-about"]}>
+                <div className={styles["about-container"]}>
+                    <p>
+                        Atualmente cursando <em>Engenharia de Software</em>,
+                        busco por oportunidade de estágio na área de
+                        desenvolvimento. Utilizo Javascript como minha
+                        principal linguagem de programação, estando atualmente
+                        aprendendo React junto com Typescript.
+                    </p>
+                    <p>
+                        Desde pequeno curtia o mundo de desenvolvimento de software, em especial a area de games. Tanto que meu primeiro contato com a programação foi em 2016, ano em queme ingressar em um curso de desenvolvimento de games, tendo o concluido em 2018.
+                    </p>
+                </div>
+                <div className={styles["about-image-container"]}>
+                    <img className={styles["about-image"]}>
+                    
+                    </img>
+                </div>
             </div>
         </section>
     );

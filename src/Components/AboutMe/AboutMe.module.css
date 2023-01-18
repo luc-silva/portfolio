@@ -1,6 +1,34 @@
 .portfolio-aboutme{
     gap: 1.5rem;
+    justify-content: flex-start;
+    box-sizing: border-box;
 }
 /* .aboutme-title{
     
 } */
+.portfolio-aboutme em{
+    color: var(--green-700);
+}
+.aboutme-about{
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-between;
+    height: 100%;
+    
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 50%;
+}
+.about-image-container{
+    height: 100%;
+    width: 40%;
+}
+.about-image{
+    width: 100%;
+    height: 100%;
+    background-image: url("../../Images/about-me.jpg");
+    background-size: cover;
+}
