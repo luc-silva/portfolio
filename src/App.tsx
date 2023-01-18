@@ -1,8 +1,10 @@
 import React from "react";
-import { AboutMe } from "./Components/AboutMe";
-import { Footer } from "./Components/Footer";
-import { Header } from "./Components/Header";
-import { Home } from "./Components/Home";
+import { AboutMe } from "./Components/AboutMe/AboutMe";
+import { Footer } from "./Components/Footer/Footer";
+import { Header } from "./Components/Header/Header";
+import { Home } from "./Components/Home/Home";
+import { Project } from "./Components/Project";
+import { Skills } from "./Components/Skills";
 
 import "./global.css"
 
@@ -12,6 +14,8 @@ function App() {
             <Header />
             <Home />
             <AboutMe />
+            <Skills />
+            <Project />
             <Footer />
         </div>
     );
