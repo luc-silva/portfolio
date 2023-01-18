@@ -7,9 +7,31 @@
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
 }
-:root{
+:root {
+    --green-700: rgb(18, 130, 6);
     --green-500: rgb(27, 172, 11);
-    --gray-700:  rgb(54, 55, 53);
-    --gray-500:  rgb(161, 161, 161);
-    --white:     rgb(255, 255, 255);
+    --gray-900: rgb(27, 27, 26);
+    --gray-700: rgb(54, 55, 53);
+    --gray-500: rgb(213, 213, 213);
+    --white: rgb(255, 255, 255);
+}
+
+a {
+    color: var(--green-500);
+}
+:visited {
+    color: var(--green-700);
+}
+
+header,
+footer {
+    padding: 0 5rem;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 }
