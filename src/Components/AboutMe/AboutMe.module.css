@@ -1,11 +1,6 @@
 .portfolio-aboutme{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-
-    height: 80vh;
+    gap: 1.5rem;
 }
-.aboutme-title{
-    font-size: 1.5rem;
-}
+/* .aboutme-title{
+    
+} */
