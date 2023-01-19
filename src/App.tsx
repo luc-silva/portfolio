@@ -1,4 +1,7 @@
 import React from "react";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import { AboutMe } from "./Components/AboutMe/AboutMe";
 import { Contact } from "./Components/Contact/Contact";
 import { Footer } from "./Components/Footer/Footer";
@@ -11,15 +14,17 @@ import "./global.css";
 
 function App() {
     return (
-        <div className="App">
+        <Router>
             <Header />
-            <Home />
-            <AboutMe />
-            <Skills />
-            <Project />
-            <Contact />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about-me" element={<AboutMe />} />
+                <Route path="/skills" element={<Skills />} />
+                <Route path="/projects" element={<Project />} />
+                <Route path="/contact" element={<Contact />} />
+            </Routes>
             <Footer />
-        </div>
+        </Router>
     );
 }
 

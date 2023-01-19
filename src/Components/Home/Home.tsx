@@ -12,7 +12,7 @@ export const Home = () => {
                 </div>
 
                 <div className={styles["greetings-buttons"]}>
-                    <a className={styles["project-button"]} href="#projects">
+                    <a className={styles["project-button"]} href="/projects">
                         See my projects
                         <ArrowRight size={18} />
                     </a>
