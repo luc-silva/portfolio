@@ -1,9 +1,40 @@
 import { ArrowRight, FileArrowDown } from "phosphor-react";
+import { useEffect, useState } from "react";
 import styles from "./Home.module.css";
 
 export const Home = () => {
+    let imagesArray = [
+        "home-image-1.jpg",
+        "home-image-2.jpg",
+        "home-image-3.jpg",
+        "home-image-4.jpg",
+        "home-image-5.jpg",
+    ];
+    let [actualImg, setActualImg] = useState(getImage(imagesArray[0]));
+    let counter = 0;
+
+    useEffect(() => {
+        let imageChangingInterval = setInterval(() => {
+            counter++;
+            if (counter == imagesArray.length) {
+                counter = 0;
+            }
+            setActualImg(getImage(imagesArray[counter]));
+        }, 5000);
+        return () => clearInterval(imageChangingInterval)
+    }, []);
+
+    function getImage(image: string) {
+        return require(`../../Images/${image}`);
+    }
+
     return (
-        <section id="home" className={styles["portfolio-home"]}>
+        <section
+            id="home"
+            className={styles["portfolio-home"]}
+            style={{ backgroundImage: `url(${actualImg})` }}
+        >
+            {/* <img src={image} alt="" /> */}
             <div className={styles["home-greetings"]}>
                 <div className={styles["greetings-title"]}>
                     <strong>Hello there!</strong>

@@ -3,18 +3,22 @@
     flex-direction: column-reverse;
     box-sizing: border-box;
     height: 90vh;
+    /* padding: 0; */
 
-    background-image: url("../../Images/home-image-2.jpg");
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .home-greetings{
     display: flex;
     flex-direction: column;
+    /* position: relative;
+    z-index: 1; */
     gap: 0.5rem;
 
     font-size: 3rem;
     color: var(--white);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.546);
 }
 .greetings-title{
     line-height: 2rem;
