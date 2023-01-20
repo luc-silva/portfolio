@@ -1,0 +1,76 @@
+.certificate{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    height: 60vh;
+    width: 60vw;
+
+    border-radius: 5px;
+
+}
+.certificate:hover{
+    
+    outline: var(--gray-500) solid 1px;
+}
+.certificate-details{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+
+    height: 100%;
+    width: 40%;
+    padding: 1rem;
+    background-color: var(--white);
+}
+.certificate-details > div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.details-title{
+    line-height: 1rem;
+}
+.details-tags{
+    font-size: 0.8rem;
+}
+.details-tags ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    line-height: 0.4rem;
+    gap: 0.4rem;
+}
+.details-info{
+margin-top: 1rem;
+}
+.details-info div {
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.25rem;
+}
+.details-external-link{
+    font-weight: bold;
+    border: 1px solid var(--green-800);
+    background-color: var(--green-700);
+}
+.details-external-link a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.details-external-link a, .details-external-link a:visited{
+    color: var(--white);
+}
+
+.certificate-image{
+    height: 100%;
+    width: 60%;
+    background-color: black;
+    object-fit: fill;
+}
