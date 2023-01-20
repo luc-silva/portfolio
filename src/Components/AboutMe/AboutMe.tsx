@@ -2,7 +2,49 @@ import styles from "./AboutMe.module.css";
 import { CertificationItem } from "./CertificationItem";
 import { CaretRight, CaretLeft } from "phosphor-react";
 
+interface certificate {
+    tags: string[];
+    certImage: string;
+    courseName: string;
+    schoolName: string;
+    schoolSite: string;
+    courseCompletitionDate: string;
+    courseLength: number;
+}
+
 export const AboutMe = () => {
+    let certificates: certificate[] = [
+        {
+            tags: ["Javascript","Typescript","HTML & CSS","ReactJS","Node", "Git", "SQL"],
+            certImage: "cert-spreadfullstack.jpg",
+            courseName: "Spread Fullstack Developer Bootcamp",
+            schoolName: "Digital Innovation One",
+            schoolSite: "https://www.dio.me/en",
+            courseCompletitionDate: "09/06/2022",
+            courseLength: 98,
+        },
+        {
+            tags: ["Javascript","HTML & CSS","Bootstrap", "SQL", "SCRUM"],
+            certImage: "cert-basicwebdev.jpg",
+            courseName: "Desenvolvimento de Sistemas Web Basico",
+            schoolName: "Recode",
+            schoolSite: "https://recode.org.br/",
+            courseCompletitionDate: "31/05/2022",
+            courseLength: 40,
+        },
+        {
+            tags: ["ReactJS", "Dot Net","SQL"],
+            certImage: "cert-basicwebdev.jpg",
+            courseName: "Desenvolvimento de Sistemas Web Basico",
+            schoolName: "Recode",
+            schoolSite: "https://recode.org.br/",
+            courseCompletitionDate: "31/05/2022",
+            courseLength: 40,
+        },
+    ];
+
+
+
     return (
         <section id="about-me" className={styles["portfolio-aboutme"]}>
             <div className={styles["aboutme-main"]}>
@@ -64,9 +106,17 @@ export const AboutMe = () => {
             <div className={styles["aboutme-certification"]}>
                 <h2>Certificações</h2>
                 <div className={styles["certification-container"]}>
-                    <CaretLeft size={50} weight="thin" color="var(--gray-700)"/>
-                    <CertificationItem />
-                    <CaretRight size={50} weight="thin" color="var(--gray-700)"/>
+                    <CaretLeft
+                        size={50}
+                        weight="thin"
+                        color="var(--gray-700)"
+                    />
+                    <CertificationItem cert={certificates[1]} />
+                    <CaretRight
+                        size={50}
+                        weight="thin"
+                        color="var(--gray-700)"
+                    />
                 </div>
             </div>
         </section>

@@ -1,47 +1,68 @@
 import styles from "./CertificationItem.module.css";
 import { ArrowSquareOut } from "phosphor-react";
 
-export const CertificationItem = () => {
+interface certificate {
+    tags: string[];
+    certImage: string;
+    courseName: string;
+    schoolName: string;
+    schoolSite: string;
+    courseCompletitionDate: string;
+    courseLength: number;
+}
+interface props extends certificate {}
+
+export const CertificationItem = ({ cert }: { cert: props }) => {
+    let {
+        tags,
+        certImage,
+        courseName,
+        schoolName,
+        schoolSite,
+        courseCompletitionDate,
+        courseLength,
+    } = cert;
     return (
         <div className={styles["certificate"]}>
             <div className={styles["certificate-details"]}>
                 <div>
                     <div className={styles["details-title"]}>
-                        <h3>Spread Fullstack Bootcamp</h3>
-                        <em>Digital Innovation One</em>
+                        <h3>{courseName}</h3>
+                        <em>{schoolName}</em>
                     </div>
                     <div className={styles["details-tags"]}>
                         <ul>
-                            <li>Javascript</li>
-                            <li>Typescript</li>
-                            <li>HTML & CSS</li>
-                            <li>ReactJS</li>
-                            <li>Node</li>
-                            <li>Git</li>
+                            {tags.map((tag: string, index: number) => {
+                                if (index != tags.length - 1) {
+                                    return <li>{tag},</li>;
+                                } else {
+                                    return <li>{tag}</li>;
+                                }
+                            })}
                         </ul>
                     </div>
                     <div className={styles["details-info"]}>
                         <div>
                             <strong>Concluido:</strong>
-                            <em>14/50/2070</em>
+                            <em>{courseCompletitionDate}</em>
                         </div>
                         <div>
                             <strong>Carga Horaria:</strong>
-                            <em>70 Horas</em>
+                            <em>{courseLength}</em>
                         </div>
                     </div>
                 </div>
 
                 <button className={styles["details-external-link"]}>
-                    <a href="">
+                    <a href={schoolSite}>
                         Link para o site
-                        <ArrowSquareOut size={20}  />
+                        <ArrowSquareOut size={20} />
                     </a>
                 </button>
             </div>
             <img
                 className={styles["certificate-image"]}
-                src={require("../../Images/cert-basicwebdev.jpg")}
+                src={require(`../../Images/${certImage}`)}
             ></img>
         </div>
     );
