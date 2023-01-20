@@ -1,15 +1,15 @@
-.portfolio-home{
+.portfolio-home {
     display: flex;
     flex-direction: column-reverse;
     box-sizing: border-box;
+    padding: 4rem 5rem;
     height: 90vh;
-    /* padding: 0; */
 
     background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.home-greetings{
+.home-greetings {
     display: flex;
     flex-direction: column;
     /* position: relative;
@@ -20,7 +20,7 @@
     color: var(--white);
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.546);
 }
-.greetings-title{
+.greetings-title {
     line-height: 2rem;
 }
 .greetings-title strong {
@@ -28,21 +28,21 @@
     font-weight: 100;
     color: var(--green-500);
 }
-.greetings-title h2{
+.greetings-title h2 {
     font-size: 2.5rem;
     font-weight: bolder;
 }
-.greetings-title p{
+.greetings-title p {
     font-size: 1rem;
 }
 
-
-.greetings-buttons{
+.greetings-buttons {
     display: flex;
     flex-direction: row;
     gap: 1rem;
 }
-.project-button, .curriculum-button{
+.project-button,
+.curriculum-button {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -57,12 +57,13 @@
     border: 1px solid var(--green-500);
     background-color: transparent;
 }
-.project-button{
+.project-button {
     background-color: var(--green-700);
 }
-.curriculum-button, .curriculum-button:visited{
+.curriculum-button,
+.curriculum-button:visited {
     color: var(--green-500);
 }
-.project-button:visited{
+.project-button:visited {
     color: var(--white);
 }

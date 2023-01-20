@@ -8,8 +8,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 :root {
+    --green-800: rgb(14, 90, 6);
     --green-700: rgb(18, 130, 6);
     --green-500: rgb(27, 172, 11);
+    --green-300: rgb(138, 238, 25);
     --gray-900: rgb(27, 27, 26);
     --gray-700: rgb(54, 55, 53);
     --gray-500: rgb(213, 213, 213);
@@ -25,19 +27,11 @@ a {
 }
 
 header,
-section,
 footer {
     padding-left: 5rem;
     padding-right: 5rem;
 }
-section {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-}
+
 button {
     padding: 0.5rem 2rem;
     border: 1px solid var(--green-500);
