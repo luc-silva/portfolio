@@ -1,6 +1,8 @@
 import styles from "./AboutMe.module.css";
 import { CertificationItem } from "./CertificationItem";
 import { CaretRight, CaretLeft } from "phosphor-react";
+import { useEffect, useState } from "react";
+import { ImageModal } from "./ImageModal";
 
 interface certificate {
     tags: string[];
@@ -15,7 +17,15 @@ interface certificate {
 export const AboutMe = () => {
     let certificates: certificate[] = [
         {
-            tags: ["Javascript","Typescript","HTML & CSS","ReactJS","Node", "Git", "SQL"],
+            tags: [
+                "Javascript",
+                "Typescript",
+                "HTML & CSS",
+                "ReactJS",
+                "Node",
+                "Git",
+                "SQL",
+            ],
             certImage: "cert-spreadfullstack.jpg",
             courseName: "Spread Fullstack Developer Bootcamp",
             schoolName: "Digital Innovation One",
@@ -24,7 +34,7 @@ export const AboutMe = () => {
             courseLength: 98,
         },
         {
-            tags: ["Javascript","HTML & CSS","Bootstrap", "SQL", "SCRUM"],
+            tags: ["Javascript", "HTML & CSS", "Bootstrap", "SQL", "SCRUM"],
             certImage: "cert-basicwebdev.jpg",
             courseName: "Desenvolvimento de Sistemas Web Basico",
             schoolName: "Recode",
@@ -33,9 +43,9 @@ export const AboutMe = () => {
             courseLength: 40,
         },
         {
-            tags: ["ReactJS", "Dot Net","SQL"],
-            certImage: "cert-basicwebdev.jpg",
-            courseName: "Desenvolvimento de Sistemas Web Basico",
+            tags: ["ReactJS", "Dot Net", "SQL"],
+            certImage: "cert-intermediatewebdev.jpg",
+            courseName: "Desenvolvimento de Sistemas Web Intermediario",
             schoolName: "Recode",
             schoolSite: "https://recode.org.br/",
             courseCompletitionDate: "31/05/2022",
@@ -43,10 +53,36 @@ export const AboutMe = () => {
         },
     ];
 
+    let [counter, setCounter] = useState(0);
+    let [modalFlag, setModalFlag] = useState(false);
+    let [modalImage, setModalImage] = useState(
+        "../../Images/cert-intermediatewebdev.jpg"
+    );
 
+    function goUp() {
+        if (counter != certificates.length - 1) {
+            setCounter((prevCounter) => prevCounter + 1);
+        }
+    }
+    function goBack() {
+        if (counter > 0) {
+            setCounter((prevCounter) => prevCounter - 1);
+        }
+    }
+    function handleModal() {
+        setModalFlag((previousFlag) => !previousFlag);
+    }
+    function handleModalImage(image: string) {
+        setModalImage(image);
+    }
 
     return (
         <section id="about-me" className={styles["portfolio-aboutme"]}>
+            <ImageModal
+                certImage={modalImage}
+                modalActive={modalFlag}
+                handleModal={handleModal}
+            />
             <div className={styles["aboutme-main"]}>
                 <div className={styles["aboutme-info"]}>
                     <div className={styles["aboutme-title"]}>
@@ -106,17 +142,37 @@ export const AboutMe = () => {
             <div className={styles["aboutme-certification"]}>
                 <h2>Certificações</h2>
                 <div className={styles["certification-container"]}>
-                    <CaretLeft
-                        size={50}
-                        weight="thin"
-                        color="var(--gray-700)"
+                    <div
+                        role="button"
+                        className={styles["cert-button"]}
+                        onClick={() => {
+                            goBack();
+                        }}
+                    >
+                        <CaretLeft
+                            size={50}
+                            weight="thin"
+                            color="var(--gray-700)"
+                        />
+                    </div>
+                    <CertificationItem
+                        cert={certificates[counter]}
+                        handleModal={handleModal}
+                        handleModalImage={handleModalImage}
                     />
-                    <CertificationItem cert={certificates[1]} />
-                    <CaretRight
-                        size={50}
-                        weight="thin"
-                        color="var(--gray-700)"
-                    />
+                    <div
+                        role="button"
+                        className={styles["cert-button"]}
+                        onClick={() => {
+                            goUp();
+                        }}
+                    >
+                        <CaretRight
+                            size={50}
+                            weight="thin"
+                            color="var(--gray-700)"
+                        />
+                    </div>
                 </div>
             </div>
         </section>

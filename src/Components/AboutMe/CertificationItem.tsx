@@ -10,9 +10,15 @@ interface certificate {
     courseCompletitionDate: string;
     courseLength: number;
 }
-interface props extends certificate {}
-
-export const CertificationItem = ({ cert }: { cert: props }) => {
+export const CertificationItem = ({
+    cert,
+    handleModal,
+    handleModalImage,
+}: {
+    cert: certificate;
+    handleModal: Function;
+    handleModalImage: Function;
+}) => {
     let {
         tags,
         certImage,
@@ -34,33 +40,37 @@ export const CertificationItem = ({ cert }: { cert: props }) => {
                         <ul>
                             {tags.map((tag: string, index: number) => {
                                 if (index != tags.length - 1) {
-                                    return <li>{tag},</li>;
+                                    return <li key={index}>{tag},</li>;
                                 } else {
-                                    return <li>{tag}</li>;
+                                    return <li key={index}>{tag}</li>;
                                 }
                             })}
                         </ul>
                     </div>
                     <div className={styles["details-info"]}>
                         <div>
-                            <strong>Concluido:</strong>
+                            <strong>Concluído em:</strong>
                             <em>{courseCompletitionDate}</em>
                         </div>
                         <div>
                             <strong>Carga Horaria:</strong>
-                            <em>{courseLength}</em>
+                            <em>{courseLength} horas</em>
                         </div>
                     </div>
                 </div>
 
                 <button className={styles["details-external-link"]}>
-                    <a href={schoolSite}>
+                    <a href={schoolSite} target="_blank">
                         Link para o site
                         <ArrowSquareOut size={20} />
                     </a>
                 </button>
             </div>
             <img
+                onClick={() => {
+                    handleModalImage(require(`../../Images/${certImage}`));
+                    handleModal();
+                }}
                 className={styles["certificate-image"]}
                 src={require(`../../Images/${certImage}`)}
             ></img>

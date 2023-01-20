@@ -84,3 +84,9 @@
     align-items: center;
 
 }
+.cert-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

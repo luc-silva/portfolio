@@ -1,0 +1,32 @@
+.image-modal {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    
+    background-color: rgba(0, 0, 0, 0.645);
+}
+.image-container {
+    height: 80vh;
+    width: 60vw;
+    position: absolute;
+    border-radius: 5px;
+    outline: black solid 1px;
+    background-color: rgba(0, 0, 0, 0.818);
+}
+.close-btn {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    color: var(--white);
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.82));
+    cursor: pointer;
+}
+.zoomed-certificate {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
