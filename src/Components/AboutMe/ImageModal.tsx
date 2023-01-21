@@ -12,8 +12,16 @@ export const ImageModal = ({
 }) => {
     if (modalActive) {
         return (
-            <div className={styles["image-modal"]}>
-                <div className={styles["image-container"]}>
+            <div
+                className={styles["image-modal"]}
+                onClick={() => {
+                    handleModal();
+                }}
+            >
+                <div
+                    className={styles["image-container"]}
+                    onClick={(e) => e.stopPropagation()}
+                >
                     <X
                         className={styles["close-btn"]}
                         size={30}

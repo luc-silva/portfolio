@@ -1,8 +1,8 @@
 import styles from "./AboutMe.module.css";
-import { CertificationItem } from "./CertificationItem";
-import { CaretRight, CaretLeft } from "phosphor-react";
-import { useEffect, useState } from "react";
+import { FileArrowDown } from "phosphor-react";
+import { useState } from "react";
 import { ImageModal } from "./ImageModal";
+import { AboutMeCertifications } from "./AboutMeCertifications";
 
 interface certificate {
     tags: string[];
@@ -109,6 +109,12 @@ export const AboutMe = () => {
                                 2018.
                             </p>
                         </div>
+                        <div className={styles["about-curriculum"]}>
+                            <a href="" download="Curriculum Vitae.pdf">
+                                <FileArrowDown size={24} />
+                                <p>Download CV</p>
+                            </a>
+                        </div>
                         <div className={styles["about-academic-container"]}>
                             <h3>Formacao Academica</h3>
                             {/* component here */}
@@ -139,42 +145,14 @@ export const AboutMe = () => {
                     <img className={styles["about-image"]}></img>
                 </div>
             </div>
-            <div className={styles["aboutme-certification"]}>
-                <h2>Certificações</h2>
-                <div className={styles["certification-container"]}>
-                    <div
-                        role="button"
-                        className={styles["cert-button"]}
-                        onClick={() => {
-                            goBack();
-                        }}
-                    >
-                        <CaretLeft
-                            size={50}
-                            weight="thin"
-                            color="var(--gray-700)"
-                        />
-                    </div>
-                    <CertificationItem
-                        cert={certificates[counter]}
-                        handleModal={handleModal}
-                        handleModalImage={handleModalImage}
-                    />
-                    <div
-                        role="button"
-                        className={styles["cert-button"]}
-                        onClick={() => {
-                            goUp();
-                        }}
-                    >
-                        <CaretRight
-                            size={50}
-                            weight="thin"
-                            color="var(--gray-700)"
-                        />
-                    </div>
-                </div>
-            </div>
+            <AboutMeCertifications
+                certificates={certificates}
+                counter={counter}
+                goBack={goBack}
+                goUp={goUp}
+                handleModal={handleModal}
+                handleModalImage={handleModalImage}
+            />
         </section>
     );
 };

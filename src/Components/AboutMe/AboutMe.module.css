@@ -10,7 +10,7 @@
 /* .aboutme-title{
 } */
 .aboutme-info{
-    width: 50%;
+    width: 55%;
 }
  
 .portfolio-aboutme em{
@@ -26,6 +26,17 @@
 /* .about-presentation{
     color: var(--gray-700);
 } */
+.about-curriculum a{
+    line-height: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.about-curriculum p {
+    font-weight: 400;
+    color: black;
+}
 .about-academic-container{
     display: flex;
     flex-direction: column;
@@ -67,26 +78,6 @@
     background-image: url("../../Images/about-me.jpg");
     background-size: cover;
 }
-
-.aboutme-certification{
-    background-color: var(--gray-300);
-    height: 80vh;
-    padding: 5rem;
-}
-.aboutme-certification h2{
-    text-align: center;
-    margin-bottom: 2rem;
-}
-.certification-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-}
-.cert-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+.about-btn-panel button{
+    color: var(--green-700);
 }
