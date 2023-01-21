@@ -1,0 +1,17 @@
+.header-logo{
+    font-family: myFirstFont;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 0.5rem;
+
+}
+.logo-name{
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+.logo-title{
+    font-weight: 100;
+    color: var(--green-500);
+    line-height: 1.5rem;
+}
