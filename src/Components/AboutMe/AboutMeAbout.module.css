@@ -1,0 +1,29 @@
+.aboutme-about{
+    display: flex;
+    flex-direction: column;   
+    height: 100%;
+    gap: 1rem;
+    
+}
+/* .about-presentation{
+    color: var(--gray-700);
+} */
+.about-curriculum a{
+    line-height: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.about-curriculum p {
+    font-weight: 400;
+    color: black;
+}
+.about-academic-container{
+    display: flex;
+    flex-direction: column;
+}
+.about-academic-container h3{
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--gray-700);
+}

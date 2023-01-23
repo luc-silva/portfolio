@@ -16,58 +16,7 @@
 .portfolio-aboutme em{
     color: var(--green-700);
 }
-.aboutme-about{
-    display: flex;
-    flex-direction: column;   
-    height: 100%;
-    gap: 1rem;
-    
-}
-/* .about-presentation{
-    color: var(--gray-700);
-} */
-.about-curriculum a{
-    line-height: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 
-}
-.about-curriculum p {
-    font-weight: 400;
-    color: black;
-}
-.about-academic-container{
-    display: flex;
-    flex-direction: column;
-}
-.about-academic-container h3{
-    margin-bottom: 0.5rem;
-    border-bottom: 1px solid var(--gray-700);
-}
-.container-item{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-.item-title{
-    font-size: 1.2rem;
-    line-height: 1rem;
-}
-.item-title p{
-    font-size: 1rem;
-    color: var(--gray-700);
-}
-.item-title em{
-    font-size: 0.8rem;
-}
-.item-info > div{
-    margin-left: 1rem;
-}
-.item-info span {
-    color: var(--green-700);
-    font-weight: 500;
-}
 .about-image-container{
     height: 100%;
     width: 40%;

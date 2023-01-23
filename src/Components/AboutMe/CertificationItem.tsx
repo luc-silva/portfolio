@@ -7,6 +7,7 @@ interface certificate {
     courseName: string;
     schoolName: string;
     schoolSite: string;
+    additionalInfo: string;
     courseCompletitionDate: string;
     courseLength: number;
 }
@@ -25,6 +26,7 @@ export const CertificationItem = ({
         courseName,
         schoolName,
         schoolSite,
+        additionalInfo,
         courseCompletitionDate,
         courseLength,
     } = cert;
@@ -56,6 +58,11 @@ export const CertificationItem = ({
                             <strong>Carga Horaria:</strong>
                             <em>{courseLength} horas</em>
                         </div>
+                        {additionalInfo && (
+                            <div>
+                                <em>{additionalInfo}</em>
+                            </div>
+                        )}
                     </div>
                 </div>
 

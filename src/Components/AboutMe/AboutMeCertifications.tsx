@@ -9,6 +9,7 @@ interface certificate {
     courseName: string;
     schoolName: string;
     schoolSite: string;
+    additionalInfo: string;
     courseCompletitionDate: string;
     courseLength: number;
 }
