@@ -1,4 +1,4 @@
-.portfolio-header{
+.portfolio-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -8,36 +8,24 @@
     z-index: 1;
     position: sticky;
     top: 0;
-    
+
     border-bottom: 1px solid var(--gray-900);
     background-color: var(--gray-700);
     color: var(--white);
 }
+.portfolio-header > div {
+    width: 30%;
+}
 .portfolio-header a {
     color: var(--white);
 }
-
-.header-link > ul{
+.header-link{
+    display: flex;
+    justify-content: center;
+}
+.header-link > ul {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-}
-.header-external-btn{
-    padding: 0.5rem 1.5rem;
-    background-color: var(--green-700);
-    border: 1px solid var(--green-500);
-
-}
-.header-external-btn a{
-    font-weight: 100;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    line-height: 0;
-    gap: 0.5rem;
-}
-.header-external-btn a, .header-external-btn a:visited{
-    color: black;
 }

@@ -1,5 +1,6 @@
 import { ArrowSquareOut } from "phosphor-react";
 import styles from "./Header.module.css";
+import { HeaderExternalBtn } from "./HeaderExternalBtn";
 import { HeaderLogo } from "./HeaderLogo";
 
 export const Header = () => {
@@ -19,15 +20,7 @@ export const Header = () => {
                     </li>
                 </ul>
             </div>
-            <div className={styles["header-external-btn"]}>
-                <a
-                    href="https://www.linkedin.com/in/silva-luc/"
-                    target={"_blank"}
-                >
-                    LinkedIn
-                    <ArrowSquareOut size={18} />
-                </a>
-            </div>
+            <HeaderExternalBtn />
         </header>
     );
 };
