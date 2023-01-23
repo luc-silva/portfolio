@@ -5,16 +5,21 @@
     gap: 1rem;
     
 }
-/* .about-presentation{
+.about-presentation{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     color: var(--gray-700);
-} */
-.about-curriculum a{
-    line-height: 0;
+    font-size: 0.9rem;
+}
+
+.about-curriculum{
     display: flex;
     flex-direction: row;
     align-items: center;
-
+    gap: 0.5rem;
 }
+
 .about-curriculum p {
     font-weight: 400;
     color: black;

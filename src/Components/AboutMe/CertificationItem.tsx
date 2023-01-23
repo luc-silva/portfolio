@@ -42,7 +42,7 @@ export const CertificationItem = ({
                         <ul>
                             {tags.map((tag: string, index: number) => {
                                 if (index != tags.length - 1) {
-                                    return <li key={index}>{tag},</li>;
+                                    return <li  key={index}>{tag},</li>;
                                 } else {
                                     return <li key={index}>{tag}</li>;
                                 }

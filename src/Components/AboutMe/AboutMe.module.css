@@ -7,9 +7,16 @@
     height: 80vh;
     padding: 5rem;
 }
-/* .aboutme-title{
-} */
+.aboutme-title{
+    line-height: 1.8rem;
+}
+.aboutme-title p {
+    color: var(--green-700);
+}
 .aboutme-info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     width: 55%;
 }
  

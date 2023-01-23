@@ -9,7 +9,7 @@
     /* font-family: Roboto, "monospace"; */
 }
 p {
-    font-family: Roboto, "monospace";
+    font-family: "Roboto", "monospace";
 }
 :root {
     --green-800: rgb(14, 90, 6);
