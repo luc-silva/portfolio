@@ -10,8 +10,7 @@
     flex-direction: column;
     padding: 5rem 5rem;
 
-    background-color: var(--green-500);
-    color: var(--white);
+    background-color: var(--gray-300);
 }
 .projects-title {
     display: flex;
@@ -20,6 +19,12 @@
     align-items: center;
 
     margin-bottom: 3rem;
+}
+/* .projects-title h2 {
+    color: var(--green-500);
+} */
+.projects-title p{
+    color: var(--gray-700);
 }
 .projects-container {
     display: inline-grid;

@@ -11,10 +11,35 @@ interface project {
 export const Project = () => {
     const projects: project[] = [
         {
+            projectTitle: "Todo Manager",
+            projectLink: "https://github.com/luc-silva/to-do",
+            projectImages: [
+                "project-todo-1.png",
+                "project-todo-2.png",
+                "project-todo-3.png",
+            ],
+            projectTags: ["JS", "HTML", "CSS"],
+        },
+        {
+            projectTitle: "Weather App",
+            projectLink: "https://github.com/luc-silva/weather-app",
+            projectImages: [
+                "project-weatherapp-1.png",
+                "project-weatherapp-2.png",
+            ],
+            projectTags: ["JS", "HTML", "CSS"],
+        },
+        {
             projectTitle: "Restaurant Page",
-            projectLink: "",
-            projectImages: ["", ""],
-            projectTags: ["", ""],
+            projectLink: "https://github.com/luc-silva/restaurant-page",
+            projectImages: [
+                "project-restaurant-1.png",
+                "project-restaurant-2.png",
+                "project-restaurant-3.png",
+                "project-restaurant-4.png",
+                "project-restaurant-5.png",
+            ],
+            projectTags: ["JS", "ReactJS", "HTML", "CSS"],
         },
     ];
 
@@ -38,15 +63,27 @@ export const Project = () => {
                     </p>
                 </div>
                 <div className={styles["projects-container"]}>
-                    <ProjectCard />
-                    <ProjectCard />
-                    <ProjectCard />
-                    <ProjectCard />
-                    <ProjectCard />
-                    <ProjectCard />
-                    <ProjectCard />
-                    <ProjectCard />
-                    <ProjectCard />
+                    {projects.map(
+                        (
+                            {
+                                projectTitle,
+                                projectLink,
+                                projectImages,
+                                projectTags,
+                            }: project,
+                            index: number
+                        ) => {
+                            return (
+                                <ProjectCard
+                                    projectTitle={projectTitle}
+                                    projectLink={projectLink}
+                                    projectImages={projectImages}
+                                    projectTags={projectTags}
+                                    key={index}
+                                />
+                            );
+                        }
+                    )}
                 </div>
             </div>
         </section>
