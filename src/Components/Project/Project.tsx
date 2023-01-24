@@ -8,11 +8,6 @@ interface project {
     projectImages: string[];
     projectTags: string[];
 }
-interface knowTool {
-    name: string;
-    toolImage: string;
-    additionalInfo: string;
-}
 
 export const Project = () => {
     const projects: project[] = [

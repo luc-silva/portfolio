@@ -1,5 +1,9 @@
 import styles from "./ProjectSkills.module.css";
-
+interface knowTool {
+    name: string;
+    toolImage: string;
+    additionalInfo: string;
+}
 export const ProjectSkills = () => {
     let knowTools = [
         {
@@ -50,18 +54,20 @@ export const ProjectSkills = () => {
     ];
     return (
         <ul className={styles["skills-about"]}>
-            {knowTools.map(({ name, toolImage, additionalInfo }, index) => {
-                return (
-                    <li key={index}>
-                        <img
-                            src={require(`../../Images/${toolImage}`)}
-                            alt={"Logotipo do " + name}
-                        />
-                        <p>{name}</p>
-                        {additionalInfo && <em>{additionalInfo}</em> }
-                    </li>
-                );
-            })}
+            {knowTools.map(
+                ({ name, toolImage, additionalInfo }: knowTool, index) => {
+                    return (
+                        <li key={index}>
+                            <img
+                                src={require(`../../Images/${toolImage}`)}
+                                alt={"Logotipo do " + name}
+                            />
+                            <p>{name}</p>
+                            {additionalInfo && <em>{additionalInfo}</em>}
+                        </li>
+                    );
+                }
+            )}
         </ul>
     );
 };
