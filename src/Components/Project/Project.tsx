@@ -47,6 +47,18 @@ export const Project = () => {
             ],
             projectTags: ["JS", "ReactJS", "HTML", "CSS"],
         },
+        {
+            projectTitle: "Portfolio",
+            projectLink: "https://github.com/luc-silva/portfolio",
+            projectImages: [
+                "project-portfolio-1.png",
+                "project-portfolio-2.png",
+                "project-portfolio-3.png",
+                "project-portfolio-4.png",
+                "project-portfolio-5.png",
+            ],
+            projectTags: ["TS", "ReactJS", "HTML", "CSS"],
+        },
     ];
 
     return (
