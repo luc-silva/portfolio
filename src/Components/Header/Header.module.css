@@ -29,3 +29,6 @@
     align-items: center;
     gap: 1rem;
 }
+.nav-active, .nav-active:visited{
+    color: var(--green-700);
+}

@@ -1,7 +1,8 @@
-import { ArrowSquareOut } from "phosphor-react";
-import styles from "./Header.module.css";
+import { NavLink } from "react-router-dom";
 import { HeaderExternalBtn } from "./HeaderExternalBtn";
 import { HeaderLogo } from "./HeaderLogo";
+
+import styles from "./Header.module.css";
 
 export const Header = () => {
     return (
@@ -10,13 +11,34 @@ export const Header = () => {
             <div className={styles["header-link"]}>
                 <ul>
                     <li>
-                        <a href="/">Home</a>
+                        <NavLink
+                            className={({ isActive }) =>
+                                isActive ? styles["nav-active"] : undefined
+                            }
+                            to="/"
+                        >
+                            Home
+                        </NavLink>
                     </li>
                     <li>
-                        <a href="/about-me">About Me</a>
+                        <NavLink
+                            className={({ isActive }) =>
+                                isActive ? styles["nav-active"] : undefined
+                            }
+                            to="/about-me"
+                        >
+                            About Me
+                        </NavLink>
                     </li>
                     <li>
-                        <a href="/projects">Projects</a>
+                        <NavLink
+                            className={({ isActive }) =>
+                                isActive ? styles["nav-active"] : undefined
+                            }
+                            to="/projects"
+                        >
+                            Projects
+                        </NavLink>
                     </li>
                 </ul>
             </div>
