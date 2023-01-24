@@ -1,6 +1,6 @@
 ## Portfolio
 
-Portfolio website made with Typescript, Javascript, CSS and HTML.
+Portfolio website made with Typescript, ReactJS, CSS and HTML.
 
 ## How to test it
 First, download the repository into your machine:
@@ -12,7 +12,7 @@ Go to project directory:
 Install dependencies: 
 `` npm install``
 
-And thhen, start localhost server:
+And then, start your localhost server:
 ``npm start``
 
 ## Images
