@@ -71,7 +71,7 @@ export const Project = () => {
                 <div className={styles["projects-title"]}>
                     <h2>Projetos</h2>
                     <p>
-                        Projetos os quais botei em pratica tudo que venho
+                        Projetos os quais botei em prática tudo que venho
                         aprendendo
                     </p>
                 </div>
