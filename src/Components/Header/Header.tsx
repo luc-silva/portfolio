@@ -17,7 +17,7 @@ export const Header = () => {
                             }
                             to="/"
                         >
-                            Home
+                            Início
                         </NavLink>
                     </li>
                     <li>
@@ -27,7 +27,7 @@ export const Header = () => {
                             }
                             to="/about-me"
                         >
-                            About Me
+                            Sobre Mim
                         </NavLink>
                     </li>
                     <li>
@@ -37,7 +37,7 @@ export const Header = () => {
                             }
                             to="/projects"
                         >
-                            Projects
+                            Projetos
                         </NavLink>
                     </li>
                 </ul>
