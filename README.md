@@ -26,7 +26,6 @@ And then, start your localhost server:
 
 ## Credits
 **Homepage images**
-
 [@walling](https://unsplash.com/@walling) ``home-image-1.jpg``,
 [@goodchinese](https://unsplash.com/@goodchinese) ``home-image-2.jpg``,
 [@alesiaskaz](https://unsplash.com/@alesiaskaz) ``home-image-3.jpg``,
@@ -35,7 +34,6 @@ And then, start your localhost server:
 
 
 **About Me images**
-
 [@olenkasergienko](https://unsplash.com/@olenkasergienko) ``about-me.jpg``
 
 
