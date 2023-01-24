@@ -1,11 +1,17 @@
 import styles from "./Project.module.css";
 import { ProjectCard } from "./ProjectCard";
+import { ProjectSkills } from "./ProjectSkills";
 
 interface project {
     projectTitle: string;
     projectLink: string;
     projectImages: string[];
     projectTags: string[];
+}
+interface knowTool {
+    name: string;
+    toolImage: string;
+    additionalInfo: string;
 }
 
 export const Project = () => {
@@ -45,14 +51,14 @@ export const Project = () => {
 
     return (
         <section id="projects" className={styles["portfolio-projects"]}>
-            {/* page for projects, articles and activities (hackatons, CTF and so on) */}
+            {/* page for detail projects, articles and activities (hackatons, CTF and so on). statistics should be in about me */}
 
             <div className={styles["project-skills"]}>
-                <div>
-                    <h2>Skills</h2>
-                    <p>Ferramentas as quais utilizo</p>
+                <div className={styles["project-main"]}>
+                    <h2>Skills & Ferramentas</h2>
+                    <p>Ferramentas as quais utilizo ou tenho algum tipo de experiência</p>
                 </div>
-                <div className={styles["skills-about"]}></div>
+                <ProjectSkills />
             </div>
             <div className={styles["project-projects"]}>
                 <div className={styles["projects-title"]}>
