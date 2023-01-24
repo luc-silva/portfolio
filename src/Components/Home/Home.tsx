@@ -37,14 +37,14 @@ export const Home = () => {
             {/* <img src={image} alt="" /> */}
             <div className={styles["home-greetings"]}>
                 <div className={styles["greetings-title"]}>
-                    <strong>Hello there!</strong>
-                    <h2>My name is Lucas Santos</h2>
-                    <p>Software Engineering Student</p>
+                    <strong>Olá, como vai?</strong>
+                    <h2>Me chamo Lucas Santos</h2>
+                    <p>Estudante de Engenharia de Software</p>
                 </div>
 
                 <div className={styles["greetings-buttons"]}>
                     <a className={styles["project-button"]} href="/projects">
-                        See my projects
+                        Veja meus projetos
                         <ArrowRight size={18} />
                     </a>
                     <a
@@ -52,7 +52,7 @@ export const Home = () => {
                         href=""
                         download="Curriculum Vitae.pdf"
                     >
-                        Download CV
+                        Baixe o currículo
                         <FileArrowDown size={18} />
                     </a>
                 </div>

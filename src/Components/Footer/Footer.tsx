@@ -5,16 +5,16 @@ export const Footer = () => {
     return (
         <footer className={styles["portfolio-footer"]}>
             <div>
-                <p>Portfolio created using ReactJS, HTML/CSS and Typescript.</p>
+                <p>Portfolio criado usando ReactJS, HTML/CSS e Typescript.</p>
                 <p>
-                    Icons by{" "}
+                    Ícones por{" "}
                     <a href="https://phosphoricons.com/" target={"_blank"}>
                         Phosphor-React
                     </a>
                 </p>
             </div>
             <div className="icon-container">
-                Download CV
+                Baixe o Currículo
                 <FileArrowDown size={18} />
             </div>
         </footer>
