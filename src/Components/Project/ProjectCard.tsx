@@ -49,13 +49,11 @@ export const ProjectCard = ({
                 toggleMouseHovering(true);
             }}
             onMouseOut={() => {
-                toggleMouseHovering(false);
-                // setActualImage(
-                //     require(`../../Images/` + projectImages[counter])
-                // );
+                toggleMouseHovering(false)
             }}
         >
             <img
+                loading="lazy"
                 src={actualImage}
                 alt="Project image"
                 className={styles["card-image"]}
