@@ -18,16 +18,20 @@ export const AboutMeAbout = () => {
                     Desde pequeno era fã do mundo de desenvolvimento de
                     software, em especial a área de jogos. Em 2016 cheguei a
                     cursar um curso de desenvolvimento de games, tendo o
-                    concluido em 2018. Não possuo experiência de trabalho e nem como freelancer, mas sempre tento me desafiar ao aplicar novas implementações em meus projetos.
+                    concluido em 2018. Não possuo experiência de trabalho e nem
+                    como freelancer, mas sempre tento me desafiar ao aplicar
+                    novas implementações em meus projetos.
                 </p>
             </div>
             <div className={styles["about-curriculum"]}>
                 <Download size={24} />
-                <a href="" download="Curriculum Vitae.pdf">
+                <a
+                    href={require("../../assets/lucas-silva-resume.pdf")}
+                    download="lucas-silva-cv.pdf"
+                >
                     Baixar Curriculo
                 </a>
             </div>
-
         </div>
     );
 };

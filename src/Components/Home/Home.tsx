@@ -50,8 +50,8 @@ export const Home = () => {
                     </a>
                     <a
                         className={styles["curriculum-button"]}
-                        href=""
-                        download="Curriculum Vitae.pdf"
+                        href={require("../../assets/lucas-silva-resume.pdf")}
+                        download="lucas-silva-cv.pdf"
                     >
                         Baixe o currículo
                         <FileArrowDown size={18} />

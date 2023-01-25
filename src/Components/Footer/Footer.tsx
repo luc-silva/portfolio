@@ -13,9 +13,14 @@ export const Footer = () => {
                     </a>
                 </p>
             </div>
-            <div className="icon-container">
-                Baixe o Currículo
-                <FileArrowDown size={18} />
+            <div className={styles["icon-container"]}>
+                <a
+                    href={require("../../assets/lucas-silva-resume.pdf")}
+                    download="lucas-silva-cv.pdf"
+                >
+                    Baixe o Currículo
+                    <FileArrowDown size={18} />
+                </a>
             </div>
         </footer>
     );

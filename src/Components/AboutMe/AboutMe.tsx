@@ -101,7 +101,7 @@ export const AboutMe = () => {
                     <AboutMeAbout />
                 </div>
                 <div className={styles["about-image-container"]}>
-                    <img loading="lazy" className={styles["about-image"]}></img>
+                    <img loading="lazy" alt="Foto de fundo" className={styles["about-image"]}></img>
                 </div>
             </div>
             <AboutMeCertifications
