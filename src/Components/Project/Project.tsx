@@ -54,6 +54,23 @@ export const Project = () => {
             ],
             projectTags: ["TS", "ReactJS", "HTML", "CSS"],
         },
+        {
+            projectTitle: "Etch-A-Sketch",
+            projectLink: "https://github.com/luc-silva/Etch-A-Sketch",
+            projectImages: [
+                "project-etchasketch-1.png",
+                "project-etchasketch-2.png",
+            ],
+            projectTags: ["JS", "HTML", "CSS"],
+        },
+        {
+            projectTitle: "Calculator",
+            projectLink: "https://github.com/luc-silva/calculator",
+            projectImages: [
+                "project-calculator-1.png",
+            ],
+            projectTags: ["JS", "HTML", "CSS"],
+        },
     ];
 
     return (

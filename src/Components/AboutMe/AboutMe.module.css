@@ -31,8 +31,8 @@
 .about-image{
     width: 100%;
     height: 100%;
-    background-image: url("../../Images/about-me.jpg");
-    background-size: cover;
+    object-fit: contain;
+
 }
 .about-btn-panel button{
     color: var(--green-700);
