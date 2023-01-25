@@ -59,6 +59,7 @@ export const ProjectSkills = () => {
                     return (
                         <li key={index}>
                             <img
+                                loading="lazy"
                                 src={require(`../../Images/${toolImage}`)}
                                 alt={"Logotipo do " + name}
                             />
