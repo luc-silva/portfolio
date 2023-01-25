@@ -17,12 +17,12 @@
         "react-scripts": "5.0.1",
         "typescript": "^4.9.4"
     },
+    "homepage": "https://luc-silva.github.io/portfolio",
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "homepage": "https://luc-silva.github.io/portfolio",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build"
     },
