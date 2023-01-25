@@ -39,17 +39,17 @@ export const ProjectSkills = () => {
         {
             name: "SQL",
             toolImage: "logo-sql.png",
-            additionalInfo: "Experiencia acadêmica.",
+            additionalInfo: "Experiência acadêmica.",
         },
         {
             name: "Shell Scripting",
             toolImage: "logo-shell.png",
-            additionalInfo: "Experiencia acadêmica.",
+            additionalInfo: "Experiência acadêmica.",
         },
         {
             name: "Python",
             toolImage: "logo-python.png",
-            additionalInfo: "Experiencia acadêmica.",
+            additionalInfo: "Experiência acadêmica.",
         },
     ];
     return (

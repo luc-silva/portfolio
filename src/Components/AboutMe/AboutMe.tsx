@@ -42,7 +42,8 @@ export const AboutMe = () => {
             courseName: "Desenvolvimento de Sistemas Web Intermediário",
             schoolName: "Recode",
             schoolSite: "https://recode.org.br/",
-            additionalInfo: "Data de conclusão do curso e emissão do certificado não se condizem**",
+            additionalInfo:
+                "Data de conclusão do curso e emissão do certificado não se condizem**",
             courseCompletitionDate: "31/05/2022",
             courseLength: 40,
         },
@@ -52,7 +53,8 @@ export const AboutMe = () => {
             courseName: "Desenvolvimento de Sistemas Web Básico",
             schoolName: "Recode",
             schoolSite: "https://recode.org.br/",
-            additionalInfo: "Data de conclusão do curso e emissão do certificado não se condizem**",
+            additionalInfo:
+                "Data de conclusão do curso e emissão do certificado não se condizem**",
             courseCompletitionDate: "20/04/2022",
             courseLength: 40,
         },
@@ -92,12 +94,14 @@ export const AboutMe = () => {
                 <div className={styles["aboutme-info"]}>
                     <div className={styles["aboutme-title"]}>
                         <h2>Sobre Mim</h2>
-                        <p>Sou Lucas, um estudante de Engenharia de Software...</p>
+                        <p>
+                            Sou Lucas, um estudante de Engenharia de Software...
+                        </p>
                     </div>
-                    <AboutMeAbout/>
+                    <AboutMeAbout />
                 </div>
                 <div className={styles["about-image-container"]}>
-                    <img className={styles["about-image"]}></img>
+                    <img loading="lazy" className={styles["about-image"]}></img>
                 </div>
             </div>
             <AboutMeCertifications

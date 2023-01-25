@@ -21,7 +21,7 @@ export const Home = () => {
             }
             setActualImg(getImage(imagesArray[counter]));
         }, 5000);
-        return () => clearInterval(imageChangingInterval)
+        return () => clearInterval(imageChangingInterval);
     }, []);
 
     function getImage(image: string) {
@@ -29,12 +29,13 @@ export const Home = () => {
     }
 
     return (
-        <section
-            id="home"
-            className={styles["portfolio-home"]}
-            style={{ backgroundImage: `url(${actualImg})` }}
-        >
-            {/* <img src={image} alt="" /> */}
+        <section id="home" className={styles["portfolio-home"]}>
+            <img
+                loading="lazy"
+                className={styles["background-image"]}
+                src={actualImg}
+                alt="Portofolio home image"
+            />
             <div className={styles["home-greetings"]}>
                 <div className={styles["greetings-title"]}>
                     <strong>Olá, como vai?</strong>
