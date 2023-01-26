@@ -29,7 +29,6 @@ a {
 :visited {
     color: var(--green-700);
 }
-
 header,
 footer {
     padding-left: 5rem;

@@ -21,3 +21,8 @@
 .header-external-btn a, .header-external-btn a:visited{
     color: black;
 }
+@media (max-width:480px) {
+    .header-external-btn{
+        display: none;
+    }
+}

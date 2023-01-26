@@ -3,8 +3,15 @@ import { HeaderExternalBtn } from "./HeaderExternalBtn";
 import { HeaderLogo } from "./HeaderLogo";
 
 import styles from "./Header.module.css";
+import { List, X } from "phosphor-react";
 
-export const Header = () => {
+export const Header = ({
+    toggleMenu,
+    isHeaderMenuActive,
+}: {
+    toggleMenu: Function;
+    isHeaderMenuActive: boolean;
+}) => {
     return (
         <header className={styles["portfolio-header"]}>
             <HeaderLogo />
@@ -42,6 +49,24 @@ export const Header = () => {
                     </li>
                 </ul>
             </div>
+            {(isHeaderMenuActive && (
+                <X
+                    className={styles["mobile-btn"]}
+                    size={30}
+                    onClick={() => {
+                        toggleMenu(!isHeaderMenuActive);
+                    }}
+                />
+            )) || (
+                <List
+                    className={styles["mobile-btn"]}
+                    size={30}
+                    onClick={() => {
+                        toggleMenu(!isHeaderMenuActive);
+                    }}
+                />
+            )}
+
             <HeaderExternalBtn />
         </header>
     );
