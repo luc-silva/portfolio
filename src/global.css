@@ -55,3 +55,10 @@ button {
     align-items: center;
     gap: 0.5rem;
 }
+@media (max-width: 480px) {
+    header,
+    footer {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}

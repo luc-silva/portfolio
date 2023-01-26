@@ -20,3 +20,19 @@
     justify-content: center;
     gap: 0.5rem;
 }
+@media (max-width: 480px) {
+    .portfolio-footer {
+        justify-content: space-between;
+    }
+    .portfolio-footer div{
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        font-size: 0.7rem;
+        width: 49%;
+    }
+    .icon-container a{
+        padding: 5px;
+        border: 1px solid var(--gray-500);
+    }
+}

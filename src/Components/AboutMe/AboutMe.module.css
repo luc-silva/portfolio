@@ -37,3 +37,34 @@
 .about-btn-panel button{
     color: var(--green-700);
 }
+
+@media (max-width: 480px) {
+    .portfolio-aboutme{
+        box-sizing: border-box;
+    }
+    .aboutme-main{
+        padding: 2rem 2rem;
+        box-sizing: border-box;
+        width: 100vw;
+        height: 90vh;
+    }
+    .aboutme-title {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .aboutme-title h2{
+        font-size: 2.5rem;
+    }
+    .aboutme-title p{
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    .aboutme-info{
+        width: 100%;
+        gap: 1rem;
+    }
+    .about-image-container{
+        display: none;
+    }
+}

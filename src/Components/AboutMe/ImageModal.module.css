@@ -31,3 +31,9 @@
     width: 100%;
     object-fit: contain;
 }
+@media (max-width: 480px) {
+    .image-container{
+        width: 100vw;
+        height: 90vh;
+    }
+}

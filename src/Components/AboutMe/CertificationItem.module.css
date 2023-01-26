@@ -1,7 +1,7 @@
 .certificate{
     display: flex;
     flex-direction: row;
-    height: 60vh;
+    /* height: 60vh; */
     width: 60vw;
 
     border-radius: 5px;
@@ -16,9 +16,6 @@
     flex-direction: column;
     box-sizing: border-box;
     justify-content: space-between;
-
-
-    height: 100%;
     width: 40%;
     padding: 1rem;
     background-color: var(--white);
@@ -76,4 +73,18 @@ margin-top: 1rem;
 }
 .certificate-image:hover{
     transform: scale(1.025);
+}
+@media (max-width: 480px) {
+    .certificate{
+        width: 80vw;
+        
+    }
+    .certificate-details{
+        display: none;
+    }
+    .certificate-image {
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+    }
 }

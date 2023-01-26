@@ -7,7 +7,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-.background-image{
+.background-image {
     box-sizing: border-box;
     position: relative;
     object-fit: cover;
@@ -73,6 +73,38 @@
 .project-button:visited {
     color: var(--white);
 }
-.curriculum-button:hover, .project-button:hover{
+.curriculum-button:hover,
+.project-button:hover {
     transform: scale(1.05);
+}
+@media (max-width: 480px) {
+    .portfolio-home {
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    .home-greetings {
+        gap: 0.5rem;
+        margin: 0 2rem;
+        top: 50%;
+    }
+    .greetings-title strong {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    .greetings-title h2 {
+        font-size: 2rem;
+        line-break: loose;
+    }
+    .greetings-title p {
+        line-height: 1.4rem;
+    }
+    .project-button {
+        line-height: normal;
+        font-size: 1rem;
+        padding: 0.5rem 2rem;
+    }
+    .curriculum-button {
+        display: none;
+    }
 }

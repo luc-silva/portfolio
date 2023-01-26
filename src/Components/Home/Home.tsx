@@ -1,5 +1,6 @@
 import { ArrowRight, FileArrowDown } from "phosphor-react";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import styles from "./Home.module.css";
 
 export const Home = () => {
@@ -16,7 +17,7 @@ export const Home = () => {
     useEffect(() => {
         let imageChangingInterval = setInterval(() => {
             counter++;
-            if (counter == imagesArray.length) {
+            if (counter === imagesArray.length) {
                 counter = 0;
             }
             setActualImg(getImage(imagesArray[counter]));
@@ -44,10 +45,10 @@ export const Home = () => {
                 </div>
 
                 <div className={styles["greetings-buttons"]}>
-                    <a className={styles["project-button"]} href="/projects">
+                    <Link className={styles["project-button"]} to="/projects">
                         Veja meus projetos
                         <ArrowRight size={18} />
-                    </a>
+                    </Link>
                     <a
                         className={styles["curriculum-button"]}
                         href={require("../../assets/lucas-silva-resume.pdf")}

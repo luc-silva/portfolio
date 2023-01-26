@@ -7,6 +7,7 @@
 
 }
 .logo-name{
+    display: block;
     font-size: 1.8rem;
     font-weight: bolder;
 }
@@ -14,4 +15,12 @@
     font-weight: 100;
     color: var(--green-500);
     line-height: 1.5rem;
+}
+@media (max-width: 480px) {
+    .logo-name{
+        display: none;
+    }
+    .logo-title{
+        font-size: 1.5rem;
+    }
 }

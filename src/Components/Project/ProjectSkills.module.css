@@ -31,3 +31,9 @@
     font-size: 0.6rem;
     color: var(--green-700);
 }
+@media (max-width: 480px) {
+    .skills-about{
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(auto, auto);
+    }
+}

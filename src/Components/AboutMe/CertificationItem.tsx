@@ -42,7 +42,7 @@ export const CertificationItem = ({
                         <ul>
                             {tags.map((tag: string, index: number) => {
                                 if (index != tags.length - 1) {
-                                    return <li  key={index}>{tag},</li>;
+                                    return <li key={index}>{tag},</li>;
                                 } else {
                                     return <li key={index}>{tag}</li>;
                                 }
@@ -74,11 +74,11 @@ export const CertificationItem = ({
                 </button>
             </div>
             <img
+                className={styles["certificate-image"]}
                 onClick={() => {
                     handleModalImage(require(`../../Images/${certImage}`));
                     handleModal();
                 }}
-                className={styles["certificate-image"]}
                 src={require(`../../Images/${certImage}`)}
             ></img>
         </div>
