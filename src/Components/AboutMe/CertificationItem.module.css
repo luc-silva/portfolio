@@ -1,7 +1,6 @@
 .certificate{
     display: flex;
     flex-direction: row;
-    overflow: hidden;
     height: 60vh;
     width: 60vw;
 
@@ -73,4 +72,8 @@ margin-top: 1rem;
     width: 60%;
     background-color: black;
     object-fit: fill;
+    transition: transform 0.5s;
+}
+.certificate-image:hover{
+    transform: scale(1.025);
 }

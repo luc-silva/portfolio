@@ -1,6 +1,5 @@
 import { Download } from "phosphor-react";
 import styles from "./AboutMeAbout.module.css";
-import { EducationItem } from "./EducationItem";
 
 export const AboutMeAbout = () => {
     return (

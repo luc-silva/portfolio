@@ -1,5 +1,4 @@
 import styles from "./AboutMe.module.css";
-import { FileArrowDown } from "phosphor-react";
 import { useState } from "react";
 import { ImageModal } from "./ImageModal";
 import { AboutMeCertifications } from "./AboutMeCertifications";

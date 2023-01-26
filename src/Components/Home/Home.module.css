@@ -64,6 +64,7 @@
 }
 .project-button {
     background-color: var(--green-700);
+    animation-name: hoverEffect;
 }
 .curriculum-button,
 .curriculum-button:visited {
@@ -71,4 +72,7 @@
 }
 .project-button:visited {
     color: var(--white);
+}
+.curriculum-button:hover, .project-button:hover{
+    transform: scale(1.05);
 }

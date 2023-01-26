@@ -14,6 +14,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: transform 0.25s;
+}
+.skills-about li:hover{
+    transform: scale(1.1);
 }
 .skills-about li > p {
     margin-top: 0.5rem;

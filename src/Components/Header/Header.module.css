@@ -19,6 +19,10 @@
 .portfolio-header a {
     color: var(--white);
 }
+.header-link a:hover{
+    border-bottom: 3px solid var(--green-700);
+    padding-bottom: 1rem;
+}
 .header-link{
     display: flex;
     justify-content: center;

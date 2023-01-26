@@ -3,13 +3,13 @@ Portfolio website made with Typescript, ReactJS, CSS and HTML.
 
 **The website is in Portuguese-Brazil for now.**
 
-See it online (Not recommended. images take time to load)
+[See it online](https://luc-silva.github.io/portfolio/)
 
-https://luc-silva.github.io/portfolio/
+
 ## Plans
-Adapt website for smartphones
+- Adapt website for smartphones
 
-## How to test it
+## How to test it locally 
 First, download the repository into your machine:
 ``git clone https://github.com/luc-silva/portfolio``
 

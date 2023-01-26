@@ -7,8 +7,13 @@
     border-radius: 5px;
     position: relative;
 
+    transition: transform 0.25s;
     background-color: var(--white);
 }
+.project-card:hover{
+    transform: scale(1.05);
+}
+
 .card-image {
     width: 100%;
     height: 100%;

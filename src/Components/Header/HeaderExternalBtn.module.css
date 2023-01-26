@@ -15,6 +15,9 @@
     background-color: var(--green-700);
     border: 1px solid var(--green-500);
 }
+.header-external-btn a:hover{
+    transform: scale(1.05);
+}
 .header-external-btn a, .header-external-btn a:visited{
     color: black;
 }
