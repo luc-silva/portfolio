@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.baab3a86.css",
-    "main.js": "/portfolio/static/js/main.9530f8b3.js",
+    "main.css": "/portfolio/static/css/main.6b98e5cc.css",
+    "main.js": "/portfolio/static/js/main.94f29750.js",
     "static/media/project-restaurant-1.png": "/portfolio/static/media/project-restaurant-1.0eb9cfb5acf20d8a7b62.png",
     "static/media/project-portfolio-1.png": "/portfolio/static/media/project-portfolio-1.18043f6effe6c1213941.png",
     "static/media/about-me.jpg": "/portfolio/static/media/about-me.3bebc2e396f84fca0ee5.jpg",
@@ -39,11 +39,11 @@
     "static/media/logo-ubuntu.png": "/portfolio/static/media/logo-ubuntu.f9fb429d4d7fe4a84005.png",
     "static/media/logo-javascript.png": "/portfolio/static/media/logo-javascript.266bd9fb2663dcc057b4.png",
     "index.html": "/portfolio/index.html",
-    "main.baab3a86.css.map": "/portfolio/static/css/main.baab3a86.css.map",
-    "main.9530f8b3.js.map": "/portfolio/static/js/main.9530f8b3.js.map"
+    "main.6b98e5cc.css.map": "/portfolio/static/css/main.6b98e5cc.css.map",
+    "main.94f29750.js.map": "/portfolio/static/js/main.94f29750.js.map"
   },
   "entrypoints": [
-    "static/css/main.baab3a86.css",
-    "static/js/main.9530f8b3.js"
+    "static/css/main.6b98e5cc.css",
+    "static/js/main.94f29750.js"
   ]
 }
