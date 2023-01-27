@@ -26,7 +26,13 @@
     gap: 0.4rem;
 }
 .details-title{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
     line-height: 1rem;
+}
+.details-title h3{
+    line-height: 1.1rem;
 }
 .details-tags{
     font-size: 0.8rem;
@@ -75,6 +81,24 @@ margin-top: 1rem;
     transform: scale(1.025);
 }
 @media (max-width: 480px) {
+    .certificate{
+        width: 80vw;
+        
+    }
+    .certificate-details{
+        display: none;
+    }
+    .certificate-image {
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+    }
+}
+@media (min-width:481px) and (max-width: 920px) {
+    .certificate-details{
+        display: none;
+    }
+
     .certificate{
         width: 80vw;
         

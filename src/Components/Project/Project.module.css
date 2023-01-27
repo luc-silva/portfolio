@@ -69,4 +69,15 @@
         grid-template-columns: repeat(1, 90vw);
     }
 }
-
+@media (min-width:481px) and (max-width: 850px) {
+    .projects-container{
+        justify-items: center;
+        grid-template-columns: repeat(1, 45vw);
+    }
+}
+@media (min-width:851px) and (max-width: 1050px) {
+    .projects-container{
+        justify-items: center;
+        grid-template-columns: repeat(2, 45vw);
+    }
+}

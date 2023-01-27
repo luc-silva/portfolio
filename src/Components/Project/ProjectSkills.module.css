@@ -37,3 +37,9 @@
         grid-template-rows: repeat(auto, auto);
     }
 }
+@media (min-width:481px)and (max-width: 1050px) {
+    .skills-about{
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(auto, auto);
+    }
+}

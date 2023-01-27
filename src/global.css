@@ -6,8 +6,10 @@
     outline: none;
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
-    /* font-family: Roboto, "monospace"; */
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap");
+
 p {
     font-family: "Roboto", "monospace";
 }
