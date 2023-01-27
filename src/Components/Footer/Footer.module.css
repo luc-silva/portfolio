@@ -23,6 +23,7 @@
 @media (max-width: 480px) {
     .portfolio-footer {
         justify-content: space-between;
+        flex-grow: 1;
     }
     .portfolio-footer div{
         display: flex;

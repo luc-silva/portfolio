@@ -46,7 +46,8 @@
         padding: 2rem 2rem;
         box-sizing: border-box;
         width: 100vw;
-        height: 90vh;
+        min-height: 90vh;
+        flex-grow: 1;
     }
     .aboutme-title {
         display: flex;
