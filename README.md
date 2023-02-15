@@ -7,7 +7,8 @@ Portfolio website made with Typescript, ReactJS, CSS and HTML.
 
 
 ## Plans
-- Adapt website for smartphones
+- Improve SEO
+- Improve design
 
 ## How to test it locally 
 First, download the repository into your machine:
