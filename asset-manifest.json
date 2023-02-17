@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.fb905a46.css",
-    "main.js": "/portfolio/static/js/main.94f29750.js",
+    "main.css": "/portfolio/static/css/main.e2a1dba8.css",
+    "main.js": "/portfolio/static/js/main.84c4179d.js",
     "static/media/project-restaurant-1.png": "/portfolio/static/media/project-restaurant-1.0eb9cfb5acf20d8a7b62.png",
     "static/media/project-portfolio-1.png": "/portfolio/static/media/project-portfolio-1.18043f6effe6c1213941.png",
-    "static/media/about-me.jpg": "/portfolio/static/media/about-me.3bebc2e396f84fca0ee5.jpg",
     "static/media/project-restaurant-4.png": "/portfolio/static/media/project-restaurant-4.be242dd336b83e36e3e8.png",
     "static/media/cert-intermediatewebdev.jpg": "/portfolio/static/media/cert-intermediatewebdev.4f80ba432d325469ccc9.jpg",
     "static/media/project-weatherapp-1.png": "/portfolio/static/media/project-weatherapp-1.66f8df4c07d636ebabca.png",
@@ -13,25 +12,29 @@
     "static/media/project-restaurant-2.png": "/portfolio/static/media/project-restaurant-2.b5bce09cfc6562e04956.png",
     "static/media/cert-spreadfullstack.jpg": "/portfolio/static/media/cert-spreadfullstack.604a108c860e7ba80c91.jpg",
     "static/media/project-portfolio-5.png": "/portfolio/static/media/project-portfolio-5.e457b8ecc17fe2647c91.png",
+    "static/media/about-me.jpg": "/portfolio/static/media/about-me.77df618f9c112bf2163e.jpg",
     "static/media/home-image-3.jpg": "/portfolio/static/media/home-image-3.77df618f9c112bf2163e.jpg",
     "static/media/home-image-1.jpg": "/portfolio/static/media/home-image-1.462a9ea33606df1a8b3e.jpg",
+    "static/media/cert-mongodbnodejspath.png": "/portfolio/static/media/cert-mongodbnodejspath.45f0d5d0d78b7988c183.png",
+    "static/media/project-todo-4.png": "/portfolio/static/media/project-todo-4.a01e66356d813beb03ee.png",
     "static/media/home-image-5.jpg": "/portfolio/static/media/home-image-5.05d93be03e5ab9f97866.jpg",
     "static/media/lucas-silva-resume.pdf": "/portfolio/static/media/lucas-silva-resume.709d9e9115edff75fb81.pdf",
     "static/media/home-image-4.jpg": "/portfolio/static/media/home-image-4.b95b30434e517c5c0d51.jpg",
     "static/media/logo-reactjs.png": "/portfolio/static/media/logo-reactjs.8a6fc0a24a800d1e0f4a.png",
     "static/media/home-image-2.jpg": "/portfolio/static/media/home-image-2.a970a8c5407d28bc3068.jpg",
+    "static/media/project-todo-3.png": "/portfolio/static/media/project-todo-3.994b778b7f61e49cda3f.png",
+    "static/media/project-todo-1.png": "/portfolio/static/media/project-todo-1.e0a98c8e03cac5c06390.png",
     "static/media/project-portfolio-3.png": "/portfolio/static/media/project-portfolio-3.f8c319903ad47e1a5a75.png",
+    "static/media/project-todo-2.png": "/portfolio/static/media/project-todo-2.759ce6138084237f51c9.png",
     "static/media/logo-shell.png": "/portfolio/static/media/logo-shell.b4814d5a4be276bac559.png",
     "static/media/logo-html.png": "/portfolio/static/media/logo-html.860d906ddaa16acfecda.png",
-    "static/media/project-todo-3.png": "/portfolio/static/media/project-todo-3.7f1d6c9d0a41fd3ea746.png",
     "static/media/project-restaurant-3.png": "/portfolio/static/media/project-restaurant-3.dd26fd7f371b42e4361d.png",
     "static/media/project-weatherapp-2.png": "/portfolio/static/media/project-weatherapp-2.9591d99760db7b02c3a9.png",
     "static/media/logo-typescript.png": "/portfolio/static/media/logo-typescript.1e3902edbe4c3f2970d8.png",
     "static/media/logo-sql.png": "/portfolio/static/media/logo-sql.9c9e418452a111f0d760.png",
     "static/media/project-portfolio-4.png": "/portfolio/static/media/project-portfolio-4.310cfd5141fd4d1692d5.png",
     "static/media/project-restaurant-5.png": "/portfolio/static/media/project-restaurant-5.5b403ab6e5b299c375ca.png",
-    "static/media/project-todo-1.png": "/portfolio/static/media/project-todo-1.6cb9395090307cf9e600.png",
-    "static/media/project-todo-2.png": "/portfolio/static/media/project-todo-2.5b20208bdf928cdea30d.png",
+    "static/media/logo-nodejs.png": "/portfolio/static/media/logo-nodejs.07d152a8a036951b8d14.png",
     "static/media/project-etchasketch-1.png": "/portfolio/static/media/project-etchasketch-1.f436c32562e27e795ed0.png",
     "static/media/logo-css.png": "/portfolio/static/media/logo-css.bc75ccc78e3bf74f8aed.png",
     "static/media/project-etchasketch-2.png": "/portfolio/static/media/project-etchasketch-2.193e1d24cb0bef2d7dc2.png",
@@ -39,11 +42,11 @@
     "static/media/logo-ubuntu.png": "/portfolio/static/media/logo-ubuntu.f9fb429d4d7fe4a84005.png",
     "static/media/logo-javascript.png": "/portfolio/static/media/logo-javascript.266bd9fb2663dcc057b4.png",
     "index.html": "/portfolio/index.html",
-    "main.fb905a46.css.map": "/portfolio/static/css/main.fb905a46.css.map",
-    "main.94f29750.js.map": "/portfolio/static/js/main.94f29750.js.map"
+    "main.e2a1dba8.css.map": "/portfolio/static/css/main.e2a1dba8.css.map",
+    "main.84c4179d.js.map": "/portfolio/static/js/main.84c4179d.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb905a46.css",
-    "static/js/main.94f29750.js"
+    "static/css/main.e2a1dba8.css",
+    "static/js/main.84c4179d.js"
   ]
 }
