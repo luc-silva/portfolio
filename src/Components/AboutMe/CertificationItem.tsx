@@ -66,12 +66,14 @@ export const CertificationItem = ({
                     </div>
                 </div>
 
-                <button className={styles["details-external-link"]}>
-                    <a href={schoolSite} target="_blank">
-                        Link para o site
-                        <ArrowSquareOut size={20} />
-                    </a>
-                </button>
+                <a
+                    className={styles["details-external-link"]}
+                    href={schoolSite}
+                    target="_blank"
+                >
+                    Link para o site
+                    <ArrowSquareOut size={20} />
+                </a>
             </div>
             <img
                 className={styles["certificate-image"]}

@@ -33,15 +33,15 @@ And then, start your localhost server:
 
 ## Credits
 **Homepage images**
-[@walling](https://unsplash.com/@walling) ``home-image-1.jpg``,
-[@goodchinese](https://unsplash.com/@goodchinese) ``home-image-2.jpg``,
-[@alesiaskaz](https://unsplash.com/@alesiaskaz) ``home-image-3.jpg``,
-[@olegivanovpht](https://unsplash.com/@olegivanovpht ) ``home-image-4.jpg``,
-[@matt_wojtas](https://unsplash.com/@matt_wojtas ) ``home-image-5.jpg``
+* [@walling](https://unsplash.com/@walling) ``home-image-1.jpg``
+* [@goodchinese](https://unsplash.com/@goodchinese) ``home-image-2.jpg``
+* [@alesiaskaz](https://unsplash.com/@alesiaskaz) ``home-image-3.jpg``
+* [@olegivanovpht](https://unsplash.com/@olegivanovpht ) ``home-image-4.jpg``
+* [@matt_wojtas](https://unsplash.com/@matt_wojtas ) ``home-image-5.jpg``
 
 
 **About Me images**
-[@olenkasergienko](https://unsplash.com/@olenkasergienko) ``about-me.jpg``
+* [@alesiaskaz](https://unsplash.com/@alesiaskaz) ``about-me.jpg``
 
 
 

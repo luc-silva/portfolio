@@ -1,17 +1,15 @@
-.certificate{
+.certificate {
     display: flex;
     flex-direction: row;
-    /* height: 60vh; */
+    height: 65vh;
     width: 60vw;
-
     border-radius: 5px;
-
+    box-sizing: border-box;
 }
-.certificate:hover{
-    
+.certificate:hover {
     outline: var(--gray-500) solid 1px;
 }
-.certificate-details{
+.certificate-details {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -20,21 +18,21 @@
     padding: 1rem;
     background-color: var(--white);
 }
-.certificate-details > div{
+.certificate-details > div {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
 }
-.details-title{
+.details-title {
     display: flex;
     flex-direction: column;
     gap: 0.1rem;
     line-height: 1rem;
 }
-.details-title h3{
+.details-title h3 {
     line-height: 1.1rem;
 }
-.details-tags{
+.details-tags {
     font-size: 0.8rem;
 }
 .details-tags ul {
@@ -44,8 +42,8 @@
     line-height: 0.4rem;
     gap: 0.4rem;
 }
-.details-info{
-margin-top: 1rem;
+.details-info {
+    margin-top: 1rem;
 }
 .details-info div {
     font-size: 0.9rem;
@@ -54,38 +52,42 @@ margin-top: 1rem;
     align-items: center;
     gap: 0.25rem;
 }
-.details-external-link{
+.details-external-link {
     font-weight: bold;
     border: 1px solid var(--green-800);
     background-color: var(--green-700);
 }
-.details-external-link a{
+.details-external-link {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    font-size: 0.8rem;
+    padding: 0.5rem;
     gap: 8px;
 }
-.details-external-link a, .details-external-link a:visited{
+.details-external-link,
+.details-external-link:visited {
     color: var(--white);
 }
 
-.certificate-image{
+.certificate-image {
     height: 100%;
     width: 60%;
+    cursor: pointer;
     background-color: black;
     object-fit: fill;
     transition: transform 0.5s;
 }
-.certificate-image:hover{
+.certificate-image:hover {
     transform: scale(1.025);
 }
 @media (max-width: 480px) {
-    .certificate{
+    .certificate {
+        height: auto;
         width: 80vw;
-        
     }
-    .certificate-details{
+    .certificate-details {
         display: none;
     }
     .certificate-image {
@@ -94,16 +96,16 @@ margin-top: 1rem;
         height: auto;
     }
 }
-@media (min-width:481px) and (max-width: 920px) {
-    .certificate-details{
+@media (min-width: 481px) and (max-width: 920px) {
+    .certificate-details {
+        height: auto;
         display: none;
     }
 
-    .certificate{
+    .certificate {
         width: 80vw;
-        
     }
-    .certificate-details{
+    .certificate-details {
         display: none;
     }
     .certificate-image {
