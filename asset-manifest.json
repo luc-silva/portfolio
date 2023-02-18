@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.e2a1dba8.css",
-    "main.js": "/portfolio/static/js/main.84c4179d.js",
+    "main.js": "/portfolio/static/js/main.90136706.js",
     "static/media/project-restaurant-1.png": "/portfolio/static/media/project-restaurant-1.0eb9cfb5acf20d8a7b62.png",
     "static/media/project-portfolio-1.png": "/portfolio/static/media/project-portfolio-1.18043f6effe6c1213941.png",
     "static/media/project-restaurant-4.png": "/portfolio/static/media/project-restaurant-4.be242dd336b83e36e3e8.png",
@@ -18,11 +18,11 @@
     "static/media/cert-mongodbnodejspath.png": "/portfolio/static/media/cert-mongodbnodejspath.45f0d5d0d78b7988c183.png",
     "static/media/project-todo-4.png": "/portfolio/static/media/project-todo-4.a01e66356d813beb03ee.png",
     "static/media/home-image-5.jpg": "/portfolio/static/media/home-image-5.05d93be03e5ab9f97866.jpg",
-    "static/media/lucas-silva-resume.pdf": "/portfolio/static/media/lucas-silva-resume.709d9e9115edff75fb81.pdf",
     "static/media/home-image-4.jpg": "/portfolio/static/media/home-image-4.b95b30434e517c5c0d51.jpg",
     "static/media/logo-reactjs.png": "/portfolio/static/media/logo-reactjs.8a6fc0a24a800d1e0f4a.png",
     "static/media/home-image-2.jpg": "/portfolio/static/media/home-image-2.a970a8c5407d28bc3068.jpg",
     "static/media/project-todo-3.png": "/portfolio/static/media/project-todo-3.994b778b7f61e49cda3f.png",
+    "static/media/lucas-silva-resume.pdf": "/portfolio/static/media/lucas-silva-resume.8f9fde3ff8807236842d.pdf",
     "static/media/project-todo-1.png": "/portfolio/static/media/project-todo-1.e0a98c8e03cac5c06390.png",
     "static/media/project-portfolio-3.png": "/portfolio/static/media/project-portfolio-3.f8c319903ad47e1a5a75.png",
     "static/media/project-todo-2.png": "/portfolio/static/media/project-todo-2.759ce6138084237f51c9.png",
@@ -43,10 +43,10 @@
     "static/media/logo-javascript.png": "/portfolio/static/media/logo-javascript.266bd9fb2663dcc057b4.png",
     "index.html": "/portfolio/index.html",
     "main.e2a1dba8.css.map": "/portfolio/static/css/main.e2a1dba8.css.map",
-    "main.84c4179d.js.map": "/portfolio/static/js/main.84c4179d.js.map"
+    "main.90136706.js.map": "/portfolio/static/js/main.90136706.js.map"
   },
   "entrypoints": [
     "static/css/main.e2a1dba8.css",
-    "static/js/main.84c4179d.js"
+    "static/js/main.90136706.js"
   ]
 }
