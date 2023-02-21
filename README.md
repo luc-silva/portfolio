@@ -1,5 +1,6 @@
 ## Portfolio
 Portfolio website made with Typescript, ReactJS, CSS and HTML.
+Remaster in progress!
 
 **The website is in Portuguese-Brazil for now.**
 
