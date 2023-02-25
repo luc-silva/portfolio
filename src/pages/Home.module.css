@@ -1,0 +1,100 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+.greetings {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+.greetings-main{
+    display: flex;
+    flex-direction: column;
+}
+.greetings-main > strong {
+    font-size: 1.2rem;
+    color: var(--main-color);
+}
+.greetings-title {
+    display: flex;
+    flex-direction: column;
+}
+.greetings-title h2 {
+    font-size: 1.8rem;
+    color: var(--title-color-light);
+    font-weight: bold;
+}
+.greetings-title p{
+    font-size: 0.8rem;
+    color: var(--text-color-light);
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.project-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--main-color);
+    color: white;
+    padding: 0.5rem 1rem;
+}
+.curriculum-button {
+    display: none;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .home{
+       justify-content: flex-start;
+    }
+    .greetings {
+        padding: 2rem 2rem;
+    }
+    .greetings-main > strong {
+        font-size: 1.4rem;
+        color: var(--main-color);
+    }
+    .greetings-title {
+        display: flex;
+        flex-direction: column;
+    }
+    .greetings-title h2 {
+        font-size: 2rem;
+        color: var(--title-color-light);
+        font-weight: bold;
+    }
+    .greetings-title p{
+        color: var(--text-color-light);
+    }
+}
+@media (min-width: 1025px) {
+    .home{
+        justify-content: flex-start;
+    }
+    .greetings {
+        padding: 4rem 4rem;
+    }
+    .greetings-main > strong {
+        font-size: 1.5rem;
+        color: var(--main-color);
+    }
+    .greetings-title {
+        display: flex;
+        flex-direction: column;
+    }
+    .greetings-title h2 {
+        font-size: 2.1rem;
+        color: var(--title-color-light);
+        font-weight: bold;
+    }
+    .greetings-title p{
+        font-size: 0.9rem;
+        color: var(--text-color-light);
+    }
+}
