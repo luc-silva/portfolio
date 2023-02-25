@@ -1,6 +1,4 @@
-import { NavLink } from "react-router-dom";
-import { HeaderExternalBtn } from "./HeaderExternalBtn";
-import { HeaderLogo } from "./HeaderLogo";
+import { Link, NavLink } from "react-router-dom";
 
 import styles from "./Header.module.css";
 import { List, X } from "phosphor-react";
@@ -13,9 +11,30 @@ export const Header = ({
     isHeaderMenuActive: boolean;
 }) => {
     return (
-        <header className={styles["portfolio-header"]}>
-            <HeaderLogo />
-            <div className={styles["header-link"]}>
+        <header role={"heading"} className={styles["header"]}>
+            <div className={styles["header-main"]}>
+                {(isHeaderMenuActive && (
+                    <X
+                        className={styles["mobile-btn"]}
+                        size={30}
+                        onClick={() => {
+                            toggleMenu(!isHeaderMenuActive);
+                        }}
+                    />
+                )) || (
+                    <List
+                        className={styles["mobile-btn"]}
+                        size={30}
+                        onClick={() => {
+                            toggleMenu(!isHeaderMenuActive);
+                        }}
+                    />
+                )}
+                <div className={styles["header-logo"]}>
+                    <Link to={"/"}>Portfolio</Link>
+                </div>
+            </div>
+            <nav role={"navigation"} className={styles["header-navigation"]}>
                 <ul>
                     <li>
                         <NavLink
@@ -48,26 +67,7 @@ export const Header = ({
                         </NavLink>
                     </li>
                 </ul>
-            </div>
-            {(isHeaderMenuActive && (
-                <X
-                    className={styles["mobile-btn"]}
-                    size={30}
-                    onClick={() => {
-                        toggleMenu(!isHeaderMenuActive);
-                    }}
-                />
-            )) || (
-                <List
-                    className={styles["mobile-btn"]}
-                    size={30}
-                    onClick={() => {
-                        toggleMenu(!isHeaderMenuActive);
-                    }}
-                />
-            )}
-
-            <HeaderExternalBtn />
+            </nav>
         </header>
     );
 };
