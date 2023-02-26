@@ -42,7 +42,7 @@ export const Home = () => {
                 <div className={styles["buttons"]}>
                     <Link className={styles["project-button"]  } to="/projects">
                         Veja meus projetos
-                        <ArrowRight size={18} />
+                        <ArrowRight size={20} weight="bold"/>
                     </Link>
                     <a
                         className={styles["curriculum-button"]}
@@ -50,7 +50,7 @@ export const Home = () => {
                         download="lucas-silva-cv.pdf"
                     >
                         Baixe o currículo
-                        <FileArrowDown size={18} weight="bold"/>
+                        <FileArrowDown size={20} weight="bold"/>
                     </a>
                 </div>
             </section>

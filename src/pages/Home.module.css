@@ -47,6 +47,13 @@
 }
 .curriculum-button {
     display: none;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -72,6 +79,9 @@
     .greetings-title p{
         color: var(--text-color-light);
     }
+    .curriculum-button {
+        display: flex;
+    }
 }
 @media (min-width: 1025px) {
     .home{
@@ -96,5 +106,8 @@
     .greetings-title p{
         font-size: 0.9rem;
         color: var(--text-color-light);
+    }
+    .curriculum-button {
+        display: flex;
     }
 }
