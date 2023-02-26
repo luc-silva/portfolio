@@ -20,7 +20,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -50,10 +49,10 @@ table {
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap");
 
 :root {
-    --main-color: #2abe19;
+    --main-color: #1bac0b;
 
     --background-light:#ffffff;
-    --background-faded-light: #d6d5d5;
+    --background-faded-light: #f2efef;
     --text-color-light: #363735;
     --title-color-ligght: #1b1b1a;
 
@@ -77,5 +76,5 @@ table {
     border: none;
     outline: none;
     list-style: none;
-    font-family: "Roboto", "monospace"
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
