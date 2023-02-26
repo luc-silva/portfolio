@@ -1,6 +1,6 @@
 import styles from "./Project.module.css";
 import { ProjectCard } from "./ProjectCard";
-import { ProjectSkills } from "./ProjectSkills";
+import { ProjectSkills } from "../ProjectSkills";
 import { projects, IProject } from "../../data";
 
 export const Project = () => {

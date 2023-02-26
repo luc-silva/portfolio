@@ -2,21 +2,6 @@
     display: flex;
     flex-direction: column;
 }
-.project-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.project-main p{
-    color: var(--gray-700);
-}
-.project-skills {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding: 5rem 5rem;
-}
 .project-projects {
     display: flex;
     flex-direction: column;
