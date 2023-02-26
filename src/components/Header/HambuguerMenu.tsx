@@ -17,7 +17,7 @@ export const HamburguerMenu = ({
                         <NavLink
                             className={({ isActive }) =>
                                 isActive
-                                    ? styles["mobile-nav-active"]
+                                    ? styles["nav-active"]
                                     : undefined
                             }
                             to="/"
@@ -32,7 +32,7 @@ export const HamburguerMenu = ({
                         <NavLink
                             className={({ isActive }) =>
                                 isActive
-                                    ? styles["mobile-nav-active"]
+                                    ? styles["nav-active"]
                                     : undefined
                             }
                             to="/about-me"
@@ -47,7 +47,7 @@ export const HamburguerMenu = ({
                         <NavLink
                             className={({ isActive }) =>
                                 isActive
-                                    ? styles["mobile-nav-active"]
+                                    ? styles["nav-active"]
                                     : undefined
                             }
                             to="/projects"

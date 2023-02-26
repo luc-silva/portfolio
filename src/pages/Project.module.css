@@ -32,6 +32,9 @@
     }
 }
 @media (min-width: 1025px) {
+    .projects-title h2{
+        font-size: 2.3rem;
+    }
     .projects-container{
         grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(auto, auto);

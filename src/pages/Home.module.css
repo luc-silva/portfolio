@@ -72,7 +72,7 @@
         flex-direction: column;
     }
     .greetings-title h2 {
-        font-size: 2rem;
+        font-size: 2.8rem;
         color: var(--title-color-light);
         font-weight: bold;
     }
@@ -99,12 +99,12 @@
         flex-direction: column;
     }
     .greetings-title h2 {
-        font-size: 2.1rem;
+        font-size: 3.3rem;
         color: var(--title-color-light);
         font-weight: bold;
     }
     .greetings-title p{
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         color: var(--text-color-light);
     }
     .curriculum-button {

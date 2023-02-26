@@ -10,7 +10,8 @@ export const Header = ({
     toggleMenu: Function;
     isHeaderMenuActive: boolean;
 }) => {
-    return (
+    let color =  styles["nav-active"] 
+   return (
         <header role={"heading"} className={styles["header"]}>
             <div className={styles["header-main"]}>
                 {(isHeaderMenuActive && (
@@ -39,7 +40,7 @@ export const Header = ({
                     <li>
                         <NavLink
                             className={({ isActive }) =>
-                                isActive ? styles["nav-active"] : undefined
+                                isActive ? color : undefined
                             }
                             to="/"
                         >
@@ -49,7 +50,7 @@ export const Header = ({
                     <li>
                         <NavLink
                             className={({ isActive }) =>
-                                isActive ? styles["nav-active"] : undefined
+                                isActive ? color : undefined
                             }
                             to="/about-me"
                         >
@@ -59,7 +60,7 @@ export const Header = ({
                     <li>
                         <NavLink
                             className={({ isActive }) =>
-                                isActive ? styles["nav-active"] : undefined
+                                isActive ? color : undefined
                             }
                             to="/projects"
                         >
