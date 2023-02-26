@@ -1,0 +1,65 @@
+/* .aboutme {
+} */
+.aboutme-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+}
+.aboutme-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+.aboutme-title {
+    display: flex;
+    flex-direction: column;
+}
+.aboutme-title h2 {
+    font-size: 2.5rem;
+}
+.aboutme-title p {
+    color: var(--main-color);
+    font-size: 1rem;
+    line-height: 1rem;
+}
+.aboutme-about {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 1rem;
+    min-height: 90vh;
+}
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    font-size: 0.9rem;
+    text-align: justify;
+    color: var(--text-color-light);
+}
+.about-resume {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+.about-resume a {
+    color: var(--main-color);
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .about-text{
+        width: 45%;
+    }
+}
+@media (min-width: 1025px) {
+    .aboutme-main{
+        padding: 4rem 4rem;
+    }
+    .about-text{
+        width: 55%;
+    }
+}
