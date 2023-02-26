@@ -1,7 +1,7 @@
-import styles from "./ProjectSkills.module.css";
+import styles from "./Skills.module.css";
 import { knowTools, IKnowTool } from "../data";
 
-export const ProjectSkills = () => {
+export const Skills = () => {
     return (
         <section className={styles["skills"]}>
             <div className={styles["skills-title"]}>
@@ -13,13 +13,13 @@ export const ProjectSkills = () => {
             </div>
             <ul className={styles["skills-container"]}>
                 {knowTools.map(
-                    ({ name, toolImage, additionalInfo }: IKnowTool, index) => {
+                    ({ name, toolImage, additionalInfo, alt }: IKnowTool, index) => {
                         return (
                             <li key={index}>
                                 <img
                                     loading="lazy"
                                     src={require(`../assets/images/${toolImage}`)}
-                                    alt={"Logotipo do " + name}
+                                    alt={alt}
                                 />
                                 <p>{name}</p>
                                 {additionalInfo && <em>{additionalInfo}</em>}

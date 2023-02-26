@@ -10,7 +10,7 @@
     justify-content: space-between;
     width: 40%;
     padding: 1rem;
-    background-color: var(--background-light);
+    background-color: var(--background-faded-light);
     display: none;
 }
 .certificate-details em{
@@ -49,8 +49,7 @@
 }
 .details-external-link {
     font-weight: bold;
-    border: 1px solid var(--green-800);
-    background-color: var(--green-700);
+    background-color: var(--main-color);
 }
 .details-external-link {
     display: flex;

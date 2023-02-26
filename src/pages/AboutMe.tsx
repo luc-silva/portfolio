@@ -5,25 +5,14 @@ import { certificates } from "../data";
 
 import { Download } from "phosphor-react";
 import styles from "./AboutMe.module.css";
-import { ProjectSkills } from "../components/ProjectSkills";
+import { Skills } from "../components/Skills";
 
 export const AboutMe = () => {
-    let [counter, setCounter] = useState(0);
     let [modalFlag, setModalFlag] = useState(false);
     let [modalImage, setModalImage] = useState(
         "../../Images/cert-intermediatewebdev.jpg"
     );
 
-    function goUp() {
-        if (counter != certificates.length - 1) {
-            setCounter((prevCounter) => prevCounter + 1);
-        }
-    }
-    function goBack() {
-        if (counter > 0) {
-            setCounter((prevCounter) => prevCounter - 1);
-        }
-    }
     function handleModal() {
         setModalFlag((previousFlag) => !previousFlag);
     }
@@ -88,12 +77,9 @@ export const AboutMe = () => {
                     />
                 </div> */}
             </section>
-            <ProjectSkills />
+            <Skills />
             <AboutMeCertificates
                 certificates={certificates}
-                counter={counter}
-                goBack={goBack}
-                goUp={goUp}
                 handleModal={handleModal}
                 handleModalImage={handleModalImage}
             />

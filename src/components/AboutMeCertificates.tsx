@@ -1,35 +1,34 @@
-import { CaretRight, CaretLeft } from "phosphor-react";
 import { CertificateItem } from "./CertificateItem";
+import { useState } from "react";
+import { ICertificate } from "../data";
 
+import { CaretRight, CaretLeft } from "phosphor-react"
 import styles from "./AboutMeCertificates.module.css";
 
-interface certificate {
-    tags: string[];
-    certImage: string;
-    courseName: string;
-    schoolName: string;
-    schoolSite: string;
-    additionalInfo: string;
-    courseCompletitionDate: string;
-    courseLength: number;
-}
+
 interface CertificatesSectionProps {
-    certificates: certificate[];
-    counter: number;
+    certificates: ICertificate[];
     handleModal: Function;
     handleModalImage: Function;
-    goBack: Function;
-    goUp: Function;
 }
 
 export const AboutMeCertificates = ({
     certificates,
-    counter,
     handleModal,
-    handleModalImage,
-    goBack,
-    goUp,
+    handleModalImage
 }: CertificatesSectionProps) => {
+    let [counter, setCounter] = useState(0);
+
+    function goUp() {
+        if (counter != certificates.length - 1) {
+            setCounter((prevCounter) => prevCounter + 1);
+        }
+    }
+    function goBack() {
+        if (counter > 0) {
+            setCounter((prevCounter) => prevCounter - 1);
+        }
+    }
     return (
         <section className={styles["aboutme-certificates"]}>
             <div className={styles["certificates-main"]}>
