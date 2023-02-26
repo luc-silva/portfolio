@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import { ImageModal } from "./ImageModal";
+import { ImageModal } from "../components/ImageModal";
 import { AboutMeCertificates } from "../components/AboutMeCertificates";
 import { certificates } from "../data";
 
@@ -22,11 +22,11 @@ export const AboutMe = () => {
 
     return (
         <main role={"main"} className={styles["aboutme"]}>
-            {/* <ImageModal
+            <ImageModal
                 certImage={modalImage}
                 modalActive={modalFlag}
                 handleModal={handleModal}
-            /> */}
+            />
             <section className={styles["aboutme-main"]}>
                 <div className={styles["aboutme-info"]}>
                     <div className={styles["aboutme-title"]}>
