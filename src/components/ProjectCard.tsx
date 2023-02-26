@@ -1,21 +1,15 @@
 import { ArrowSquareOut } from "phosphor-react";
 import { useEffect, useState } from "react";
+import { IProject } from "../data";
 
 import styles from "./ProjectCard.module.css";
-
-interface project {
-    projectTitle: string;
-    projectLink: string;
-    projectImages: string[];
-    projectTags: string[];
-}
 
 export const ProjectCard = ({
     projectTitle,
     projectLink,
     projectImages,
     projectTags,
-}: project) => {
+}: IProject) => {
     let [counter, setCounter] = useState(0);
     let [actualImage, setActualImage] = useState(getImage(projectImages[0]));
     let [isMouseHovering, toggleMouseHovering] = useState(false);
@@ -39,7 +33,7 @@ export const ProjectCard = ({
     }, [counter, isMouseHovering, actualImage]);
 
     function getImage(item: string) {
-        return require(`../../Images/` + item);
+        return require(`../assets/images/` + item);
     }
 
     return (

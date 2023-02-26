@@ -1,21 +1,12 @@
 import styles from "./Project.module.css";
-import { ProjectCard } from "./ProjectCard";
-import { ProjectSkills } from "../ProjectSkills";
-import { projects, IProject } from "../../data";
+import { projects, IProject } from "../data";
+import { ProjectCard } from "../components/ProjectCard";
 
 export const Project = () => {
     return (
-        <section id="projects" className={styles["portfolio-projects"]}>
+        <section className={styles["projects"]}>
             {/* page for detail projects, articles and activities (hackatons, CTF and so on). statistics should be in about me */}
-
-            <div className={styles["project-skills"]}>
-                <div className={styles["project-main"]}>
-                    <h2>Skills & Ferramentas</h2>
-                    <p>Ferramentas as quais utilizo ou tenho algum tipo de experiência</p>
-                </div>
-                <ProjectSkills />
-            </div>
-            <div className={styles["project-projects"]}>
+            <div className={styles["projects-about"]}>
                 <div className={styles["projects-title"]}>
                     <h2>Projetos</h2>
                     <p>

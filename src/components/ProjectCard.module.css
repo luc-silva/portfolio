@@ -1,14 +1,12 @@
 .project-card {
     display: flex;
     height: 225px;
-    width: 380px;
 
     overflow: hidden;
     border-radius: 5px;
     position: relative;
 
     transition: transform 0.25s;
-    background-color: var(--white);
 }
 .project-card:hover{
     transform: scale(1.05);
@@ -32,18 +30,18 @@
     position: absolute;
     box-sizing: border-box;
 
-    color: var(--gray-500);
-    background-color: var(--gray-700);
+    background-color: var(--background-faded-light);
 }
 .footer-main{
     display: flex;
     flex-direction: column;
 }
 .item-title{
-    color: var(--gray-300);
+    color: var(--title-color-light);
     font-weight: 500;
 }
 .item-tags{
+    color: var(--text-color-light);
     font-size: 0.6rem;
     font-family: "Roboto Mono", monospace;
 }
@@ -52,9 +50,10 @@
     flex-direction: row;
     align-items: center;
     gap: 0.5rem;
+    color: var(--main-color);
 }
-@media (max-width:480px) {
-    .project-card{
-        width: 100%;
-    }
+@media (min-width: 769px) and (max-width: 1024px) {
+   
+}
+@media (min-width: 1025px) {
 }

@@ -20,10 +20,7 @@ export const projects: IProject[] = [
     {
         projectTitle: "Weather App",
         projectLink: "https://github.com/luc-silva/weather-app",
-        projectImages: [
-            "project-weatherapp-1.png",
-            "project-weatherapp-2.png",
-        ],
+        projectImages: ["project-weatherapp-1.png", "project-weatherapp-2.png"],
         projectTags: ["JS", "HTML", "CSS"],
     },
     {
@@ -62,9 +59,7 @@ export const projects: IProject[] = [
     {
         projectTitle: "Calculator",
         projectLink: "https://github.com/luc-silva/calculator",
-        projectImages: [
-            "project-calculator-1.png",
-        ],
+        projectImages: ["project-calculator-1.png"],
         projectTags: ["JS", "HTML", "CSS"],
     },
 ];
@@ -100,11 +95,7 @@ export const certificates: ICertificate[] = [
         courseLength: 98,
     },
     {
-        tags: [
-            "MongoDB", 
-            "NoSQL",
-            "NodeJS"
-        ],
+        tags: ["MongoDB", "NoSQL", "NodeJS"],
         certImage: "cert-mongodbnodejspath.png",
         courseName: "MongoDB Node.js Developer Path",
         schoolName: "MongoDB University",
@@ -139,62 +130,74 @@ export const certificates: ICertificate[] = [
 
 export interface IKnowTool {
     name: string;
+    alt: string;
     toolImage: string;
     additionalInfo: string;
 }
 export const knowTools: IKnowTool[] = [
     {
         name: "Javascript",
+        alt: "Javascript logo",
         toolImage: "logo-javascript.png",
         additionalInfo: "",
     },
     {
         name: "Typescript",
+        alt: "Typescript logo",
         toolImage: "logo-typescript.png",
         additionalInfo: "",
     },
     {
         name: "ReactJS",
+        alt: "ReactJS logo",
         toolImage: "logo-reactjs.png",
         additionalInfo: "",
     },
     {
         name: "NodeJS",
+        alt: "NodeJS logo",
         toolImage: "logo-nodejs.png",
         additionalInfo: "",
     },
     {
         name: "Ubuntu",
+        alt: "Ubuntu logo",
         toolImage: "logo-ubuntu.png",
         additionalInfo: "",
     },
     {
         name: "MongoDB",
+        alt: "MongoDB logo",
         toolImage: "logo-mongo.png",
         additionalInfo: "",
     },
     {
         name: "HTML",
+        alt: "HTML logo",
         toolImage: "logo-html.png",
         additionalInfo: "",
     },
     {
         name: "CSS",
+        alt: "CSS logo",
         toolImage: "logo-css.png",
         additionalInfo: "",
     },
     {
         name: "SQL",
+        alt: "SQL logo",
         toolImage: "logo-sql.png",
         additionalInfo: "Experiência acadêmica.",
     },
     {
         name: "Shell Scripting",
+        alt: "Shell logo",
         toolImage: "logo-shell.png",
         additionalInfo: "Experiência acadêmica.",
     },
     {
         name: "Python",
+        alt: "Python logo",
         toolImage: "logo-python.png",
         additionalInfo: "Experiência acadêmica.",
     },

@@ -6,7 +6,7 @@ import { HamburguerMenu } from "./components/Header/HambuguerMenu";
 
 import { Home } from "./pages/Home";
 import { AboutMe } from "./pages/AboutMe";
-import { Project } from "./components/Project/Project";
+import { Project } from "./pages/Project";
 import { Footer } from "./components/Footer/Footer";
 
 import "./global.css";
@@ -29,7 +29,7 @@ function Portfolio() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about-me" element={<AboutMe />} />
-                {/* <Route path="/projects" element={<Project />} /> */}
+                <Route path="/projects" element={<Project />} /> 
             </Routes>
             {/* <Footer /> */}
         </Router>
