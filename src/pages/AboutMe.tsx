@@ -1,6 +1,6 @@
 import { useState } from "react";
 // import { ImageModal } from "./ImageModal";
-// import { AboutMeCertifications } from "./AboutMeCertifications";
+import { AboutMeCertificates } from "../components/AboutMeCertificates";
 import { certificates } from "../data";
 
 import { Download } from "phosphor-react";
@@ -88,15 +88,15 @@ export const AboutMe = () => {
                     />
                 </div> */}
             </section>
-            {/* <AboutMeCertifications
+            <ProjectSkills />
+            <AboutMeCertificates
                 certificates={certificates}
                 counter={counter}
                 goBack={goBack}
                 goUp={goUp}
                 handleModal={handleModal}
                 handleModalImage={handleModalImage}
-            /> */}
-            <ProjectSkills />
+            />
         </main>
     );
 };

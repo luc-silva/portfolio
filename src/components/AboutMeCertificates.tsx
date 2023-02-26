@@ -1,7 +1,7 @@
 import { CaretRight, CaretLeft } from "phosphor-react";
-import { CertificationItem } from "./CertificationItem";
+import { CertificateItem } from "./CertificateItem";
 
-import styles from "./AboutMeCertifications.module.css";
+import styles from "./AboutMeCertificates.module.css";
 
 interface certificate {
     tags: string[];
@@ -13,30 +13,30 @@ interface certificate {
     courseCompletitionDate: string;
     courseLength: number;
 }
-interface CertifcationsSectionProps {
+interface CertificatesSectionProps {
     certificates: certificate[];
     counter: number;
-    handleModal: Function
-    handleModalImage: Function
-    goBack: Function
-    goUp: Function
+    handleModal: Function;
+    handleModalImage: Function;
+    goBack: Function;
+    goUp: Function;
 }
 
-export const AboutMeCertifications = ({
+export const AboutMeCertificates = ({
     certificates,
     counter,
     handleModal,
     handleModalImage,
     goBack,
     goUp,
-} : CertifcationsSectionProps ) => {
+}: CertificatesSectionProps) => {
     return (
-        <div className={styles["aboutme-certification"]}>
-            <div className={styles["certification-main"]}>
+        <section className={styles["aboutme-certificates"]}>
+            <div className={styles["certificates-main"]}>
                 <h2>Certificações</h2>
                 <p>Clique na imagem do certificado para dar zoom</p>
             </div>
-            <div className={styles["certification-container"]}>
+            <div className={styles["certificates-container"]}>
                 <div
                     role="button"
                     className={styles["cert-button"]}
@@ -47,10 +47,10 @@ export const AboutMeCertifications = ({
                     <CaretLeft
                         size={50}
                         weight="thin"
-                        color="var(--gray-700)"
+                        color="var(--text-color-light)"
                     />
                 </div>
-                <CertificationItem
+                <CertificateItem
                     cert={certificates[counter]}
                     handleModal={handleModal}
                     handleModalImage={handleModalImage}
@@ -65,10 +65,10 @@ export const AboutMeCertifications = ({
                     <CaretRight
                         size={50}
                         weight="thin"
-                        color="var(--gray-700)"
+                        color="var(--text-color-light)"
                     />
                 </div>
             </div>
-        </div>
+        </section>
     );
 };

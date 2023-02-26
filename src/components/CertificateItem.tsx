@@ -1,4 +1,4 @@
-import styles from "./CertificationItem.module.css";
+import styles from "./CertificateItem.module.css";
 import { ArrowSquareOut } from "phosphor-react";
 
 interface certificate {
@@ -11,7 +11,7 @@ interface certificate {
     courseCompletitionDate: string;
     courseLength: number;
 }
-export const CertificationItem = ({
+export const CertificateItem = ({
     cert,
     handleModal,
     handleModalImage,
@@ -78,10 +78,10 @@ export const CertificationItem = ({
             <img
                 className={styles["certificate-image"]}
                 onClick={() => {
-                    handleModalImage(require(`../../Images/${certImage}`));
+                    handleModalImage(require(`../assets/images/${certImage}`));
                     handleModal();
                 }}
-                src={require(`../../Images/${certImage}`)}
+                src={require(`../assets/images/${certImage}`)}
             ></img>
         </div>
     );
