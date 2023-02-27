@@ -30,18 +30,18 @@
     position: absolute;
     box-sizing: border-box;
 
-    background-color: var(--background-faded-light);
+    background-color: var(--background-faded );
 }
 .footer-main{
     display: flex;
     flex-direction: column;
 }
 .item-title{
-    color: var(--title-color-light);
+    color: var(--title-color );
     font-weight: 500;
 }
 .item-tags{
-    color: var(--text-color-light);
+    color: var(--text-color );
     font-size: 0.6rem;
     font-family: "Roboto Mono", monospace;
 }

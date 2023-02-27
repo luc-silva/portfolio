@@ -1,6 +1,7 @@
 .projects {
     display: flex;
     flex-direction: column;
+    background-color: var(--background);
 }
 .projects-title{
     display: flex;
@@ -11,10 +12,11 @@
     text-align: center;
 }
 .projects-title h2{
+    color: var(--title-color);
     font-size: 2rem;
 }
 .projects-title p{
-    color: var(--text-color-light);
+    color: var(--text-color);
 }
 .projects-container{
     display: grid;

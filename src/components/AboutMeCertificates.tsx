@@ -46,7 +46,7 @@ export const AboutMeCertificates = ({
                     <CaretLeft
                         size={50}
                         weight="thin"
-                        color="var(--text-color-light)"
+                        color="var(--text-color )"
                     />
                 </div>
                 <CertificateItem
@@ -64,7 +64,7 @@ export const AboutMeCertificates = ({
                     <CaretRight
                         size={50}
                         weight="thin"
-                        color="var(--text-color-light)"
+                        color="var(--text-color "
                     />
                 </div>
             </div>

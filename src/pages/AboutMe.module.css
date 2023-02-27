@@ -1,5 +1,6 @@
-/* .aboutme {
-}  */
+.aboutme {
+    background-color: var(--background);
+} 
 .aboutme-main {
     display: flex;
     flex-direction: column;
@@ -18,6 +19,7 @@
     flex-direction: column;
 }
 .aboutme-title h2 {
+    color: var(--title-color);
     font-size: 2.5rem;
 }
 .aboutme-title p {
@@ -36,7 +38,7 @@
 
     font-size: 0.9rem;
     text-align: justify;
-    color: var(--text-color-light);
+    color: var(--text-color );
 }
 .about-resume {
     display: flex;
@@ -53,13 +55,13 @@
     gap: 1rem;
 }
 .contact-title h3 {
-    color: var(--title-color-light);
+    color: var(--title-color );
 }
 .contact-title p {
     color: var(--main-color);
 }
 .contact-info {
-    color: var(--text-color-light);
+    color: var(--text-color );
 }
 .contact-info > div {
     display: flex;

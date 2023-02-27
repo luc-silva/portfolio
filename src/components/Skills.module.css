@@ -1,5 +1,5 @@
 .skills{
-    background-color: var(--background-faded-light);
+    background-color: var(--background-faded );
     padding: 2rem 2rem;
     min-height: 90vh;
 }
@@ -10,10 +10,11 @@
     text-align: center;
 }
 .skills-title h2{
+    color: var(--title-color);
     font-size: 2rem;
 }
 .skills-title p{
-    color: var(--text-color-light);
+    color: var(--text-color);
     font-size: 0.8rem;
 }
 .skills-container {
@@ -33,7 +34,7 @@
     align-items: center;
     justify-content: center;
     transition: transform 0.25s;
-    color: var(--text-color-light);
+    color: var(--text-color );
 }
 .skills-container li:hover {
     transform: scale(1.1);

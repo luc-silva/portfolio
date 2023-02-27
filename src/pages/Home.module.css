@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: center;
     height: 90vh;
+    background-color: var(--background);
 }
 .greetings {
     display: flex;
@@ -10,12 +11,12 @@
     gap: 1rem;
     padding: 0 2rem;
 }
-.greetings-main{
+.greetings-main {
     display: flex;
     flex-direction: column;
 }
 .greetings-main > strong {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     color: var(--main-color);
 }
 .greetings-title {
@@ -24,19 +25,19 @@
 }
 .greetings-title h2 {
     font-size: 1.8rem;
-    color: var(--title-color-light);
+    color: var(--title-color);
     font-weight: bold;
 }
-.greetings-title p{
+.greetings-title p {
     font-size: 0.8rem;
-    color: var(--text-color-light);
+    color: var(--text-color);
 }
 .buttons {
     display: flex;
     flex-direction: row;
     gap: 1rem;
 }
-.project-button{
+.project-button {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -55,16 +56,22 @@
     color: var(--main-color);
     border: 1px solid var(--main-color);
 }
+.social-accounts ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    .home{
-       justify-content: flex-start;
+    .home {
+        justify-content: flex-start;
     }
     .greetings {
         padding: 2rem 2rem;
     }
     .greetings-main > strong {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         color: var(--main-color);
     }
     .greetings-title {
@@ -73,25 +80,21 @@
     }
     .greetings-title h2 {
         font-size: 2.8rem;
-        color: var(--title-color-light);
         font-weight: bold;
-    }
-    .greetings-title p{
-        color: var(--text-color-light);
     }
     .curriculum-button {
         display: flex;
     }
 }
 @media (min-width: 1025px) {
-    .home{
+    .home {
         justify-content: flex-start;
     }
     .greetings {
         padding: 4rem 4rem;
     }
     .greetings-main > strong {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         color: var(--main-color);
     }
     .greetings-title {
@@ -100,14 +103,14 @@
     }
     .greetings-title h2 {
         font-size: 3.3rem;
-        color: var(--title-color-light);
         font-weight: bold;
     }
-    .greetings-title p{
+    .greetings-title p {
         font-size: 1.2rem;
-        color: var(--text-color-light);
     }
     .curriculum-button {
         display: flex;
     }
+    /* .social-accounts{
+    } */
 }

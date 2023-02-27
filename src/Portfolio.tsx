@@ -10,11 +10,10 @@ import { Project } from "./pages/Project";
 import { Footer } from "./components/Footer/Footer";
 
 import "./global.css";
-import { useState } from "react";
+import { useState, createContext } from "react";
 
 function Portfolio() {
     let [isHeaderMenuActive, toggle] = useState(false);
-
     return (
         <Router basename={process.env.PUBLIC_URL}>
             <ScrollToTop />
@@ -22,14 +21,11 @@ function Portfolio() {
                 isHeaderMenuActive={isHeaderMenuActive}
                 toggleMenu={toggle}
             />
-            <HamburguerMenu
-                isActive={isHeaderMenuActive}
-                toggleMenu={toggle}
-            />
+            <HamburguerMenu isActive={isHeaderMenuActive} toggleMenu={toggle} />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about-me" element={<AboutMe />} />
-                <Route path="/projects" element={<Project />} /> 
+                <Route path="/projects" element={<Project />} />
             </Routes>
             {/* <Footer /> */}
         </Router>

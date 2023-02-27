@@ -12,14 +12,15 @@
     width: 100%;
     padding: 0 2rem;
 
-    background-color: var(--background-light);
+    background-color: var(--background-faded );
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.196);
-    border-bottom: 1px solid var(--background-light);
+    border-bottom: 1px solid var(--background );
 }
 .header-main{
     display: flex;
     flex-direction: row;
     align-items: center;
+    line-height: 1rem;
     gap: 1rem;
 }
 .header-logo a{
@@ -27,7 +28,12 @@
     font-size: 1.6rem;
     color: var(--main-color);
 }
-
+.navigation-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
 .header-navigation{
     display: none;
 }
@@ -39,7 +45,7 @@
 .header-navigation a{
     font-size: 1.1rem;
     font-family: "open sans";
-    color: var(--text-color-light);
+    color: var(--text-color );
 }
 .header-navigation .nav-active{
     color: var(--main-color);

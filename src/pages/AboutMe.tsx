@@ -58,7 +58,7 @@ export const AboutMe = () => {
                             </p>
                         </div>
                         <div className={styles["about-resume"]}>
-                            <Download size={24} />
+                            <Download size={24} color="var(--title-color)"/>
                             <a
                                 href={require("../assets/lucas-silva-resume.pdf")}
                                 download="lucas-silva-cv.pdf"

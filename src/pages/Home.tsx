@@ -1,48 +1,30 @@
-import { ArrowRight, FileArrowDown } from "phosphor-react";
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+
+import {
+    ArrowRight,
+    Envelope,
+    FileArrowDown,
+    GithubLogo,
+    LinkedinLogo,
+} from "phosphor-react";
 import styles from "./Home.module.css";
 
 export const Home = () => {
-    let imagesArray = [
-        "home-image-1.jpg",
-        "home-image-2.jpg",
-        "home-image-3.jpg",
-        "home-image-4.jpg",
-        "home-image-5.jpg",
-    ];
-    // let [actualImg, setActualImg] = useState(getImage(imagesArray[0]));
-    // let counter = 0;
-
-    // useEffect(() => {
-    //     let imageChangingInterval = setInterval(() => {
-    //         counter++;
-    //         if (counter === imagesArray.length) {
-    //             counter = 0;
-    //         }
-    //         setActualImg(getImage(imagesArray[counter]));
-    //     }, 5000);
-    //     return () => clearInterval(imageChangingInterval);
-    // }, []);
-
-    // function getImage(image: string) {
-    //     return require(`../../Images/${image}`);
-    // }
-
+  
     return (
         <main role={"main"} className={styles["home"]}>
             <section className={styles["greetings"]}>
                 <div className={styles["greetings-main"]}>
-                    <strong>Olá, como vai?</strong>
+                    <strong>Olá, como vai? Me chamo</strong>
                     <div className={styles["greetings-title"]}>
-                        <h2>Me chamo Lucas Santos</h2>
+                        <h2>Lucas da Silva Santos</h2>
                         <p>Desenvolvedor Web</p>
                     </div>
                 </div>
                 <div className={styles["buttons"]}>
-                    <Link className={styles["project-button"]  } to="/projects">
+                    <Link className={styles["project-button"]} to="/projects">
                         Veja meus projetos
-                        <ArrowRight size={20} weight="bold"/>
+                        <ArrowRight size={20} weight="bold" />
                     </Link>
                     <a
                         className={styles["curriculum-button"]}
@@ -50,8 +32,27 @@ export const Home = () => {
                         download="lucas-silva-cv.pdf"
                     >
                         Baixe o currículo
-                        <FileArrowDown size={20} weight="bold"/>
+                        <FileArrowDown size={20} weight="bold" />
                     </a>
+                </div>
+                <div className={styles["social-accounts"]}>
+                    <ul>
+                        <li>
+                            <a href="" target={"_blank"}>
+                                <LinkedinLogo size={30} color="var(--main-color)" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target={"_blank"}>
+                                <GithubLogo size={30} color="var(--main-color)" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" target={"_blank"}>
+                                <Envelope size={30} color="var(--main-color)" />
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </main>

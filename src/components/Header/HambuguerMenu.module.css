@@ -9,8 +9,7 @@
     z-index: 1;
 
     width: 100%;
-    background-color: var(--background-light);
-    border-bottom: 1px solid var(--background-faded-light);
+    background-color: var(--background-faded );
 }
 .header-menu ul {
     flex-direction: row;
@@ -24,10 +23,13 @@
 }
 .header-menu a {
     font-family: "open sans";
-    color: var(--text-color-light);
+    color: var(--text-color );
 }
 .mobile-nav-active {
     color: var(--main-color);
+}
+.mobile-btn{
+    color: var(--text-color);
 }
 @media (min-width: 769px) and (max-width: 1024px) {
     .header-menu {
