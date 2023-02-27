@@ -45,6 +45,12 @@
     background-color: var(--main-color);
     color: white;
     padding: 0.5rem 1rem;
+    transition: background-color 0.5s, color 0.5s;
+}
+.project-button:hover{
+    background-color: var(--background);
+    color: var(--main-color);
+    outline: var(--main-color) solid 1px;
 }
 .curriculum-button {
     display: none;
@@ -61,6 +67,12 @@
     flex-direction: row;
     align-items: center;
     gap: 1rem;
+}
+.social-accounts li{
+    transition: transform 1s;
+}
+.social-accounts li:hover{
+    transform: scale(1.3);
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {

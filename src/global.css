@@ -73,5 +73,5 @@ table {
     outline: none;
     list-style: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    transition: background-color 1s, color 1s;
+    transition: background-color 0.5s, color 0.5s;
 }

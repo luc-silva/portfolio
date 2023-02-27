@@ -49,6 +49,10 @@
     font-family: "open sans";
     color: var(--text-color );
 }
+.header-navigation a:hover{
+    color: var(--title-color);
+    font-weight: bold;
+}
 .header-navigation .nav-active{
     color: var(--main-color);
 }
