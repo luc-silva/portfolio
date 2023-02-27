@@ -7,26 +7,15 @@ import { Download, Envelope, LinkedinLogo } from "phosphor-react";
 import styles from "./AboutMe.module.css";
 import { Skills } from "../components/Skills";
 
-export const AboutMe = () => {
-    let [modalFlag, setModalFlag] = useState(false);
-    let [modalImage, setModalImage] = useState(
-        "../../images/cert-intermediatewebdev.jpg"
-    );
-
-    function handleModal() {
-        setModalFlag((previousFlag) => !previousFlag);
-    }
-    function handleModalImage(image: string) {
-        setModalImage(image);
-    }
-
+export const AboutMe = ({
+    setModalImage,
+    toggleImageModal,
+}: {
+    setModalImage: Function;
+    toggleImageModal: Function;
+}) => {
     return (
         <main role={"main"} className={styles["aboutme"]}>
-            <ImageModal
-                certImage={modalImage}
-                modalActive={modalFlag}
-                handleModal={handleModal}
-            />
             <section className={styles["aboutme-main"]}>
                 <div className={styles["aboutme-info"]}>
                     <div className={styles["aboutme-title"]}>
@@ -58,7 +47,7 @@ export const AboutMe = () => {
                             </p>
                         </div>
                         <div className={styles["about-resume"]}>
-                            <Download size={24} color="var(--title-color)"/>
+                            <Download size={24} color="var(--title-color)" />
                             <a
                                 href={require("../assets/lucas-silva-resume.pdf")}
                                 download="lucas-silva-cv.pdf"
@@ -75,22 +64,21 @@ export const AboutMe = () => {
                     </div>
                     <div className={styles["contact-info"]}>
                         <div>
-                            <LinkedinLogo size={20} color={"var(--main-color)"}/>
+                            <LinkedinLogo
+                                size={20}
+                                color={"var(--main-color)"}
+                            />
                             Linkedin: luc-silva
                         </div>
                         <div>
-                            <Envelope size={20} color={"var(--main-color)"}/>
+                            <Envelope size={20} color={"var(--main-color)"} />
                             Email: lucas.silva1203@outlook.com
                         </div>
                     </div>
                 </div>
             </section>
             <Skills />
-            <AboutMeCertificates
-                certificates={certificates}
-                handleModal={handleModal}
-                handleModalImage={handleModalImage}
-            />
+            <AboutMeCertificates toggleImageModal={toggleImageModal}  setModalImage={ setModalImage} />
         </main>
     );
 };

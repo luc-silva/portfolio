@@ -13,12 +13,10 @@ interface certificate {
 }
 export const CertificateItem = ({
     cert,
-    handleModal,
-    handleModalImage,
+    toggleImageModal,
 }: {
+    toggleImageModal: Function;
     cert: certificate;
-    handleModal: Function;
-    handleModalImage: Function;
 }) => {
     let {
         tags,
@@ -78,8 +76,7 @@ export const CertificateItem = ({
             <img
                 className={styles["certificate-image"]}
                 onClick={() => {
-                    handleModalImage(require(`../assets/images/${certImage}`));
-                    handleModal();
+                    toggleImageModal();
                 }}
                 src={require(`../assets/images/${certImage}`)}
             ></img>

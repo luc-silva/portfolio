@@ -13,7 +13,7 @@ export const Header = ({
 }) => {
     let color = styles["nav-active"];
     return (
-        <header role={"heading"} className={styles["header"]}>
+        <header aria-level={1} role={"heading"} className={styles["header"]}>
             <div className={styles["header-main"]}>
                 {(isHeaderMenuActive && (
                     <X

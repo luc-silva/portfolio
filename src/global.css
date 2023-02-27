@@ -45,7 +45,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
 :root {
     --main-color: #1bac0b;
     --background:#ffffff;

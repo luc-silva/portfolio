@@ -1,24 +1,19 @@
 import { CertificateItem } from "./CertificateItem";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ICertificate } from "../data";
 
-import { CaretRight, CaretLeft } from "phosphor-react"
+import { CaretRight, CaretLeft } from "phosphor-react";
 import styles from "./AboutMeCertificates.module.css";
+import { certificates } from "../data";
 
-
-interface CertificatesSectionProps {
-    certificates: ICertificate[];
-    handleModal: Function;
-    handleModalImage: Function;
-}
-
-export const AboutMeCertificates = ({
-    certificates,
-    handleModal,
-    handleModalImage
-}: CertificatesSectionProps) => {
+export const AboutMeCertificates = (
+    { toggleImageModal,  setModalImage }:
+    { toggleImageModal: Function,  setModalImage:Function }
+) => {
     let [counter, setCounter] = useState(0);
-
+    useEffect(() => {
+        setModalImage(certificates[counter].certImage)
+    },[counter])
     function goUp() {
         if (counter != certificates.length - 1) {
             setCounter((prevCounter) => prevCounter + 1);
@@ -49,11 +44,7 @@ export const AboutMeCertificates = ({
                         color="var(--text-color )"
                     />
                 </div>
-                <CertificateItem
-                    cert={certificates[counter]}
-                    handleModal={handleModal}
-                    handleModalImage={handleModalImage}
-                />
+                <CertificateItem cert={certificates[counter]} toggleImageModal={toggleImageModal}/>
                 <div
                     role="button"
                     className={styles["cert-button"]}

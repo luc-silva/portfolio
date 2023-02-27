@@ -1,21 +1,27 @@
 import { X } from "phosphor-react";
+import { useState } from "react";
 import styles from "./ImageModal.module.css";
 
 export const ImageModal = ({
-    certImage,
-    modalActive,
-    handleModal,
+    isActive,
+    toggleModal,
+    image,
 }: {
-    certImage: string;
-    modalActive: boolean;
-    handleModal: Function;
+    isActive: boolean;
+    toggleModal: Function;
+    image: string;
 }) => {
-    if (modalActive) {
+
+    function getImage(image: string){
+        console.log(image)
+        return require(`../assets/images/${image}`)
+    }
+    if (isActive) {
         return (
             <div
                 className={styles["image-modal"]}
                 onClick={() => {
-                    handleModal();
+                    toggleModal();
                 }}
             >
                 <div
@@ -26,11 +32,11 @@ export const ImageModal = ({
                         className={styles["close-btn"]}
                         size={30}
                         onClick={() => {
-                            handleModal();
+                            toggleModal();
                         }}
                     />
                     <img
-                        src={certImage}
+                        src={getImage(image)}
                         alt="Certificate image"
                         className={styles["zoomed-certificate"]}
                     />
