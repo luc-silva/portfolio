@@ -3,14 +3,14 @@ import { ImageModal } from "../components/ImageModal";
 import { AboutMeCertificates } from "../components/AboutMeCertificates";
 import { certificates } from "../data";
 
-import { Download } from "phosphor-react";
+import { Download, Envelope, LinkedinLogo } from "phosphor-react";
 import styles from "./AboutMe.module.css";
 import { Skills } from "../components/Skills";
 
 export const AboutMe = () => {
     let [modalFlag, setModalFlag] = useState(false);
     let [modalImage, setModalImage] = useState(
-        "../../Images/cert-intermediatewebdev.jpg"
+        "../../images/cert-intermediatewebdev.jpg"
     );
 
     function handleModal() {
@@ -68,14 +68,22 @@ export const AboutMe = () => {
                         </div>
                     </div>
                 </div>
-                {/* <div className={styles["about-image-container"]}>
-                    <img
-                        // src={require("../../Images/about-me.jpg")}
-                        loading="lazy"
-                        alt="Foto de fundo"
-                        className={styles["about-image"]}
-                    />
-                </div> */}
+                <div className={styles["aboutme-contact"]}>
+                    <div className={styles["contact-title"]}>
+                        <h3>ENTRE EM CONTATO</h3>
+                        <p>Sao Paulo - SP, Brasil</p>
+                    </div>
+                    <div className={styles["contact-info"]}>
+                        <div>
+                            <LinkedinLogo size={20} color={"var(--main-color)"}/>
+                            Linkedin: luc-silva
+                        </div>
+                        <div>
+                            <Envelope size={20} color={"var(--main-color)"}/>
+                            Email: lucas.silva1203@outlook.com
+                        </div>
+                    </div>
+                </div>
             </section>
             <Skills />
             <AboutMeCertificates
