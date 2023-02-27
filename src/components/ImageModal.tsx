@@ -11,10 +11,8 @@ export const ImageModal = ({
     toggleModal: Function;
     image: string;
 }) => {
-
-    function getImage(image: string){
-        console.log(image)
-        return require(`../assets/images/${image}`)
+    function getImage(image: string) {
+        return require(`../assets/images/${image}`);
     }
     if (isActive) {
         return (
