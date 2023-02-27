@@ -1,7 +1,7 @@
 ## Portfolio
 Portfolio website made with Typescript, ReactJS, CSS and HTML.
 
-**The website is in Portuguese-Brazil for now.**
+**Website is in Portuguese-Brazil for now.**
 
 [See it online](https://luc-silva.github.io/portfolio/)
 
