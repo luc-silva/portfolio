@@ -10,6 +10,7 @@
 
     width: 100%;
     background-color: var(--background-faded );
+    border-bottom: 1px solid var(--text-color);
 }
 .header-menu ul {
     flex-direction: row;

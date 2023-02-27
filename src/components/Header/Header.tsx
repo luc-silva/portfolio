@@ -28,7 +28,7 @@ export const Header = ({
                     <List
                         className={styles["mobile-btn"]}
                         color="var(--text-color)"
-                        size={30}
+                        size={35}
                         onClick={() => {
                             toggleMenu(!isHeaderMenuActive);
                         }}

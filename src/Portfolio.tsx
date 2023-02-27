@@ -23,7 +23,6 @@ function Portfolio() {
     return (
         <Router basename={process.env.PUBLIC_URL}>
             <ScrollToTop />
-            <HamburguerMenu isActive={isHeaderMenuActive} toggleMenu={toggle} />
             <ImageModal
                 toggleModal={handleImageModal}
                 isActive={isCertificateModalActive}
@@ -33,6 +32,7 @@ function Portfolio() {
                 isHeaderMenuActive={isHeaderMenuActive}
                 toggleMenu={toggle}
             />
+            <HamburguerMenu isActive={isHeaderMenuActive} toggleMenu={toggle} />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route
