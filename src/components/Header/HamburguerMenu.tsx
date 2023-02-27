@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import styles from "./HambuguerMenu.module.css";
+import styles from "./HamburguerMenu.module.css";
 
 export const HamburguerMenu = ({
     isActive,
