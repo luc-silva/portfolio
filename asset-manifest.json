@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.5a9d625e.css",
-    "main.js": "/portfolio/static/js/main.64c036e0.js",
+    "main.js": "/portfolio/static/js/main.8adcecb5.js",
     "static/media/project-restaurant-1.png": "/portfolio/static/media/project-restaurant-1.0eb9cfb5acf20d8a7b62.png",
     "static/media/project-portfolio-1.png": "/portfolio/static/media/project-portfolio-1.18043f6effe6c1213941.png",
     "static/media/project-restaurant-4.png": "/portfolio/static/media/project-restaurant-4.be242dd336b83e36e3e8.png",
@@ -14,9 +14,9 @@
     "static/media/project-portfolio-5.png": "/portfolio/static/media/project-portfolio-5.e457b8ecc17fe2647c91.png",
     "static/media/cert-mongodbnodejspath.png": "/portfolio/static/media/cert-mongodbnodejspath.45f0d5d0d78b7988c183.png",
     "static/media/project-todo-4.png": "/portfolio/static/media/project-todo-4.a01e66356d813beb03ee.png",
+    "static/media/lucas-silva-resume.pdf": "/portfolio/static/media/lucas-silva-resume.b29deb72da43499fdf6b.pdf",
     "static/media/logo-reactjs.png": "/portfolio/static/media/logo-reactjs.8a6fc0a24a800d1e0f4a.png",
     "static/media/project-todo-3.png": "/portfolio/static/media/project-todo-3.994b778b7f61e49cda3f.png",
-    "static/media/lucas-silva-resume.pdf": "/portfolio/static/media/lucas-silva-resume.8f9fde3ff8807236842d.pdf",
     "static/media/project-todo-1.png": "/portfolio/static/media/project-todo-1.e0a98c8e03cac5c06390.png",
     "static/media/project-portfolio-3.png": "/portfolio/static/media/project-portfolio-3.f8c319903ad47e1a5a75.png",
     "static/media/project-todo-2.png": "/portfolio/static/media/project-todo-2.759ce6138084237f51c9.png",
@@ -37,10 +37,10 @@
     "static/media/logo-javascript.png": "/portfolio/static/media/logo-javascript.266bd9fb2663dcc057b4.png",
     "index.html": "/portfolio/index.html",
     "main.5a9d625e.css.map": "/portfolio/static/css/main.5a9d625e.css.map",
-    "main.64c036e0.js.map": "/portfolio/static/js/main.64c036e0.js.map"
+    "main.8adcecb5.js.map": "/portfolio/static/js/main.8adcecb5.js.map"
   },
   "entrypoints": [
     "static/css/main.5a9d625e.css",
-    "static/js/main.64c036e0.js"
+    "static/js/main.8adcecb5.js"
   ]
 }
