@@ -1,29 +1,27 @@
-## Portfolio
-Portfolio website made with Typescript, ReactJS, CSS and HTML.
+## Portfólio
+Portfólio (Site Pessoal) feito com Typescript, ReactJS, CSS and HTML.
 
-**Website is in Portuguese-Brazil for now.**
-
-[See it online](https://luc-silva.github.io/portfolio/)
+[Veja Online](https://luc-silva.github.io/portfolio/)
 
 
-## Plans
-- Improve SEO
-- Improve design
+### Planos
+- Melhorar SEO
+- Melhorar design
 
-## How to test it locally 
-First, download the repository into your machine:
+### How to test it locally 
+1 - Clone o repositório para a sua máquina
 ``git clone https://github.com/luc-silva/portfolio``
 
-Go to project directory:
+2 - Vá ao diretório do projeto
 ``cd /home/[user]/[location]/portfolio``
 
-Install dependencies: 
+3 - Baixe as dependências
 `` npm install``
 
-And then, start your localhost server:
+4 - Inicie o servidor local
 ``npm start``
 
-## Images
+### Imagens
 ![port 1 (2)](https://user-images.githubusercontent.com/100732316/221714685-43398955-5158-4403-93c0-69b6c4c8e8b8.png)
 ![port 1 (1)](https://user-images.githubusercontent.com/100732316/221714700-f6a27188-e288-41f3-a64f-2a77653c6c71.png)
 ![port 4 (1![port 4 (2)](https://user-images.githubusercontent.com/100732316/221714741-b45f0038-51b0-4cbc-9bb4-2098942430ed.png)
