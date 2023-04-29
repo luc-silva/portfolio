@@ -177,6 +177,12 @@ export const knowTools: IKnowTool[] = [
         additionalInfo: "",
     },
     {
+        name: "Java",
+        alt: "Java logo",
+        toolImage: "logo-java.png",
+        additionalInfo: "",
+    },
+    {
         name: "Ubuntu",
         alt: "Ubuntu logo",
         toolImage: "logo-ubuntu.png",
