@@ -7,6 +7,29 @@ export interface IProject {
 
 export const projects: IProject[] = [
     {
+        projectTitle: "Electroware",
+        projectLink: "https://github.com/luc-silva/electroware",
+        projectImages: [
+            "project-electroware-1.png",
+            "project-electroware-2.png",
+            "project-electroware-3.png",
+            "project-electroware-4.png",
+            "project-electroware-5.png",
+        ],
+        projectTags: ["TS", "ReactJS", "MongoDB", "Express", "HTML", "CSS"],
+    },
+    {
+        projectTitle: "Weather App",
+        projectLink: "https://github.com/luc-silva/weather-app",
+        projectImages: [
+            "project-weatherapp-1.png",
+            "project-weatherapp-2.png",
+            "project-weatherapp-3.png",
+            "project-weatherapp-4.png",
+        ],
+        projectTags: ["TS", "ReactJS", "HTML", "CSS"],
+    },
+    {
         projectTitle: "Todo Manager",
         projectLink: "https://github.com/luc-silva/to-do",
         projectImages: [
@@ -16,12 +39,6 @@ export const projects: IProject[] = [
             "project-todo-4.png",
         ],
         projectTags: ["TS", "ReactJS", "HTML", "CSS"],
-    },
-    {
-        projectTitle: "Weather App",
-        projectLink: "https://github.com/luc-silva/weather-app",
-        projectImages: ["project-weatherapp-1.png", "project-weatherapp-2.png"],
-        projectTags: ["JS", "HTML", "CSS"],
     },
     {
         projectTitle: "Restaurant Page",
