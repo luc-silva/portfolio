@@ -1,27 +1,42 @@
-## Portfólio
+# Portfólio
+
 Portfólio (Site Pessoal) feito com Typescript, ReactJS, CSS and HTML.
 
 [Veja Online](https://luc-silva.github.io/portfolio/)
 
+## Planos
 
-### Planos
 - Melhorar SEO
 - Melhorar design
 
-### How to test it locally 
+## Como testar localmente
+
 1 - Clone o repositório para a sua máquina
-``git clone https://github.com/luc-silva/portfolio``
+
+``` bash
+git clone https://github.com/luc-silva/portfolio
+```
 
 2 - Vá ao diretório do projeto
-``cd /home/[user]/[location]/portfolio``
+
+``` bash
+cd /home/[user]/[location]/portfolio
+```
 
 3 - Baixe as dependências
-`` npm install``
+
+``` bash
+npm install
+```
 
 4 - Inicie o servidor local
-``npm start``
 
-### Imagens
+``` bash
+npm start
+```
+
+## Imagens
+
 ![port 1 (2)](https://user-images.githubusercontent.com/100732316/221714685-43398955-5158-4403-93c0-69b6c4c8e8b8.png)
 ![port 1 (1)](https://user-images.githubusercontent.com/100732316/221714700-f6a27188-e288-41f3-a64f-2a77653c6c71.png)
 ![port 4 (1![port 4 (2)](https://user-images.githubusercontent.com/100732316/221714741-b45f0038-51b0-4cbc-9bb4-2098942430ed.png)
@@ -31,4 +46,3 @@ Portfólio (Site Pessoal) feito com Typescript, ReactJS, CSS and HTML.
 ![cell4 (1)](https://user-images.githubusercontent.com/100732316/221714790-ddf8a5a3-d128-4647-8d51-b643927e4654.png)
 ![cell3 (1)](https://user-images.githubusercontent.com/100732316/221714833-40ee7aad-efa1-4667-971f-7221c3e3ffdb.png)
 ![cell2 (2)](https://user-images.githubusercontent.com/100732316/221714912-21518c46-334d-480c-8af0-a2e1517a9b02.png)
-
