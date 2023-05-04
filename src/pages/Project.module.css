@@ -1,9 +1,10 @@
 .projects {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: var(--background);
 }
-.projects-title{
+.projects-title {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,35 +12,36 @@
     padding: 2rem;
     text-align: center;
 }
-.projects-title h2{
+.projects-title h2,
+.projects-extra-title h2 {
     color: var(--title-color);
     font-size: 2rem;
 }
-.projects-title p{
+.projects-title p {
     color: var(--text-color);
 }
-.projects-container{
-    display: grid;
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(auto, auto);
-    gap: 1rem;
-    padding: 2rem;
+.projects-main {
+    padding: 0.5rem;
 }
-
+.projects-extra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    width: 100%;
+}
 @media (min-width: 769px) and (max-width: 1024px) {
-    .projects-container{
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(auto, auto);
-
+    .projects-main {
+        padding: 0 2rem;
+        width: 80%;
     }
 }
 @media (min-width: 1025px) {
-    .projects-title h2{
-        font-size: 2.3rem;
+    .projects-main {
+        padding: 0 2rem;
+        width: 80%;
     }
-    .projects-container{
-        grid-template-columns: repeat(3, auto);
-        grid-template-rows: repeat(auto, auto);
-
+    .projects-title h2 {
+        font-size: 2.3rem;
     }
 }

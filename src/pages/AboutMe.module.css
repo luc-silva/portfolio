@@ -1,7 +1,7 @@
 .aboutme {
     position: relative;
     background-color: var(--background);
-} 
+}
 .aboutme-main {
     display: flex;
     flex-direction: column;
@@ -39,7 +39,7 @@
 
     font-size: 0.9rem;
     text-align: justify;
-    color: var(--text-color );
+    color: var(--text-color);
 }
 .about-resume {
     display: flex;
@@ -56,13 +56,13 @@
     gap: 1rem;
 }
 .contact-title h3 {
-    color: var(--title-color );
+    color: var(--title-color);
 }
 .contact-title p {
     color: var(--main-color);
 }
 .contact-info {
-    color: var(--text-color );
+    color: var(--text-color);
 }
 .contact-info > div {
     display: flex;
@@ -70,7 +70,12 @@
     gap: 0.5rem;
     align-items: center;
 }
-
+.skills {
+    width: 100%;
+}
+.certificates {
+    width: 100%;
+}
 @media (min-width: 769px) and (max-width: 1024px) {
     .aboutme-main {
         flex-direction: row;

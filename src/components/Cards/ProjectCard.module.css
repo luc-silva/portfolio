@@ -36,20 +36,13 @@
     display: flex;
     flex-direction: column;
 }
-.item-title{
-    color: var(--title-color );
-    font-weight: 500;
-}
-.item-tags{
-    color: var(--text-color );
-    font-size: 0.6rem;
-    font-family: "Roboto Mono", monospace;
-}
-.card-footer a{
+.footer-link a{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 0.5rem;
+    line-height: 1rem;
+    font-size: 1rem;
+    height: 1rem;
     color: var(--main-color);
 }
 @media (min-width: 769px) and (max-width: 1024px) {

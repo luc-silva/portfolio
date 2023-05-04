@@ -1,10 +1,8 @@
 import { CertificateItem } from "./CertificateItem";
 import { useEffect, useState } from "react";
-import { ICertificate } from "../data";
-
 import { CaretRight, CaretLeft } from "phosphor-react";
-import styles from "./AboutMeCertificates.module.css";
 import { certificates } from "../data";
+import styles from "./AboutMeCertificates.module.css";
 
 export const AboutMeCertificates = (
     { toggleImageModal,  setModalImage }:
@@ -13,9 +11,9 @@ export const AboutMeCertificates = (
     let [counter, setCounter] = useState(0);
     useEffect(() => {
         setModalImage(certificates[counter].certImage)
-    },[counter])
+    },[counter, setModalImage])
     function goUp() {
-        if (counter != certificates.length - 1) {
+        if (counter !== certificates.length - 1) {
             setCounter((prevCounter) => prevCounter + 1);
         }
     }

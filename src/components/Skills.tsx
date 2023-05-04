@@ -1,5 +1,5 @@
 import styles from "./Skills.module.css";
-import { knowTools, IKnowTool } from "../data";
+import { tools } from "../data";
 
 export const Skills = () => {
     return (
@@ -12,8 +12,11 @@ export const Skills = () => {
                 </p>
             </div>
             <ul className={styles["skills-container"]}>
-                {knowTools.map(
-                    ({ name, toolImage, additionalInfo, alt }: IKnowTool, index) => {
+                {tools.map(
+                    (
+                        { name, toolImage, additionalInfo, alt }: ITool,
+                        index
+                    ) => {
                         return (
                             <li key={index}>
                                 <img

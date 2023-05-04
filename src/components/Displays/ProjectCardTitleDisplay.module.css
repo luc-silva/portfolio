@@ -1,0 +1,9 @@
+.title {
+    color: var(--title-color);
+    font-weight: 500;
+}
+.tags {
+    color: var(--text-color);
+    font-size: 0.6rem;
+    font-family: "Roboto Mono", monospace;
+}

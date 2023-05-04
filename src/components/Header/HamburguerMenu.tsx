@@ -8,7 +8,6 @@ export const HamburguerMenu = ({
     isActive: boolean;
     toggleMenu: Function;
 }) => {
-    console.log(isActive);
     if (isActive) {
         return (
             <div className={styles["header-menu"]}>

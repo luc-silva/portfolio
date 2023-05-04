@@ -1,96 +1,92 @@
-export interface IProject {
-    projectTitle: string;
-    projectLink: string;
-    projectImages: string[];
-    projectTags: string[];
-}
-
-export const projects: IProject[] = [
+export const projects: IProjectData[] = [
     {
-        projectTitle: "Electroware",
-        projectLink: "https://github.com/luc-silva/electroware",
-        projectImages: [
+        title: "Electroware",
+        link: "https://github.com/luc-silva/electroware",
+        introduction:"Electroware é um projeto (CRUD) criado com Typescript, React, Express e MongoDB baseado em um marketplace.",
+        description: `O projeto possui sistema de contas, carrinhos de compras, lista de desejos, coleções de itens da lista de desejos, criação, compra, edição e busca de produtos. Também é possível avaliar e visualizar o perfil de outros usuários.\nRotas privadas são protegidas por JWT, enquanto as senhas são criptografadas com o bcrypt.`,
+        main_project: true,
+        images: [
             "project-electroware-1.png",
             "project-electroware-2.png",
             "project-electroware-3.png",
             "project-electroware-4.png",
             "project-electroware-5.png",
         ],
-        projectTags: ["TS", "ReactJS", "MongoDB", "Express", "HTML", "CSS"],
+        tags: ["TS", "ReactJS", "MongoDB", "Express", "HTML", "CSS"],
     },
     {
-        projectTitle: "Weather App",
-        projectLink: "https://github.com/luc-silva/weather-app",
-        projectImages: [
+        title: "Weather App",
+        link: "https://github.com/luc-silva/weather-app",
+        introduction:"Aplicação que exibe a temperaturas de diversas cidades. Configurações são salvas em LocalStorage.",
+        description: `Desenvolvida inicialmente com Javascript, hoje remasterizada com ReactJs e Typescript.\n O usuário pode alterar a temperatura da cidade que aparece no display principal bem as demais além de realizar pesquisa à uma cidade em específico.\n O projeto também possui também, além das abas de climas e configurações, a aba de notícias (que mostra 5 notícias fictícias criadas pelo ChatGPT) e a agenda, aba em que o usuário pode criar e salvar tarefas a serem feitas.`,
+        main_project: true,
+        images: [
             "project-weatherapp-1.png",
             "project-weatherapp-2.png",
             "project-weatherapp-3.png",
             "project-weatherapp-4.png",
         ],
-        projectTags: ["TS", "ReactJS", "HTML", "CSS"],
+        tags: ["TS", "ReactJS", "HTML", "CSS"],
     },
     {
-        projectTitle: "Todo Manager",
-        projectLink: "https://github.com/luc-silva/to-do",
-        projectImages: [
+        title: "Todo Manager",
+        introduction:"Aplicação de gerenciamento de tarefas.",
+        description: "Desenvolvido inicialmente com JavaScript, o projeto permite que um usuário defina tarefas para sem feitas, podendo especificar datas e prioridades ou até mesmo planejar algum grande feito, também podendo inserir sub-tarefas. \nTambém contém uma dashboard com histórico de tarefas e algumas estatísticas.",
+        main_project: true,
+        link: "https://github.com/luc-silva/to-do",
+        images: [
             "project-todo-1.png",
             "project-todo-2.png",
             "project-todo-3.png",
             "project-todo-4.png",
         ],
-        projectTags: ["TS", "ReactJS", "HTML", "CSS"],
+        tags: ["TS", "ReactJS", "HTML", "CSS"],
     },
     {
-        projectTitle: "Restaurant Page",
-        projectLink: "https://github.com/luc-silva/restaurant-page",
-        projectImages: [
+        title: "Restaurant Page",
+        link: "https://github.com/luc-silva/restaurant-page",
+        introduction:"",
+        description: "",
+        images: [
             "project-restaurant-1.png",
             "project-restaurant-2.png",
             "project-restaurant-3.png",
             "project-restaurant-4.png",
             "project-restaurant-5.png",
         ],
-        projectTags: ["JS", "ReactJS", "HTML", "CSS"],
+        tags: ["JS", "ReactJS", "HTML", "CSS"],
     },
     {
-        projectTitle: "Portfolio",
-        projectLink: "https://github.com/luc-silva/portfolio",
-        projectImages: [
+        title: "Portfolio",
+        link: "https://github.com/luc-silva/portfolio",
+        introduction:"",
+        description: "",
+        images: [
             "project-portfolio-1.png",
             "project-portfolio-2.png",
             "project-portfolio-3.png",
             "project-portfolio-4.png",
             "project-portfolio-5.png",
         ],
-        projectTags: ["TS", "ReactJS", "HTML", "CSS"],
+        tags: ["TS", "ReactJS", "HTML", "CSS"],
     },
     {
-        projectTitle: "Etch-A-Sketch",
-        projectLink: "https://github.com/luc-silva/Etch-A-Sketch",
-        projectImages: [
-            "project-etchasketch-1.png",
-            "project-etchasketch-2.png",
-        ],
-        projectTags: ["JS", "HTML", "CSS"],
+        title: "Etch-A-Sketch",
+        link: "https://github.com/luc-silva/Etch-A-Sketch",
+        introduction:"",
+        description: "",
+        images: ["project-etchasketch-1.png", "project-etchasketch-2.png"],
+        tags: ["JS", "HTML", "CSS"],
     },
     {
-        projectTitle: "Calculator",
-        projectLink: "https://github.com/luc-silva/calculator",
-        projectImages: ["project-calculator-1.png"],
-        projectTags: ["JS", "HTML", "CSS"],
+        title: "Calculator",
+        link: "https://github.com/luc-silva/calculator",
+        introduction:"",
+        description: "",
+        images: ["project-calculator-1.png"],
+        tags: ["JS", "HTML", "CSS"],
     },
 ];
-
-export interface ICertificate {
-    tags: string[];
-    certImage: string;
-    courseName: string;
-    schoolName: string;
-    schoolSite: string;
-    additionalInfo: string;
-    courseCompletitionDate: string;
-    courseLength: number;
-}
 
 export const certificates: ICertificate[] = [
     {
@@ -145,13 +141,7 @@ export const certificates: ICertificate[] = [
     },
 ];
 
-export interface IKnowTool {
-    name: string;
-    alt: string;
-    toolImage: string;
-    additionalInfo: string;
-}
-export const knowTools: IKnowTool[] = [
+export const tools: ITool[] = [
     {
         name: "Javascript",
         alt: "Javascript logo",

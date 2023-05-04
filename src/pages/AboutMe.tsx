@@ -1,11 +1,11 @@
-import { useState } from "react";
-import { ImageModal } from "../components/ImageModal";
 import { AboutMeCertificates } from "../components/AboutMeCertificates";
-import { certificates } from "../data";
-
-import { Download, Envelope, LinkedinLogo } from "phosphor-react";
-import styles from "./AboutMe.module.css";
+import { Download } from "phosphor-react";
 import { Skills } from "../components/Skills";
+import { AboutMeText } from "../components/Texts/AboutMeText";
+import { AboutMeContactInfo } from "../components/Texts/AboutMeContactInfo";
+
+import curriculum from "../assets/lucas-silva-resume.pdf";
+import styles from "./AboutMe.module.css";
 
 export const AboutMe = ({
     setModalImage,
@@ -24,34 +24,13 @@ export const AboutMe = ({
                             Sou Lucas, um estudante de Engenharia de Software...
                         </p>
                     </div>
-
                     <div className={styles["aboutme-about"]}>
                         <div className={styles["about-text"]}>
-                            <p>
-                                Atualmente cursando o terceiro semestre, busco
-                                por uma oportunidade de estágio na área de
-                                desenvolvimento. Utilizo Javascript como minha
-                                principal linguagem de programação, estando
-                                atualmente aprendendo React em conjunto com
-                                Typescript e ainda pretendo aprender Java
-                                backend futuramente.
-                            </p>
-                            <p>
-                                Desde pequeno era fã do mundo de desenvolvimento
-                                de software, em especial a área de jogos. Em
-                                2016 cheguei a cursar um curso de
-                                desenvolvimento de games, tendo o concluido em
-                                2018. Não possuo experiência de trabalho e nem
-                                como freelancer, mas sempre tento me desafiar ao
-                                aplicar novas implementações em meus projetos.
-                            </p>
+                            <AboutMeText />
                         </div>
                         <div className={styles["about-resume"]}>
                             <Download size={24} color="var(--title-color)" />
-                            <a
-                                href={require("../assets/lucas-silva-resume.pdf")}
-                                download="lucas-silva-cv.pdf"
-                            >
+                            <a href={curriculum} download="lucas-silva-cv.pdf">
                                 Baixar Curriculo
                             </a>
                         </div>
@@ -63,22 +42,19 @@ export const AboutMe = ({
                         <p>Sao Paulo - SP, Brasil</p>
                     </div>
                     <div className={styles["contact-info"]}>
-                        <div>
-                            <LinkedinLogo
-                                size={20}
-                                color={"var(--main-color)"}
-                            />
-                            Linkedin: luc-silva
-                        </div>
-                        <div>
-                            <Envelope size={20} color={"var(--main-color)"} />
-                            Email: lucas.silva1203@outlook.com
-                        </div>
+                        <AboutMeContactInfo />
                     </div>
                 </div>
             </section>
-            <Skills />
-            <AboutMeCertificates toggleImageModal={toggleImageModal}  setModalImage={ setModalImage} />
+            <section className={styles["skills"]}>
+                <Skills />
+            </section>
+            <section className={styles["certificates"]}>
+                <AboutMeCertificates
+                    toggleImageModal={toggleImageModal}
+                    setModalImage={setModalImage}
+                />
+            </section>
         </main>
     );
 };
