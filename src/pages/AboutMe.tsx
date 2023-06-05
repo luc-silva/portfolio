@@ -6,6 +6,7 @@ import { AboutMeContactInfo } from "../components/Texts/AboutMeContactInfo";
 
 import curriculum from "../assets/lucas-silva-resume.pdf";
 import styles from "./AboutMe.module.css";
+import { Contact } from "../components/Misc/Contact";
 
 export const AboutMe = ({
     setModalImage,
@@ -54,6 +55,9 @@ export const AboutMe = ({
                     toggleImageModal={toggleImageModal}
                     setModalImage={setModalImage}
                 />
+            </section>
+            <section className={styles["contact"]}>
+                <Contact />
             </section>
         </main>
     );
