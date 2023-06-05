@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.72e7e0c2.css",
+    "main.css": "/portfolio/static/css/main.4ede10e0.css",
     "main.js": "/portfolio/static/js/main.4668bfc6.js",
     "static/media/project-restaurant-1.png": "/portfolio/static/media/project-restaurant-1.0eb9cfb5acf20d8a7b62.png",
     "static/media/project-portfolio-1.png": "/portfolio/static/media/project-portfolio-1.18043f6effe6c1213941.png",
@@ -45,11 +45,11 @@
     "static/media/logo-ubuntu.png": "/portfolio/static/media/logo-ubuntu.f9fb429d4d7fe4a84005.png",
     "static/media/logo-javascript.png": "/portfolio/static/media/logo-javascript.266bd9fb2663dcc057b4.png",
     "index.html": "/portfolio/index.html",
-    "main.72e7e0c2.css.map": "/portfolio/static/css/main.72e7e0c2.css.map",
+    "main.4ede10e0.css.map": "/portfolio/static/css/main.4ede10e0.css.map",
     "main.4668bfc6.js.map": "/portfolio/static/js/main.4668bfc6.js.map"
   },
   "entrypoints": [
-    "static/css/main.72e7e0c2.css",
+    "static/css/main.4ede10e0.css",
     "static/js/main.4668bfc6.js"
   ]
 }
