@@ -2,16 +2,15 @@
     color: white;
     font-weight: bold;
 }
-.contact__title h2{
+.contact__title h2 {
     font-size: 2rem;
-
 }
 .contact__form {
     width: 100%;
 }
 .contact__form form {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     gap: 1rem;
 }
@@ -19,12 +18,12 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    width: 50%;
+    width: 100%;
 }
-.input-container{
+.input-container {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 0.5rem;
     width: 100%;
 }
 .input-container input,
@@ -36,7 +35,7 @@
     color: var(--main-color);
     background-color: white;
 }
-.input-container label{
+.input-container label {
     font-size: 0.8rem;
     color: white;
 }
@@ -54,8 +53,18 @@
 .submit {
     cursor: pointer;
 }
-.submit:disabled{
+.submit:disabled {
     cursor: not-allowed;
     color: rgba(255, 255, 255, 0.5);
     outline: rgba(255, 255, 255, 0.5) solid 1px;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+@media (min-width: 1025px) {
+    .contact__form form {
+        flex-direction: row;
+    }
+    .contact__form form > div {
+        width: 50%;
+    }
 }
