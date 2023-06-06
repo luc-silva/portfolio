@@ -15,6 +15,20 @@ export const projects: IProjectData[] = [
         tags: ["TS", "ReactJS", "MongoDB", "Express", "HTML", "CSS"],
     },
     {
+        title: "Bookwise",
+        link: "https://github.com/luc-silva/bookwise",
+        introduction:"Bookwise é uma aplicação de gerenciamentos de livros.",
+        description: `O projeto permite que o usuário possa adicionar livros que leu, ainda vai ler ou deixou de ler em uma conta pessoal. Também permite o upload de imagens e o display de covers dos livros em sua estante, na página inicial.`,
+        main_project: true,
+        images: [
+            "project-bookwise-1.png",
+            "project-bookwise-2.png",
+            "project-bookwise-3.png",
+            "project-bookwise-4.png",
+        ],
+        tags: ["TS", "ReactJS", "MongoDB", "Express"],
+    },
+    {
         title: "Weather App",
         link: "https://github.com/luc-silva/weather-app",
         introduction:"Aplicação que exibe a temperaturas de diversas cidades. Configurações são salvas em LocalStorage.",
@@ -170,6 +184,12 @@ export const tools: ITool[] = [
         name: "Java",
         alt: "Java logo",
         toolImage: "logo-java.png",
+        additionalInfo: "",
+    },
+    {
+        name: "Docker",
+        alt: "Docker logo",
+        toolImage: "logo-docker.png",
         additionalInfo: "",
     },
     {
