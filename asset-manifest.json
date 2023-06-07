@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.4ede10e0.css",
-    "main.js": "/portfolio/static/js/main.5a81fc25.js",
+    "main.js": "/portfolio/static/js/main.287aa45e.js",
     "static/media/project-restaurant-1.png": "/portfolio/static/media/project-restaurant-1.0eb9cfb5acf20d8a7b62.png",
     "static/media/project-restaurant-4.png": "/portfolio/static/media/project-restaurant-4.be242dd336b83e36e3e8.png",
     "static/media/project-weatherapp-1.png": "/portfolio/static/media/project-weatherapp-1.ffed2289f6bc632b0db0.png",
@@ -12,7 +12,7 @@
     "static/media/cert-spreadfullstack.jpg": "/portfolio/static/media/cert-spreadfullstack.604a108c860e7ba80c91.jpg",
     "static/media/cert-mongodbnodejspath.png": "/portfolio/static/media/cert-mongodbnodejspath.45f0d5d0d78b7988c183.png",
     "static/media/project-todo-4.png": "/portfolio/static/media/project-todo-4.a01e66356d813beb03ee.png",
-    "static/media/lucas-silva-resume.pdf": "/portfolio/static/media/lucas-silva-resume.9d0e7c860fbdab1e7ec9.pdf",
+    "static/media/lucas-silva-resume.pdf": "/portfolio/static/media/lucas-silva-resume.ecf1cb52a328bba12cb5.pdf",
     "static/media/logo-reactjs.png": "/portfolio/static/media/logo-reactjs.8a6fc0a24a800d1e0f4a.png",
     "static/media/project-todo-3.png": "/portfolio/static/media/project-todo-3.994b778b7f61e49cda3f.png",
     "static/media/project-todo-1.png": "/portfolio/static/media/project-todo-1.e0a98c8e03cac5c06390.png",
@@ -49,10 +49,10 @@
     "static/media/logo-javascript.png": "/portfolio/static/media/logo-javascript.266bd9fb2663dcc057b4.png",
     "index.html": "/portfolio/index.html",
     "main.4ede10e0.css.map": "/portfolio/static/css/main.4ede10e0.css.map",
-    "main.5a81fc25.js.map": "/portfolio/static/js/main.5a81fc25.js.map"
+    "main.287aa45e.js.map": "/portfolio/static/js/main.287aa45e.js.map"
   },
   "entrypoints": [
     "static/css/main.4ede10e0.css",
-    "static/js/main.5a81fc25.js"
+    "static/js/main.287aa45e.js"
   ]
 }
