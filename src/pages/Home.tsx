@@ -18,7 +18,7 @@ export const Home = () => {
                     <strong>Olá, como vai? Me chamo</strong>
                     <div className={styles["greetings-title"]}>
                         <h2>Lucas da Silva Santos</h2>
-                        <p>Desenvolvedor Web</p>
+                        <p>Engenheiro de Software</p>
                     </div>
                 </div>
                 <div className={styles["buttons"]}>
