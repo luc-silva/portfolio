@@ -13,6 +13,7 @@ export const ProjectLargeCard = ({ project }: { project: IProjectData }) => {
                     <ProjectCardTitleDisplay
                         tags={project.tags}
                         title={project.title}
+                        containsApi={project.containsApi}
                     />
                 </div>
                 <div className={styles["main-text"]}>

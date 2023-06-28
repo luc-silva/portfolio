@@ -48,6 +48,7 @@ table {
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
 :root {
     --main-color: #1bac0b;
+    --translucid-main-color: #1bac0b10;
     --background:#ffffff;
     --background-faded: #f5f5f5;
     --text-color: #363735;

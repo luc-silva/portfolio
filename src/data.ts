@@ -2,9 +2,11 @@ export const projects: IProjectData[] = [
     {
         title: "Electroware",
         link: "https://github.com/luc-silva/electroware",
-        introduction:"Electroware é um projeto (CRUD) criado com Typescript, React, Express e MongoDB baseado em um marketplace.",
+        introduction:
+            "Electroware é um projeto (CRUD) criado com Typescript, React, Express e MongoDB baseado em um marketplace.",
         description: `O projeto possui sistema de contas, carrinhos de compras, lista de desejos, coleções de itens da lista de desejos, criação, compra, edição e busca de produtos. Também é possível avaliar e visualizar o perfil de outros usuários.\nRotas privadas são protegidas por JWT, enquanto as senhas são criptografadas com o bcrypt.`,
         main_project: true,
+        containsApi: true,
         images: [
             "project-electroware-1.png",
             "project-electroware-2.png",
@@ -12,14 +14,15 @@ export const projects: IProjectData[] = [
             "project-electroware-4.png",
             "project-electroware-5.png",
         ],
-        tags: ["TS", "ReactJS", "MongoDB", "Express", "HTML", "CSS"],
+        tags: ["TS", "ReactJS", "MongoDB", "Express" ],
     },
     {
         title: "Bookwise",
         link: "https://github.com/luc-silva/bookwise",
-        introduction:"Bookwise é uma aplicação de gerenciamentos de livros.",
+        introduction: "Bookwise é uma aplicação de gerenciamentos de livros.",
         description: `O projeto permite que o usuário possa adicionar livros que leu, ainda vai ler ou deixou de ler em uma conta pessoal. Também permite o upload de imagens e o display de covers dos livros em sua estante, na página inicial.`,
         main_project: true,
+        containsApi: true,
         images: [
             "project-bookwise-1.png",
             "project-bookwise-2.png",
@@ -28,10 +31,28 @@ export const projects: IProjectData[] = [
         ],
         tags: ["TS", "ReactJS", "MongoDB", "Express"],
     },
+
     {
-        title: "Weather App",
+        title: "Taskbuddy",
+        introduction: "Aplicação de gerenciamento de tarefas.",
+        description:
+            "Desenvolvido inicialmente com JavaScript, o projeto permite que um usuário defina tarefas para sem feitas, podendo especificar datas e prioridades ou até mesmo planejar algum grande feito, também podendo inserir sub-tarefas. \nTambém contém uma dashboard com histórico de tarefas e algumas estatísticas.",
+        main_project: true,
+        containsApi: true,
+        link: "https://github.com/luc-silva/to-do",
+        images: [
+            "project-taskbuddy-1.png",
+            "project-taskbuddy-2.png",
+            "project-taskbuddy-3.png",
+            "project-taskbuddy-4.png",
+        ],
+        tags: ["TS", "ReactJS", "Java", "Spring"],
+    },
+    {
+        title: "WeatherScope",
         link: "https://github.com/luc-silva/weather-app",
-        introduction:"Aplicação que exibe a temperaturas de diversas cidades. Configurações são salvas em LocalStorage.",
+        introduction:
+            "Aplicação que exibe a temperaturas de diversas cidades. Configurações são salvas em LocalStorage.",
         description: `Desenvolvida inicialmente com Javascript, hoje remasterizada com ReactJs e Typescript.\n O usuário pode alterar a temperatura da cidade que aparece no display principal bem as demais além de realizar pesquisa à uma cidade em específico.\n O projeto também possui também, além das abas de climas e configurações, a aba de notícias (que mostra 5 notícias fictícias criadas pelo ChatGPT) e a agenda, aba em que o usuário pode criar e salvar tarefas a serem feitas.`,
         main_project: true,
         images: [
@@ -40,26 +61,12 @@ export const projects: IProjectData[] = [
             "project-weatherapp-3.png",
             "project-weatherapp-4.png",
         ],
-        tags: ["TS", "ReactJS", "HTML", "CSS"],
-    },
-    {
-        title: "Todo Manager",
-        introduction:"Aplicação de gerenciamento de tarefas.",
-        description: "Desenvolvido inicialmente com JavaScript, o projeto permite que um usuário defina tarefas para sem feitas, podendo especificar datas e prioridades ou até mesmo planejar algum grande feito, também podendo inserir sub-tarefas. \nTambém contém uma dashboard com histórico de tarefas e algumas estatísticas.",
-        main_project: true,
-        link: "https://github.com/luc-silva/to-do",
-        images: [
-            "project-todo-1.png",
-            "project-todo-2.png",
-            "project-todo-3.png",
-            "project-todo-4.png",
-        ],
-        tags: ["TS", "ReactJS", "HTML", "CSS"],
+        tags: ["TS", "ReactJS"],
     },
     {
         title: "Restaurant Page",
         link: "https://github.com/luc-silva/restaurant-page",
-        introduction:"",
+        introduction: "",
         description: "",
         images: [
             "project-restaurant-1.png",
@@ -67,13 +74,15 @@ export const projects: IProjectData[] = [
             "project-restaurant-3.png",
             "project-restaurant-4.png",
             "project-restaurant-5.png",
+            "project-restaurant-6.png",
+            "project-restaurant-7.png",
         ],
-        tags: ["JS", "ReactJS", "HTML", "CSS"],
+        tags: ["JS", "ReactJS" ],
     },
     {
         title: "Portfolio",
         link: "https://github.com/luc-silva/portfolio",
-        introduction:"",
+        introduction: "",
         description: "",
         images: [
             "project-portfolio-1.png",
@@ -82,12 +91,12 @@ export const projects: IProjectData[] = [
             "project-portfolio-4.png",
             "project-portfolio-5.png",
         ],
-        tags: ["TS", "ReactJS", "HTML", "CSS"],
+        tags: ["TS", "ReactJS" ],
     },
     {
         title: "Etch-A-Sketch",
         link: "https://github.com/luc-silva/Etch-A-Sketch",
-        introduction:"",
+        introduction: "",
         description: "",
         images: ["project-etchasketch-1.png", "project-etchasketch-2.png"],
         tags: ["JS", "HTML", "CSS"],
@@ -95,7 +104,7 @@ export const projects: IProjectData[] = [
     {
         title: "Calculator",
         link: "https://github.com/luc-silva/calculator",
-        introduction:"",
+        introduction: "",
         description: "",
         images: ["project-calculator-1.png"],
         tags: ["JS", "HTML", "CSS"],

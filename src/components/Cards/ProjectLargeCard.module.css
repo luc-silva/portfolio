@@ -18,6 +18,12 @@
     padding: 1rem;
     background-color: var(--background-faded);
 }
+.main-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
 .main-text{
     display: flex;
     flex-direction: column;

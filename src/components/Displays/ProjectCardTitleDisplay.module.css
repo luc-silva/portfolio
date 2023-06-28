@@ -7,3 +7,9 @@
     font-size: 0.6rem;
     font-family: "Roboto Mono", monospace;
 }
+.api-mark{
+    font-size: 0.8rem;
+    padding: 0.3rem;
+    border-radius: 3px;
+    color: var(--main-color);
+}

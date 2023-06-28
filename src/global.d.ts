@@ -13,6 +13,7 @@ interface IProjectData {
     main_project?: boolean;
     link: string;
     images: string[];
+    containsApi?: boolean;
     tags: string[];
 }
 interface ICertificate {

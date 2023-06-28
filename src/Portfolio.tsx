@@ -1,16 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 
 import { ScrollToTop } from "./components/Misc/ScrollToTop";
 import { Header } from "./components/Header/Header";
 import { HamburguerMenu } from "./components/Header/HamburguerMenu";
+import { ImageModal } from "./components/ImageModal";
 
 import { Home } from "./pages/Home";
 import { AboutMe } from "./pages/AboutMe";
 import { Project } from "./pages/Project";
 
 import "./global.css";
-import { useState } from "react";
-import { ImageModal } from "./components/ImageModal";
 
 function Portfolio() {
     let [isHeaderMenuActive, toggle] = useState(false);
