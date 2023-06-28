@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4ede10e0.css",
-    "main.js": "/portfolio/static/js/main.47f01d9b.js",
+    "main.css": "/portfolio/static/css/main.f215cbd1.css",
+    "main.js": "/portfolio/static/js/main.95246636.js",
     "static/media/project-restaurant-1.png": "/portfolio/static/media/project-restaurant-1.0eb9cfb5acf20d8a7b62.png",
     "static/media/project-restaurant-4.png": "/portfolio/static/media/project-restaurant-4.be242dd336b83e36e3e8.png",
     "static/media/project-weatherapp-1.png": "/portfolio/static/media/project-weatherapp-1.ffed2289f6bc632b0db0.png",
@@ -11,29 +11,32 @@
     "static/media/project-restaurant-2.png": "/portfolio/static/media/project-restaurant-2.b5bce09cfc6562e04956.png",
     "static/media/cert-spreadfullstack.jpg": "/portfolio/static/media/cert-spreadfullstack.604a108c860e7ba80c91.jpg",
     "static/media/cert-mongodbnodejspath.png": "/portfolio/static/media/cert-mongodbnodejspath.45f0d5d0d78b7988c183.png",
-    "static/media/project-todo-4.png": "/portfolio/static/media/project-todo-4.a01e66356d813beb03ee.png",
     "static/media/logo-reactjs.png": "/portfolio/static/media/logo-reactjs.8a6fc0a24a800d1e0f4a.png",
-    "static/media/project-todo-3.png": "/portfolio/static/media/project-todo-3.994b778b7f61e49cda3f.png",
-    "static/media/project-todo-1.png": "/portfolio/static/media/project-todo-1.e0a98c8e03cac5c06390.png",
     "static/media/lucas-silva-resume.pdf": "/portfolio/static/media/lucas-silva-resume.240e06a2564d5531dd45.pdf",
     "static/media/project-electroware-1.png": "/portfolio/static/media/project-electroware-1.f2e5a1a2fbd87e9b73ab.png",
     "static/media/project-electroware-3.png": "/portfolio/static/media/project-electroware-3.0297bf3d07da29a04461.png",
-    "static/media/project-todo-2.png": "/portfolio/static/media/project-todo-2.759ce6138084237f51c9.png",
     "static/media/logo-shell.png": "/portfolio/static/media/logo-shell.b4814d5a4be276bac559.png",
     "static/media/project-electroware-5.png": "/portfolio/static/media/project-electroware-5.105569592b49835db882.png",
     "static/media/project-weatherapp-3.png": "/portfolio/static/media/project-weatherapp-3.3217ce7d1c9725c67d01.png",
     "static/media/logo-html.png": "/portfolio/static/media/logo-html.860d906ddaa16acfecda.png",
     "static/media/project-electroware-2.png": "/portfolio/static/media/project-electroware-2.7c749abd3fd91069f8d3.png",
+    "static/media/project-taskbuddy-5.png": "/portfolio/static/media/project-taskbuddy-5.af655aa913812d5d47f9.png",
+    "static/media/project-taskbuddy-3.png": "/portfolio/static/media/project-taskbuddy-3.954d04ba8e85eb3a8fac.png",
+    "static/media/project-taskbuddy-2.png": "/portfolio/static/media/project-taskbuddy-2.fc3e505262dcbb41157a.png",
+    "static/media/project-taskbuddy-7.png": "/portfolio/static/media/project-taskbuddy-7.b5147c037c32466b61cb.png",
     "static/media/project-restaurant-3.png": "/portfolio/static/media/project-restaurant-3.dd26fd7f371b42e4361d.png",
     "static/media/logo-typescript.png": "/portfolio/static/media/logo-typescript.1e3902edbe4c3f2970d8.png",
     "static/media/logo-sql.png": "/portfolio/static/media/logo-sql.9c9e418452a111f0d760.png",
     "static/media/project-portfolio-1.png": "/portfolio/static/media/project-portfolio-1.7fc93e231dd6fa3a1ad5.png",
     "static/media/project-weatherapp-2.png": "/portfolio/static/media/project-weatherapp-2.9c9471336f3762239088.png",
+    "static/media/project-taskbuddy-1.png": "/portfolio/static/media/project-taskbuddy-1.190411133d92d587b66a.png",
+    "static/media/project-taskbuddy-4.png": "/portfolio/static/media/project-taskbuddy-4.8624b8105f59213fcd8e.png",
     "static/media/project-weatherapp-5.png": "/portfolio/static/media/project-weatherapp-5.f35992189c95de87bf57.png",
     "static/media/project-bookwise-4.png": "/portfolio/static/media/project-bookwise-4.b9dbfaf302d814326827.png",
     "static/media/project-bookwise-3.png": "/portfolio/static/media/project-bookwise-3.dee5aae74194939e1f70.png",
     "static/media/project-electroware-4.png": "/portfolio/static/media/project-electroware-4.995da7bbd451632e1422.png",
     "static/media/project-restaurant-5.png": "/portfolio/static/media/project-restaurant-5.5b403ab6e5b299c375ca.png",
+    "static/media/project-taskbuddy-6.png": "/portfolio/static/media/project-taskbuddy-6.60d9160421bd000b1b69.png",
     "static/media/project-portfolio-2.png": "/portfolio/static/media/project-portfolio-2.feb113d241fcc82eaf4d.png",
     "static/media/project-portfolio-3.png": "/portfolio/static/media/project-portfolio-3.35af7d3a2873e8c8f2be.png",
     "static/media/logo-java.png": "/portfolio/static/media/logo-java.ddf8676bd569fe01ab44.png",
@@ -48,11 +51,11 @@
     "static/media/logo-ubuntu.png": "/portfolio/static/media/logo-ubuntu.f9fb429d4d7fe4a84005.png",
     "static/media/logo-javascript.png": "/portfolio/static/media/logo-javascript.266bd9fb2663dcc057b4.png",
     "index.html": "/portfolio/index.html",
-    "main.4ede10e0.css.map": "/portfolio/static/css/main.4ede10e0.css.map",
-    "main.47f01d9b.js.map": "/portfolio/static/js/main.47f01d9b.js.map"
+    "main.f215cbd1.css.map": "/portfolio/static/css/main.f215cbd1.css.map",
+    "main.95246636.js.map": "/portfolio/static/js/main.95246636.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ede10e0.css",
-    "static/js/main.47f01d9b.js"
+    "static/css/main.f215cbd1.css",
+    "static/js/main.95246636.js"
   ]
 }
