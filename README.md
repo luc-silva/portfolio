@@ -1,13 +1,9 @@
 # Portfólio
 
-Portfólio (Site Pessoal) feito com Typescript, ReactJS, CSS and HTML.
+Portfólio (Site Pessoal) feito com Typescript e ReactJS. Pretendo atualiza-lo a cada projeto novo feito ou experiência ganha.
 
-[Veja Online](https://luc-silva.github.io/portfolio/)
+Você pode vê-lo online [aqui](https://luc-silva.github.io/portfolio/)
 
-## Planos
-
-- Melhorar SEO
-- Melhorar design
 
 ## Como testar localmente
 
