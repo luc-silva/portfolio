@@ -1,16 +1,11 @@
 import { Link } from "react-router-dom";
 
-import {
-    ArrowRight,
-    Envelope,
-    FileArrowDown,
-    GithubLogo,
-    LinkedinLogo,
-} from "phosphor-react";
+import { HomeLinks } from "../components/Misc/HomeLinks";
+import { ArrowRight, FileArrowDown } from "phosphor-react";
+
 import styles from "./Home.module.css";
 
 export const Home = () => {
-  
     return (
         <main role={"main"} className={styles["home"]}>
             <section className={styles["greetings"]}>
@@ -37,21 +32,7 @@ export const Home = () => {
                 </div>
                 <div className={styles["social-accounts"]}>
                     <ul>
-                        <li>
-                            <a href="https://www.linkedin.com/in/silva-luc/" target={"_blank"}>
-                                <LinkedinLogo size={30} color="var(--main-color)" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/luc-silva" target={"_blank"}>
-                                <GithubLogo size={30} color="var(--main-color)" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:lucas.silva1203@outlook.com">
-                                <Envelope size={30} color="var(--main-color)" />
-                            </a>
-                        </li>
+                        <HomeLinks />
                     </ul>
                 </div>
             </section>
