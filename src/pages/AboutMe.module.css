@@ -76,7 +76,7 @@
 .certificates {
     width: 100%;
 }
-.contact{
+.contact {
     display: flex;
     flex-direction: column;
     gap: 2rem;

@@ -1,4 +1,3 @@
-import { formatArrayOfStrings } from "../../Utils/tools";
 import styles from "./ProjectCardTitleDisplay.module.css";
 
 export const ProjectCardTitleDisplay = ({

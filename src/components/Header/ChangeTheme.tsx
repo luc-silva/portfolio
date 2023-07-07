@@ -16,24 +16,28 @@ export const ChangeTheme = () => {
         if (body) {
             body.setAttribute("data-theme", theme);
         }
-        toggleIcon(!isDarkThemeIconActive)
+        toggleIcon(!isDarkThemeIconActive);
     }, [theme]);
 
     return (
         <div className={styles["change-theme"]}>
-            {(isDarkThemeIconActive && <Moon
-                size={32}
-                color="var(--title-color)"
-                onClick={() => {
-                    toggleTheme();
-                }}
-            />) || <Sun
-                size={32}
-                color="var(--title-color)"
-                onClick={() => {
-                    toggleTheme();
-                }}
-            />}
+            {(isDarkThemeIconActive && (
+                <Moon
+                    size={32}
+                    color="var(--title-color)"
+                    onClick={() => {
+                        toggleTheme();
+                    }}
+                />
+            )) || (
+                <Sun
+                    size={32}
+                    color="var(--title-color)"
+                    onClick={() => {
+                        toggleTheme();
+                    }}
+                />
+            )}
         </div>
     );
 };

@@ -1,12 +1,13 @@
+import curriculum from "../assets/lucas-silva-resume.pdf";
 import { AboutMeCertificates } from "../components/AboutMeCertificates";
 import { Download } from "phosphor-react";
+
 import { Skills } from "../components/Skills";
 import { AboutMeText } from "../components/Texts/AboutMeText";
 import { AboutMeContactInfo } from "../components/Texts/AboutMeContactInfo";
-
-import curriculum from "../assets/lucas-silva-resume.pdf";
-import styles from "./AboutMe.module.css";
 import { Contact } from "../components/Misc/Contact";
+
+import styles from "./AboutMe.module.css";
 
 export const AboutMe = ({
     setModalImage,

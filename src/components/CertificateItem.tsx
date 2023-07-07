@@ -39,7 +39,7 @@ export const CertificateItem = ({
                     <div className={styles["details-tags"]}>
                         <ul>
                             {tags.map((tag: string, index: number) => {
-                                if (index != tags.length - 1) {
+                                if (index !== tags.length - 1) {
                                     return <li key={index}>{tag},</li>;
                                 } else {
                                     return <li key={index}>{tag}</li>;
@@ -68,12 +68,14 @@ export const CertificateItem = ({
                     className={styles["details-external-link"]}
                     href={schoolSite}
                     target="_blank"
+                    rel="noreferrer"
                 >
                     Link para o site
                     <ArrowSquareOut size={20} />
                 </a>
             </div>
             <img
+                alt=""
                 className={styles["certificate-image"]}
                 onClick={() => {
                     toggleImageModal();

@@ -15,13 +15,11 @@ export const HamburguerMenu = ({
                     <li>
                         <NavLink
                             className={({ isActive }) =>
-                                isActive
-                                    ? styles["nav-active"]
-                                    : undefined
+                                isActive ? styles["nav-active"] : undefined
                             }
                             to="/"
                             onClick={() => {
-                                toggleMenu(!isActive)
+                                toggleMenu(!isActive);
                             }}
                         >
                             Início
@@ -30,13 +28,11 @@ export const HamburguerMenu = ({
                     <li>
                         <NavLink
                             className={({ isActive }) =>
-                                isActive
-                                    ? styles["nav-active"]
-                                    : undefined
+                                isActive ? styles["nav-active"] : undefined
                             }
                             to="/about-me"
                             onClick={() => {
-                                toggleMenu(!isActive)
+                                toggleMenu(!isActive);
                             }}
                         >
                             Sobre Mim
@@ -45,13 +41,11 @@ export const HamburguerMenu = ({
                     <li>
                         <NavLink
                             className={({ isActive }) =>
-                                isActive
-                                    ? styles["nav-active"]
-                                    : undefined
+                                isActive ? styles["nav-active"] : undefined
                             }
                             to="/projects"
                             onClick={() => {
-                                toggleMenu(!isActive)
+                                toggleMenu(!isActive);
                             }}
                         >
                             Projetos

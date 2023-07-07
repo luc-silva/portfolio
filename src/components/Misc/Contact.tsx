@@ -21,12 +21,10 @@ export const Contact = () => {
         let target = event.target;
         if (target instanceof HTMLFormElement) {
             let formData = new FormData(target);
-            let xhr = new XMLHttpRequest();
-
             fetch("https://formspree.io/f/xpzeglae", {
                 method: "POST",
                 body: formData,
-                mode: "no-cors", 
+                mode: "no-cors",
             }).then(() => {
                 console.log("feito");
                 toggleSubmit(false);

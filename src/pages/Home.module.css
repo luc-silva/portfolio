@@ -47,7 +47,7 @@
     padding: 0.5rem 1rem;
     transition: background-color 0.5s, color 0.5s;
 }
-.project-button:hover{
+.project-button:hover {
     background-color: var(--background);
     color: var(--main-color);
     outline: var(--main-color) solid 1px;
@@ -68,10 +68,10 @@
     align-items: center;
     gap: 1rem;
 }
-.social-accounts li{
+.social-accounts li {
     transition: transform 1s;
 }
-.social-accounts li:hover{
+.social-accounts li:hover {
     transform: scale(1.3);
 }
 

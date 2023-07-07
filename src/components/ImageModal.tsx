@@ -1,5 +1,4 @@
 import { X } from "phosphor-react";
-import { useState } from "react";
 import styles from "./ImageModal.module.css";
 
 export const ImageModal = ({
@@ -35,7 +34,7 @@ export const ImageModal = ({
                     />
                     <img
                         src={getImage(image)}
-                        alt="Certificate image"
+                        alt="Certificate"
                         className={styles["zoomed-certificate"]}
                     />
                 </div>

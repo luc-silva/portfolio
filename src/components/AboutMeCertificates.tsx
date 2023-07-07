@@ -4,14 +4,17 @@ import { CaretRight, CaretLeft } from "phosphor-react";
 import { certificates } from "../data";
 import styles from "./AboutMeCertificates.module.css";
 
-export const AboutMeCertificates = (
-    { toggleImageModal,  setModalImage }:
-    { toggleImageModal: Function,  setModalImage:Function }
-) => {
+export const AboutMeCertificates = ({
+    toggleImageModal,
+    setModalImage,
+}: {
+    toggleImageModal: Function;
+    setModalImage: Function;
+}) => {
     let [counter, setCounter] = useState(0);
     useEffect(() => {
-        setModalImage(certificates[counter].certImage)
-    },[counter, setModalImage])
+        setModalImage(certificates[counter].certImage);
+    }, [counter, setModalImage]);
     function goUp() {
         if (counter !== certificates.length - 1) {
             setCounter((prevCounter) => prevCounter + 1);
@@ -42,7 +45,10 @@ export const AboutMeCertificates = (
                         color="var(--text-color )"
                     />
                 </div>
-                <CertificateItem cert={certificates[counter]} toggleImageModal={toggleImageModal}/>
+                <CertificateItem
+                    cert={certificates[counter]}
+                    toggleImageModal={toggleImageModal}
+                />
                 <div
                     role="button"
                     className={styles["cert-button"]}

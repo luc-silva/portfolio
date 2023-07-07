@@ -13,9 +13,10 @@ export const MainProjectsDisplay = () => {
     }, []);
     return (
         <div className={styles["main-projects"]}>
-            {mainProjects.length > 0 && mainProjects.map((item: IProjectData, index: React.Key) => {
-                return <ProjectLargeCard project={item} key={index} />;
-            })}
+            {mainProjects.length > 0 &&
+                mainProjects.map((item: IProjectData, index: React.Key) => {
+                    return <ProjectLargeCard project={item} key={index} />;
+                })}
         </div>
     );
 };

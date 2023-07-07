@@ -1,9 +1,7 @@
-import { ArrowSquareOut } from "phosphor-react";
-
 import { ProjectCardTitleDisplay } from "../Displays/ProjectCardTitleDisplay";
-import styles from "./ProjectCard.module.css";
 import { ProjectImageDisplay } from "../Displays/ProjectImageDisplay";
 import { LinkItem } from "../Misc/LinkItem";
+import styles from "./ProjectCard.module.css";
 
 export const ProjectCard = ({ project }: { project: IProjectData }) => {
     return (

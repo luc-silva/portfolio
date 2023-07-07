@@ -10,10 +10,10 @@
     justify-content: space-between;
     width: 40%;
     padding: 1rem;
-    background-color: var(--background-faded );
+    background-color: var(--background-faded);
     display: none;
 }
-.certificate-details em{
+.certificate-details em {
     color: var(--main-color);
 }
 .certificate-details > div {
@@ -27,11 +27,11 @@
     flex-direction: column;
     gap: 0.1rem;
 }
-.details-title h3{
+.details-title h3 {
     color: var(--title-color);
 }
 .details-tags {
-    color: var(--text-color );
+    color: var(--text-color);
     font-size: 0.8rem;
 }
 .details-tags ul {
@@ -43,7 +43,7 @@
 .details-info {
     margin-top: 1rem;
 }
-.details-info strong{
+.details-info strong {
     color: var(--title-color);
 }
 .details-info div {
@@ -77,7 +77,7 @@
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    .certificate{
+    .certificate {
         width: 80vw;
         height: 55vh;
     }
@@ -96,7 +96,7 @@
 }
 
 @media (min-width: 1025px) {
-    .certificate{
+    .certificate {
         width: 70vw;
         height: 70vh;
     }

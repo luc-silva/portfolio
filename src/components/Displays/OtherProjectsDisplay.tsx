@@ -9,7 +9,7 @@ export const OtherProjectsDisplay = () => {
                 .filter((item: IProjectData) => !item.main_project)
                 .map((data: IProjectData, index: number) => {
                     return <ProjectCard project={data} key={index} />;
-                })}
+                })}I
         </div>
     );
 };

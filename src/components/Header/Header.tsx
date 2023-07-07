@@ -1,9 +1,9 @@
-import { Link, NavLink } from "react-router-dom";
-
-import styles from "./Header.module.css";
+import { Link } from "react-router-dom";
 import { List, X } from "phosphor-react";
+
 import { ChangeTheme } from "./ChangeTheme";
 import { HeaderNavLinks } from "../Misc/HeaderNavLinks";
+import styles from "./Header.module.css";
 
 export const Header = ({
     toggleMenu,
@@ -46,7 +46,7 @@ export const Header = ({
                     className={styles["header-navigation"]}
                 >
                     <ul>
-                        <HeaderNavLinks color={color}/>
+                        <HeaderNavLinks color={color} />
                     </ul>
                 </nav>
                 <ChangeTheme />

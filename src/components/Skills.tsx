@@ -1,5 +1,5 @@
-import styles from "./Skills.module.css";
 import { tools } from "../data";
+import styles from "./Skills.module.css";
 
 export const Skills = () => {
     return (
