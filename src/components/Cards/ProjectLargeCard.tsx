@@ -1,8 +1,15 @@
+import { useContext } from "react";
+import { LanguageContext } from "../../Utils/LanguageContext";
+
 import { ProjectCardTitleDisplay } from "../Displays/ProjectCardTitleDisplay";
 import { ProjectImageDisplay } from "../Displays/ProjectImageDisplay";
+
 import styles from "./ProjectLargeCard.module.css";
+import { projectLargeCardtext } from "../../constants/page-texts";
 
 export const ProjectLargeCard = ({ project }: { project: IProjectData }) => {
+    let { lang } = useContext(LanguageContext);
+
     return (
         <div className={styles["project-large-card"]}>
             <div className={styles["card-image-container"]}>
@@ -17,20 +24,26 @@ export const ProjectLargeCard = ({ project }: { project: IProjectData }) => {
                     />
                 </div>
                 <div className={styles["main-text"]}>
-                    <p>{project.introduction}</p>
+                    <p>{project.introduction[lang]}</p>
                     <div
                         dangerouslySetInnerHTML={{
-                            __html: project.description.replace(/\n/g, "<br/>"),
+                            __html: project.description[lang].replace(
+                                /\n/g,
+                                "<br/>"
+                            ),
                         }}
                     />
                     <div className={styles["project-links"]}>
                         <p>
-                            Veja o código fonte{" "}
+                            {projectLargeCardtext.ctc_repository[lang]}
                             <a
                                 href={project.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                            >aqui</a>.
+                            >
+                                {projectLargeCardtext.ctc_repository_btn[lang]}
+                            </a>
+                            .
                         </p>
                     </div>
                 </div>

@@ -1,8 +1,10 @@
 import { CertificateItem } from "./CertificateItem";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { CaretRight, CaretLeft } from "phosphor-react";
 import { certificates } from "../data";
 import styles from "./AboutMeCertificates.module.css";
+import { LanguageContext } from "../Utils/LanguageContext";
+import { certificatesText } from "../constants/page-texts";
 
 export const AboutMeCertificates = ({
     toggleImageModal,
@@ -12,6 +14,8 @@ export const AboutMeCertificates = ({
     setModalImage: Function;
 }) => {
     let [counter, setCounter] = useState(0);
+    let {lang} = useContext(LanguageContext)
+
     useEffect(() => {
         setModalImage(certificates[counter].certImage);
     }, [counter, setModalImage]);
@@ -28,8 +32,8 @@ export const AboutMeCertificates = ({
     return (
         <section className={styles["aboutme-certificates"]}>
             <div className={styles["certificates-main"]}>
-                <h2>Certificações</h2>
-                <p>Clique na imagem do certificado para dar zoom</p>
+                <h2>{certificatesText.page_title[lang]}</h2>
+                <p>{certificatesText.page_subtitle[lang]}</p>
             </div>
             <div className={styles["certificates-container"]}>
                 <div

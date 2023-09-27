@@ -1,0 +1,6 @@
+.language-selector select {
+    padding: 0.25rem;
+    border-radius: 5px;
+    background-color: var(--background);
+    color: var(--text-color);
+}

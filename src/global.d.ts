@@ -8,8 +8,8 @@ declare module "*.pdf" {
 }
 interface IProjectData {
     title: string;
-    introduction: string;
-    description: string;
+    introduction: Languages;
+    description: Languages;
     main_project?: boolean;
     link: string;
     images: string[];
@@ -19,16 +19,70 @@ interface IProjectData {
 interface ICertificate {
     tags: string[];
     certImage: string;
-    courseName: string;
-    schoolName: string;
-    schoolSite: string;
-    additionalInfo: string;
-    courseCompletitionDate: string;
-    courseLength: number;
+    name: Languages;
+    company: string;
+    company_site: string;
+    info_active: boolean;
+    additional_info: Languages;
+    completition_date: string;
+    length: number;
 }
+
+interface JobExperience {
+    role: string;
+    company: {
+        name: string;
+        description: Languages;
+    };
+    location: {
+        state: string;
+        country: string;
+    };
+    period: {
+        start: string;
+        end: string;
+    };
+    description: {
+        text: Languages;
+        featured: string[];
+    };
+    quantifiable_results: Languages;
+    tools: string[];
+}
+
+interface Participations {
+    type: ParticipationsTypes;
+    position?: string;
+    participants: string;
+    period: {
+        start: string;
+        end: string;
+    };
+    location: {
+        state: string;
+        country: string;
+    };
+    organization: {
+        name: string;
+        description: Languages;
+    };
+    description: Languages;
+}
+
+type ParticipationsTypes = "CTF" | "Hackton" | "Lecture" | "Event" | "Award";
+
 interface ITool {
     name: string;
     alt: string;
     toolImage: string;
-    additionalInfo: string;
+    info_active: boolean;
+    additional_info: Languages;
+}
+
+interface Languages {
+    [key: string]: string;
+}
+{
+    pt_br: string;
+    en_US: string;
 }

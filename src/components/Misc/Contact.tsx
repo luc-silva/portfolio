@@ -1,9 +1,12 @@
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useContext, useState } from "react";
 import styles from "./Contact.module.css";
+import { contactByEmailText } from "../../constants/page-texts";
+import { LanguageContext } from "../../Utils/LanguageContext";
 
 export const Contact = () => {
     let [form, setForm] = useState({ email: "", subject: "", message: "" });
     let [submitActive, toggleSubmit] = useState(true);
+    let {lang} = useContext(LanguageContext)
 
     function handleChange(event: ChangeEvent<HTMLElement>) {
         let target = event.target;
@@ -34,7 +37,7 @@ export const Contact = () => {
     return (
         <>
             <div className={styles["contact__title"]}>
-                <h2>Entre em contato</h2>
+                <h2>{contactByEmailText.title[lang]}</h2>
             </div>
             <div className={styles["contact__form"]}>
                 <form
@@ -43,7 +46,7 @@ export const Contact = () => {
                 >
                     <div>
                         <div className={styles["input-container"]}>
-                            <label htmlFor="subject">Assunto</label>
+                            <label htmlFor="subject">{contactByEmailText.subject_input[lang]}</label>
                             <input
                                 type="text"
                                 name="subject"
@@ -53,7 +56,7 @@ export const Contact = () => {
                             />
                         </div>
                         <div className={styles["input-container"]}>
-                            <label htmlFor="email">Seu email</label>
+                            <label htmlFor="email">{contactByEmailText.email_input[lang]}</label>
                             <input
                                 type="email"
                                 name="email"
@@ -65,7 +68,7 @@ export const Contact = () => {
                     </div>
                     <div>
                         <div className={styles["input-container"]}>
-                            <label htmlFor="message">Mensagem</label>
+                            <label htmlFor="message">{contactByEmailText.message_input[lang]}</label>
                             <textarea
                                 name="message"
                                 value={form.message}
@@ -76,7 +79,7 @@ export const Contact = () => {
                         <div className={styles["input-container"]}>
                             <input
                                 type="submit"
-                                value="Enviar"
+                                value={contactByEmailText.submit_input[lang]}
                                 className={styles["submit"]}
                                 disabled={!submitActive}
                             />

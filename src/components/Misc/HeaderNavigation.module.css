@@ -1,0 +1,30 @@
+.header-navigation {
+    display: none;
+}
+.header-navigation ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.header-navigation a {
+    font-size: 1.1rem;
+    font-family: "open sans";
+    color: var(--text-color);
+}
+.header-navigation a:hover {
+    color: var(--title-color);
+    font-weight: bold;
+}
+.header-navigation .nav-active {
+    color: var(--main-color);
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header-navigation {
+        display: flex;
+    }
+}
+@media (min-width: 1025px) {
+    .header-navigation {
+        display: flex;
+    }
+}

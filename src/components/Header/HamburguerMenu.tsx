@@ -1,5 +1,8 @@
 import { NavLink } from "react-router-dom";
 import styles from "./HamburguerMenu.module.css";
+import { headerText } from "../../constants/page-texts";
+import { useContext } from "react";
+import { LanguageContext } from "../../Utils/LanguageContext";
 
 export const HamburguerMenu = ({
     isActive,
@@ -8,6 +11,8 @@ export const HamburguerMenu = ({
     isActive: boolean;
     toggleMenu: Function;
 }) => {
+    let {lang} = useContext(LanguageContext)
+
     if (isActive) {
         return (
             <div className={styles["header-menu"]}>
@@ -22,7 +27,7 @@ export const HamburguerMenu = ({
                                 toggleMenu(!isActive);
                             }}
                         >
-                            Início
+                            {headerText["home"][lang]}
                         </NavLink>
                     </li>
                     <li>
@@ -35,7 +40,7 @@ export const HamburguerMenu = ({
                                 toggleMenu(!isActive);
                             }}
                         >
-                            Sobre Mim
+                            {headerText["about"][lang]}
                         </NavLink>
                     </li>
                     <li>
@@ -48,7 +53,7 @@ export const HamburguerMenu = ({
                                 toggleMenu(!isActive);
                             }}
                         >
-                            Projetos
+                            {headerText["projects"][lang]}
                         </NavLink>
                     </li>
                 </ul>

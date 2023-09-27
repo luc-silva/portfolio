@@ -1,40 +1,37 @@
+import { useContext, useEffect } from "react";
 import styles from "./CertificateItem.module.css";
 import { ArrowSquareOut } from "phosphor-react";
-
-interface certificate {
-    tags: string[];
-    certImage: string;
-    courseName: string;
-    schoolName: string;
-    schoolSite: string;
-    additionalInfo: string;
-    courseCompletitionDate: string;
-    courseLength: number;
-}
+import { LanguageContext } from "../Utils/LanguageContext";
+import { certifacateDisplayText } from "../constants/page-texts";
+ 
 export const CertificateItem = ({
     cert,
     toggleImageModal,
 }: {
     toggleImageModal: Function;
-    cert: certificate;
+    cert: ICertificate;
 }) => {
     let {
         tags,
         certImage,
-        courseName,
-        schoolName,
-        schoolSite,
-        additionalInfo,
-        courseCompletitionDate,
-        courseLength,
+        name,
+        additional_info,
+        company,
+        company_site,
+        completition_date,
+        info_active,
+        length 
     } = cert;
+
+    let {lang} = useContext(LanguageContext)
+
     return (
         <div className={styles["certificate"]}>
             <div className={styles["certificate-details"]}>
                 <div>
                     <div className={styles["details-title"]}>
-                        <h3>{courseName}</h3>
-                        <em>{schoolName}</em>
+                        <h3>{name[lang]}</h3>
+                        <em>{company }</em>
                     </div>
                     <div className={styles["details-tags"]}>
                         <ul>
@@ -49,16 +46,16 @@ export const CertificateItem = ({
                     </div>
                     <div className={styles["details-info"]}>
                         <div>
-                            <strong>Concluído em:</strong>
-                            <em>{courseCompletitionDate}</em>
+                            <strong>{certifacateDisplayText.date[lang]}</strong>
+                            <em>{completition_date}</em>
                         </div>
                         <div>
-                            <strong>Carga Horaria:</strong>
-                            <em>{courseLength} horas</em>
+                            <strong>{certifacateDisplayText.course_length[lang]}</strong>
+                            <em>{length}h</em>
                         </div>
-                        {additionalInfo && (
+                        {info_active && (
                             <div>
-                                <em>{additionalInfo}</em>
+                                <em>{additional_info[lang]}</em>
                             </div>
                         )}
                     </div>
@@ -66,11 +63,11 @@ export const CertificateItem = ({
 
                 <a
                     className={styles["details-external-link"]}
-                    href={schoolSite}
+                    href={company_site}
                     target="_blank"
                     rel="noreferrer"
                 >
-                    Link para o site
+                    {certifacateDisplayText.external_link_btn[lang]}
                     <ArrowSquareOut size={20} />
                 </a>
             </div>

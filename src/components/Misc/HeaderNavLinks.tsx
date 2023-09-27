@@ -1,6 +1,11 @@
 import { NavLink } from "react-router-dom";
+import { LanguageContext } from "../../Utils/LanguageContext";
+import { useContext } from "react";
+import { headerText } from "../../constants/page-texts";
 
 export const HeaderNavLinks = ({ color }: { color: string }) => {
+    let {lang} = useContext(LanguageContext)
+
     return (
         <>
             <li>
@@ -8,7 +13,7 @@ export const HeaderNavLinks = ({ color }: { color: string }) => {
                     className={({ isActive }) => (isActive ? color : undefined)}
                     to="/"
                 >
-                    Início
+                    {headerText["home"][lang]}
                 </NavLink>
             </li>
             <li>
@@ -16,7 +21,7 @@ export const HeaderNavLinks = ({ color }: { color: string }) => {
                     className={({ isActive }) => (isActive ? color : undefined)}
                     to="/about-me"
                 >
-                    Sobre Mim
+                    {headerText["about"][lang]}
                 </NavLink>
             </li>
             <li>
@@ -24,7 +29,7 @@ export const HeaderNavLinks = ({ color }: { color: string }) => {
                     className={({ isActive }) => (isActive ? color : undefined)}
                     to="/projects"
                 >
-                    Projetos
+                    {headerText["projects"][lang]}
                 </NavLink>
             </li>
         </>
