@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f215cbd1.css",
-    "main.js": "/portfolio/static/js/main.40f624ca.js",
+    "main.css": "/portfolio/static/css/main.2c30b42c.css",
+    "main.js": "/portfolio/static/js/main.bbc37198.js",
     "static/media/project-restaurant-1.png": "/portfolio/static/media/project-restaurant-1.0eb9cfb5acf20d8a7b62.png",
     "static/media/project-restaurant-4.png": "/portfolio/static/media/project-restaurant-4.be242dd336b83e36e3e8.png",
     "static/media/project-weatherapp-1.png": "/portfolio/static/media/project-weatherapp-1.ffed2289f6bc632b0db0.png",
@@ -12,7 +12,6 @@
     "static/media/cert-spreadfullstack.jpg": "/portfolio/static/media/cert-spreadfullstack.604a108c860e7ba80c91.jpg",
     "static/media/cert-mongodbnodejspath.png": "/portfolio/static/media/cert-mongodbnodejspath.45f0d5d0d78b7988c183.png",
     "static/media/logo-reactjs.png": "/portfolio/static/media/logo-reactjs.8a6fc0a24a800d1e0f4a.png",
-    "static/media/lucas-silva-resume.pdf": "/portfolio/static/media/lucas-silva-resume.240e06a2564d5531dd45.pdf",
     "static/media/project-electroware-1.png": "/portfolio/static/media/project-electroware-1.f2e5a1a2fbd87e9b73ab.png",
     "static/media/project-electroware-3.png": "/portfolio/static/media/project-electroware-3.0297bf3d07da29a04461.png",
     "static/media/logo-shell.png": "/portfolio/static/media/logo-shell.b4814d5a4be276bac559.png",
@@ -51,11 +50,11 @@
     "static/media/logo-ubuntu.png": "/portfolio/static/media/logo-ubuntu.f9fb429d4d7fe4a84005.png",
     "static/media/logo-javascript.png": "/portfolio/static/media/logo-javascript.266bd9fb2663dcc057b4.png",
     "index.html": "/portfolio/index.html",
-    "main.f215cbd1.css.map": "/portfolio/static/css/main.f215cbd1.css.map",
-    "main.40f624ca.js.map": "/portfolio/static/js/main.40f624ca.js.map"
+    "main.2c30b42c.css.map": "/portfolio/static/css/main.2c30b42c.css.map",
+    "main.bbc37198.js.map": "/portfolio/static/js/main.bbc37198.js.map"
   },
   "entrypoints": [
-    "static/css/main.f215cbd1.css",
-    "static/js/main.40f624ca.js"
+    "static/css/main.2c30b42c.css",
+    "static/js/main.bbc37198.js"
   ]
 }
