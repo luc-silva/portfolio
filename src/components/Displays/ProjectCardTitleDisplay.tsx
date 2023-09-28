@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { LanguageContext } from "../../Utils/LanguageContext";
+import { LanguageContext } from "../../Utils/LanguageContext";  
 import { projectCardTitleDisplayText } from "../../constants/page-texts";
 import styles from "./ProjectCardTitleDisplay.module.css";
 

@@ -1,14 +1,9 @@
-import { AboutMeCertificates } from "../components/AboutMeCertificates";
-import { Download } from "phosphor-react";
-
-import { Skills } from "../components/Skills";
-import { AboutMeText } from "../components/Texts/AboutMeText";
-import { AboutMeContactInfo } from "../components/Texts/AboutMeContactInfo";
-import { Contact } from "../components/Misc/Contact";
-import { TimelineDisplay } from "../components/Displays/TimelineDisplay";
+import { Skills } from "../components/sections/Skills";
+import { Contact } from "../components/Misc/Contact"; 
+import { AboutMeInfo } from "../components/Misc/AboutMeInfo";
+import { AboutMeCertificates } from "../components/sections/AboutMeCertificates";
 
 import styles from "./AboutMe.module.css";
-import { AboutMeInfo } from "../components/Misc/AboutMeInfo";
 
 export const AboutMe = ({
     setModalImage,
@@ -18,7 +13,7 @@ export const AboutMe = ({
     toggleImageModal: Function;
 }) => {
     return (
-        <main role={"main"} className={styles["aboutme"]}>
+        <main role="main" className={styles["aboutme"]}>
             <section className={styles["aboutme-main"]}>
                 <AboutMeInfo />
             </section>

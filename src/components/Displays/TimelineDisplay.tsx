@@ -1,9 +1,10 @@
-import { useContext } from "react";
+import { useContext } from "react"; 
+import { timelineDisplayText } from "../../constants/page-texts";
+
 import { JobExperienceCard } from "../Cards/JobExperienceCard";
 import { LanguageContext } from "../../Utils/LanguageContext";
-
+ 
 import styles from "./TimelineDisplay.module.css";
-import { timelineDisplayText } from "../../constants/page-texts";
 
 export const TimelineDisplay = () => {
     let { lang } = useContext(LanguageContext);

@@ -83,6 +83,23 @@ export const aboutMeInfoText: { [key: string]: { [key: string]: string } } = {
     },
 };
 
+export const aboutMeText: { [key: string]: { [key: string]: string[] } } = {
+    about: {
+        pt_br: [
+            "Atualmente cursando o terceiro semestre, busco por uma oportunidade de estágio ou posição como júnior na área de desenvolvimento.",
+            "Utilizo Typescript, React e MongoDB como minhas principais ferramentas, mas também tenho alguns projetos em Java + MySQL e estudo springboot, como o objetivo de aprofundar os estudos em backend.",
+            "Desde pequeno era fã do mundo de desenvolvimento de software, em especial a área de jogos. Em 2016 cheguei a cursar um curso de desenvolvimento de games, tendo o concluido em 2018.",
+            "Não possuo experiência de trabalho e nem como freelancer, mas sempre tento me desafiar ao aplicar novas implementações em meus projetos.",
+        ],
+        en_us: [
+            "Currently studying the fourth semester, I am looking for an internship opportunity or position as a junior in the development area.",
+            "I use Typescript, React and MongoDB as my main tools, but I also have some projects in Java + MySQL and study springboot, with the aim of deepening my studies in backend.",
+            "Since I was little, I was a fan of the world of software development, especially the gaming area. In 2016 I took a game development course, having completed it in 2018.",
+            "I don't have work or freelance experience, but I always try to challenge myself when applying new implementations to my projects.",
+        ],
+    },
+};
+
 export const skillsText: { [key: string]: { [key: string]: string } } = {
     page_title: {
         pt_br: "Skills & Ferramentas",
@@ -90,7 +107,7 @@ export const skillsText: { [key: string]: { [key: string]: string } } = {
     },
     page_subtitle: {
         pt_br: "Ferramentas as quais utilizo ou possuo algum tipo de experiência.",
-        en_us: "Tools I use nowadays or that i have any kind of experience.",
+        en_us: "Tools that I use or have some type of experience with.",
     },
 };
 
@@ -109,7 +126,7 @@ export const certificatesText: { [key: string]: { [key: string]: string } } = {
     },
     page_subtitle: {
         pt_br: "Clique na imagem do certificado para dar zoom.",
-        en_us: "Press the certificate image to zoom in.",
+        en_us: "Click on the certificate image to zoom.",
     },
 };
 
@@ -126,7 +143,7 @@ export const certifacateDisplayText: {
     },
     external_link_btn: {
         pt_br: "Link para o site da instituição",
-        en_us: "Link to institution website",
+        en_us: "Link to the institution's website",
     },
 };
 
@@ -154,20 +171,24 @@ export const contactByEmailText: { [key: string]: { [key: string]: string } } =
         },
     };
 
-    export const projectLargeCardtext: { [key: string]: { [key: string]: string } } ={
-        ctc_repository: {
-            pt_br: "Veja o projeto ",
-            en_us: "Take a look ",
-        },
-        ctc_repository_btn:{
-            pt_br: "aqui",
-            en_us: "here",
-        }
-    }
+export const projectLargeCardtext: {
+    [key: string]: { [key: string]: string };
+} = {
+    ctc_repository: {
+        pt_br: "Veja o projeto ",
+        en_us: "Take a look ",
+    },
+    ctc_repository_btn: {
+        pt_br: "aqui",
+        en_us: "here",
+    },
+};
 
-    export const projectCardTitleDisplayText: { [key: string]: { [key: string]: string } } ={
-        api: {
-            pt_br: "Contém API",
-            en_us: "Contains API",
-        }, 
-    }
+export const projectCardTitleDisplayText: {
+    [key: string]: { [key: string]: string };
+} = {
+    api: {
+        pt_br: "Contém API",
+        en_us: "Contains API",
+    },
+};

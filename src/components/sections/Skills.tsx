@@ -1,8 +1,9 @@
-import { useContext } from "react";
-import { tools } from "../data";
-import styles from "./Skills.module.css";
-import { LanguageContext } from "../Utils/LanguageContext";
-import { skillsText } from "../constants/page-texts";
+import { useContext } from "react"; 
+import { tools } from "../../data";
+import { skillsText } from "../../constants/page-texts";
+
+import { LanguageContext } from "../../Utils/LanguageContext";  
+import styles from "./Skills.module.css"; 
 
 export const Skills = () => {
     let { lang } = useContext(LanguageContext);
@@ -29,7 +30,7 @@ export const Skills = () => {
                             <li key={index}>
                                 <img
                                     loading="lazy"
-                                    src={require(`../assets/images/${toolImage}`)}
+                                    src={require(`../../assets/images/${toolImage}`)}
                                     alt={alt}
                                 />
                                 <p>{name}</p>

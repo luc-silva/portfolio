@@ -52,7 +52,7 @@ export const projects: IProjectData[] = [
         },
         description: {
             pt_br: "Desenvolvido inicialmente com JavaScript, o projeto permite que um usuário defina tarefas para sem feitas, podendo especificar datas e prioridades ou até mesmo planejar algum grande feito, também podendo inserir sub-tarefas. \nTambém contém uma dashboard com histórico de tarefas e algumas estatísticas.",
-            en_us: "",
+            en_us: "Initially developed with JavaScript, the project allows a user to define tasks to be completed, being able to specify dates and priorities or even plan a major task, and being able to insert sub-tasks.\nIt also contains a dashboard with task history and some statistics.",
         },
         main_project: true,
         containsApi: true,
@@ -77,7 +77,7 @@ export const projects: IProjectData[] = [
         },
         description: {
             pt_br: `Desenvolvida inicialmente com Javascript, hoje remasterizada com ReactJs e Typescript.\n O usuário pode alterar a temperatura da cidade que aparece no display principal bem as demais além de realizar pesquisa à uma cidade em específico.\n O projeto também possui também, além das abas de climas e configurações, a aba de notícias (que mostra 5 notícias fictícias criadas pelo ChatGPT) e a agenda, aba em que o usuário pode criar e salvar tarefas a serem feitas.`,
-            en_us: "",
+            en_us: "Initially developed with Javascript, today remastered with ReactJs and Typescript.\n The user can change the temperature of the city that appears on the main display as well as others, in addition to searching for a specific city.\n The project also has, in addition to the weather and settings tabs, the news tab (which shows 5 fictional news items created by ChatGPT) and the agenda, a tab in which the user can create and save tasks to be done.",
         },
         main_project: true,
         images: [

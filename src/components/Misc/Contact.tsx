@@ -1,7 +1,7 @@
 import { ChangeEvent, useContext, useState } from "react";
-import styles from "./Contact.module.css";
+import { LanguageContext } from "../../Utils/LanguageContext"; 
 import { contactByEmailText } from "../../constants/page-texts";
-import { LanguageContext } from "../../Utils/LanguageContext";
+import styles from "./Contact.module.css";
 
 export const Contact = () => {
     let [form, setForm] = useState({ email: "", subject: "", message: "" });

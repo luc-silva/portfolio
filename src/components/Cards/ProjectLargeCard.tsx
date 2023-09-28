@@ -1,11 +1,11 @@
 import { useContext } from "react";
-import { LanguageContext } from "../../Utils/LanguageContext";
+import { LanguageContext } from "../../Utils/LanguageContext"; 
+import { projectLargeCardtext } from "../../constants/page-texts";
 
 import { ProjectCardTitleDisplay } from "../Displays/ProjectCardTitleDisplay";
 import { ProjectImageDisplay } from "../Displays/ProjectImageDisplay";
 
-import styles from "./ProjectLargeCard.module.css";
-import { projectLargeCardtext } from "../../constants/page-texts";
+import styles from "./ProjectLargeCard.module.css"; 
 
 export const ProjectLargeCard = ({ project }: { project: IProjectData }) => {
     let { lang } = useContext(LanguageContext);

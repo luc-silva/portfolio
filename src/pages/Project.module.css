@@ -21,6 +21,7 @@
     color: var(--text-color);
 }
 .projects-main {
+    min-height: 90vh;
     padding: 0.5rem;
 }
 .projects-extra {

@@ -38,7 +38,11 @@
     gap: 0.5rem;
 }
 .about-resume a {
+    font-size: 0.8rem;
     color: var(--main-color);
+}
+.about-resume svg {
+    color: var(--title-color);
 }
 
 .aboutme-contact {

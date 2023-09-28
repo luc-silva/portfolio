@@ -1,15 +1,15 @@
 import { useContext } from "react";
+import { aboutMeInfoText, aboutMeText } from "../../constants/page-texts";
 
 import { AboutMeContactInfo } from "../Texts/AboutMeContactInfo";
 import { LanguageContext } from "../../Utils/LanguageContext";
-import { aboutMeInfoText } from "../../constants/page-texts";
 
 import { Download } from "phosphor-react";
 import styles from "./AboutMeInfo.module.css";
+import { CurriculumDownloadBtn } from "./CurriculumDownloadBtn";
 
 export const AboutMeInfo = () => {
     let { lang } = useContext(LanguageContext);
-    let url = `${process.env.PUBLIC_URL}/lucas-silva-resume.pdf`
 
     return (
         <>
@@ -19,20 +19,16 @@ export const AboutMeInfo = () => {
                     <p>{aboutMeInfoText.page_subtitle[lang]}</p>
                 </div>
                 <div className={styles["aboutme-about"]}>
-                    <div
-                        className={styles["about-text"]}
-                        dangerouslySetInnerHTML={{
-                            __html: aboutMeInfoText.about[lang]
-                        }}
-                    />
+                    <div className={styles["about-text"]}>
+                        {aboutMeText.about[lang].map((item) => {
+                            return <p>{item}</p>;
+                        })}
+                    </div>
                     <div className={styles["about-resume"]}>
-                        <Download size={24} color="var(--title-color)" />
-                        <a
-                            href={url}
-                            download="lucas-silva-cv.pdf"
-                        >
-                           {aboutMeInfoText.ctc_cv[lang]}
-                        </a>
+                        <Download size={24}/>
+                        <CurriculumDownloadBtn
+                            text={aboutMeInfoText.ctc_cv[lang]}
+                        />
                     </div>
                 </div>
             </div>

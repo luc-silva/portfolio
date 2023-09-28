@@ -7,10 +7,11 @@ import styles from "./Home.module.css";
 import { useContext } from "react";
 import { LanguageContext } from "../Utils/LanguageContext";
 import { homeText } from "../constants/page-texts";
+import { CurriculumDownloadBtn } from "../components/Misc/CurriculumDownloadBtn";
 
 export const Home = () => {
     let { lang } = useContext(LanguageContext);
-    let url = `${process.env.PUBLIC_URL}/lucas-silva-resume.pdf`
+    let url = `${process.env.PUBLIC_URL}/lucas-silva-resume.pdf`;
 
     return (
         <main role={"main"} className={styles["home"]}>
@@ -24,17 +25,14 @@ export const Home = () => {
                 </div>
                 <div className={styles["buttons"]}>
                     <Link className={styles["project-button"]} to="/projects">
-                    {homeText.ctc_projects[lang]}
+                        {homeText.ctc_projects[lang]}
                         <ArrowRight size={20} weight="bold" />
                     </Link>
-                    <a
-                        className={styles["curriculum-button"]}
-                        href={url}
-                        download="lucas-silva-cv.pdf"
-                    >
-                        {homeText.ctc_cv[lang]}
+
+                    <div className={styles["curriculum-button"]}>
+                        <CurriculumDownloadBtn text={homeText.ctc_cv[lang]} />
                         <FileArrowDown size={20} weight="bold" />
-                    </a>
+                    </div>
                 </div>
                 <div className={styles["social-accounts"]}>
                     <ul>

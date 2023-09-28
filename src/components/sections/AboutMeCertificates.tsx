@@ -1,10 +1,11 @@
-import { CertificateItem } from "./CertificateItem";
 import { useContext, useEffect, useState } from "react";
-import { CaretRight, CaretLeft } from "phosphor-react";
-import { certificates } from "../data";
-import styles from "./AboutMeCertificates.module.css";
-import { LanguageContext } from "../Utils/LanguageContext";
-import { certificatesText } from "../constants/page-texts";
+import { LanguageContext } from "../../Utils/LanguageContext";
+import { certificates } from "../../data"; 
+import { certificatesText } from "../../constants/page-texts";
+
+import { CertificateItem } from "../CertificateItem";
+import { CaretRight, CaretLeft } from "phosphor-react"; 
+import styles from "./AboutMeCertificates.module.css"; 
 
 export const AboutMeCertificates = ({
     toggleImageModal,

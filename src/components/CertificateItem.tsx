@@ -1,9 +1,10 @@
-import { useContext, useEffect } from "react";
-import styles from "./CertificateItem.module.css";
-import { ArrowSquareOut } from "phosphor-react";
-import { LanguageContext } from "../Utils/LanguageContext";
+import { useContext } from "react";
+import { LanguageContext } from "../Utils/LanguageContext"; 
 import { certifacateDisplayText } from "../constants/page-texts";
- 
+
+import { ArrowSquareOut } from "phosphor-react";
+import styles from "./CertificateItem.module.css";
+
 export const CertificateItem = ({
     cert,
     toggleImageModal,
@@ -20,10 +21,10 @@ export const CertificateItem = ({
         company_site,
         completition_date,
         info_active,
-        length 
+        length,
     } = cert;
 
-    let {lang} = useContext(LanguageContext)
+    let { lang } = useContext(LanguageContext);
 
     return (
         <div className={styles["certificate"]}>
@@ -31,7 +32,7 @@ export const CertificateItem = ({
                 <div>
                     <div className={styles["details-title"]}>
                         <h3>{name[lang]}</h3>
-                        <em>{company }</em>
+                        <em>{company}</em>
                     </div>
                     <div className={styles["details-tags"]}>
                         <ul>
@@ -50,7 +51,9 @@ export const CertificateItem = ({
                             <em>{completition_date}</em>
                         </div>
                         <div>
-                            <strong>{certifacateDisplayText.course_length[lang]}</strong>
+                            <strong>
+                                {certifacateDisplayText.course_length[lang]}
+                            </strong>
                             <em>{length}h</em>
                         </div>
                         {info_active && (
@@ -71,14 +74,14 @@ export const CertificateItem = ({
                     <ArrowSquareOut size={20} />
                 </a>
             </div>
-            <img
-                alt=""
+            <img 
+                alt="Certificate"
                 className={styles["certificate-image"]}
                 onClick={() => {
                     toggleImageModal();
                 }}
                 src={require(`../assets/images/${certImage}`)}
-            ></img>
+            />
         </div>
     );
 };

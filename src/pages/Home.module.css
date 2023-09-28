@@ -59,8 +59,11 @@
     gap: 0.5rem;
     padding: 0.5rem 1rem;
 
-    color: var(--main-color);
     border: 1px solid var(--main-color);
+}
+.curriculum-button a,
+.curriculum-button svg {
+    color: var(--main-color);
 }
 .social-accounts ul {
     display: flex;
