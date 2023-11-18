@@ -15,7 +15,7 @@ export const Header = ({
 }) => {
 
     return (
-        <header aria-level={1} role={"heading"} className={styles["header"]}>
+        <header className={styles["header"]}>
             <div className={styles["header-main"]}>
                 {(isHeaderMenuActive && (
                     <X
