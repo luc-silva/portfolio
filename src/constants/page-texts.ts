@@ -1,4 +1,4 @@
-export const headerText: { [key: string]: { [key: string]: string } } = {
+export const headerText: LangObject = {
     home: {
         pt_br: "Início",
         en_us: "Home",
@@ -13,7 +13,7 @@ export const headerText: { [key: string]: { [key: string]: string } } = {
     },
 };
 
-export const homeText: { [key: string]: { [key: string]: string } } = {
+export const homeText: LangObject = {
     greeting: {
         pt_br: "Olá, como vai? Me chamo",
         en_us: "Hi, how you doing? My name is",
@@ -32,7 +32,7 @@ export const homeText: { [key: string]: { [key: string]: string } } = {
     },
 };
 
-export const projectText: { [key: string]: { [key: string]: string } } = {
+export const projectText: LangObject = {
     page_title: {
         pt_br: "Projetos",
         en_us: "Projects",
@@ -48,7 +48,7 @@ export const projectText: { [key: string]: { [key: string]: string } } = {
 };
 
 //components
-export const aboutMeInfoText: { [key: string]: { [key: string]: string } } = {
+export const aboutMeInfoText: LangObject = {
     page_title: {
         pt_br: "Sobre Mim",
         en_us: "About Me",
@@ -100,7 +100,7 @@ export const aboutMeText: { [key: string]: { [key: string]: string[] } } = {
     },
 };
 
-export const skillsText: { [key: string]: { [key: string]: string } } = {
+export const skillsText: LangObject = {
     page_title: {
         pt_br: "Skills & Ferramentas",
         en_us: "Skills & Tools ",
@@ -111,7 +111,7 @@ export const skillsText: { [key: string]: { [key: string]: string } } = {
     },
 };
 
-export const timelineDisplayText: { [key: string]: { [key: string]: string } } =
+export const timelineDisplayText: LangObject =
     {
         page_title: {
             pt_br: "Experiência",
@@ -119,7 +119,7 @@ export const timelineDisplayText: { [key: string]: { [key: string]: string } } =
         },
     };
 
-export const certificatesText: { [key: string]: { [key: string]: string } } = {
+export const certificatesText: LangObject = {
     page_title: {
         pt_br: "Certificações",
         en_us: "Certificates",
@@ -147,7 +147,7 @@ export const certifacateDisplayText: {
     },
 };
 
-export const contactByEmailText: { [key: string]: { [key: string]: string } } =
+export const contactByEmailText: LangObject =
     {
         title: {
             pt_br: "Entre em contato",

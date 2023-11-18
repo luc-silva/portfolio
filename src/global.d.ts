@@ -6,6 +6,13 @@ declare module "*.pdf" {
     const file: string;
     export default file;
 }
+
+type LangObject = { [key: string]: { [key: string]: string } };
+interface LanguageOptionObject {
+    value: string;
+    text: string;
+    icon: JSX.Element;
+}
 interface IProjectData {
     title: string;
     introduction: Languages;
