@@ -16,6 +16,7 @@
     align-items: center;
     gap: 0.5rem;
 }
+
 .language-selector__container{
     display: flex;
     justify-content: space-between;
@@ -34,4 +35,12 @@
     background-color: var(--background);
     border: 1px solid var(--background-faded);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.196);
+}
+@media (max-width: 769px) {
+    .language-selector {
+        width: fit-content;
+    }
+    .language-selector__current p {
+        display: none;
+    }
 }

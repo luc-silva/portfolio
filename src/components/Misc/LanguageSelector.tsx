@@ -8,6 +8,7 @@ import { CaretDown, CaretUp } from "phosphor-react";
 
 export const LanguageSelector = () => {
     let { lang, changeLang } = useContext(LanguageContext);
+    let [screnSize, setScreenSize] = useState(window.innerWidth);
     let [isOptionsActive, toggleOptions] = useState(false);
     let [currentLangOption, setCurrentLangOption] = useState(
         languageOptions[0]
@@ -21,6 +22,11 @@ export const LanguageSelector = () => {
         changeLang(currentLangOption.value);
     }, [currentLangOption]);
 
+    useEffect(() => {
+        setScreenSize(window.innerWidth);
+        console.log(screnSize);
+    }, [window.innerWidth]);
+
     return (
         <div className={styles["language-selector"]}>
             <div
@@ -29,7 +35,7 @@ export const LanguageSelector = () => {
             >
                 <div className={styles["language-selector__current"]}>
                     {currentLangOption.icon}
-                    {currentLangOption.text}
+                    <p>{currentLangOption.text}</p>
                 </div>
                 {(isOptionsActive && <CaretUp size={32} weight="fill" />) || (
                     <CaretDown size={32} weight="fill" />
