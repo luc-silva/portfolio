@@ -1,9 +1,10 @@
 import { Skills } from "../components/sections/Skills";
-import { Contact } from "../components/Misc/Contact"; 
+import { Contact } from "../components/Misc/Contact";
 import { AboutMeInfo } from "../components/Misc/AboutMeInfo";
 import { AboutMeCertificates } from "../components/sections/AboutMeCertificates";
 
 import styles from "./AboutMe.module.css";
+import { AboutMeEducation } from "../components/sections/AboutMeEducation";
 
 export const AboutMe = ({
     setModalImage,
@@ -23,6 +24,9 @@ export const AboutMe = ({
             {/* <section className={styles["timeline"]}>
                 <TimelineDisplay />
             </section> */}
+            <section className={styles["education"]}>
+                <AboutMeEducation />
+            </section>
             <section className={styles["certificates"]}>
                 <AboutMeCertificates
                     toggleImageModal={toggleImageModal}

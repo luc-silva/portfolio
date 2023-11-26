@@ -34,8 +34,12 @@ interface ICertificate {
     completition_date: string;
     length: number;
 }
-interface MultiLangData {[key: string]: string };
-interface MultiLandArrayData {[key: string]: string[] }
+interface MultiLangData {
+    [key: string]: string;
+}
+interface MultiLangArrayData {
+    [key: string]: string[];
+}
 
 interface JobExperience {
     role: MultiLangData;
@@ -48,16 +52,16 @@ interface JobExperience {
         country: MultiLangData;
     };
     period: {
-        start: Date
-        end?: Date
+        start: Date;
+        end?: Date;
     };
     description: {
         text: MultiLangData;
         featured?: MultiLangData[];
     };
-    quantifiable_results: MultiLandArrayData;
+    quantifiable_results: MultiLangArrayData;
     tools: string[];
-    active: boolean
+    active: boolean;
 }
 
 interface Participations {
@@ -87,6 +91,31 @@ interface ITool {
     toolImage: string;
     info_active: boolean;
     additional_info: Languages;
+}
+
+interface EducationDetail {
+    school: {
+        name: string;
+        description: MultiLangArrayData;
+    };
+    course: MultiLangData;
+    course_type: {
+        pt_br: string;
+        en_us: string;
+    };
+    period: {
+        start: Date;
+        end: Date;
+    };
+    logo_changable: boolean;
+    logo_path: { [key: string]: string };
+    duration?: {
+        length: 4,
+        type: {
+            pt_br: "anos" | "meses",
+            en_us: "years" | "months"
+        }
+    }
 }
 
 interface Languages {

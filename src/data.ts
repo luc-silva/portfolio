@@ -145,7 +145,10 @@ export const certificates: ICertificate[] = [
             "SQL",
         ],
         certImage: "cert-spreadfullstack.jpg",
-        name: { pt_br: "Spread Fullstack Developer Bootcamp", en_us: "Spread Fullstack Developer Bootcamp" },
+        name: {
+            pt_br: "Spread Fullstack Developer Bootcamp",
+            en_us: "Spread Fullstack Developer Bootcamp",
+        },
         company: "Digital Innovation One",
         company_site: "https://www.dio.me/en",
         info_active: false,
@@ -159,7 +162,10 @@ export const certificates: ICertificate[] = [
     {
         tags: ["MongoDB", "NoSQL", "NodeJS"],
         certImage: "cert-mongodbnodejspath.png",
-        name: { pt_br: "MongoDB Node.js Developer Path", en_us: "MongoDB Node.js Developer Path" },
+        name: {
+            pt_br: "MongoDB Node.js Developer Path",
+            en_us: "MongoDB Node.js Developer Path",
+        },
         company: "MongoDB University",
         company_site: "https://learn.mongodb.com/",
         info_active: false,
@@ -190,7 +196,10 @@ export const certificates: ICertificate[] = [
     {
         tags: ["Javascript", "HTML & CSS", "Bootstrap", "SQL", "SCRUM"],
         certImage: "cert-basicwebdev.jpg",
-        name: { pt_br: "Desenvolvimento de Sistemas Web Básico", en_us: "Basic Web Development" },
+        name: {
+            pt_br: "Desenvolvimento de Sistemas Web Básico",
+            en_us: "Basic Web Development",
+        },
         company: "Recode",
         company_site: "https://recode.org.br/",
         info_active: false,
@@ -312,6 +321,84 @@ export const tools: ITool[] = [
         additional_info: {
             pt_br: "Experiência acadêmica.",
             en_us: "Academic Experience",
+        },
+    },
+];
+
+export const educationDetails: EducationDetail[] = [
+    {
+        school: {
+            name: "Estácio de Sá",
+            description: {
+                pt_br: [
+                    "Escolhi esse curso devido a abrangência de disciplinas e assuntos contidos.",
+                    "Graças ao ensino totalmente a distância, pude participar de cursos e oficinas criadas pela própria universidade.",
+                ],
+                en_us: [
+                    "I chose this course due to the scope of the disciplines.",
+                    "Thanks to fully distance learning, I was able to take part in courses and workshops created by the university.",
+                ],
+            },
+        },
+        course: {
+            pt_br: "Engenharia de Software",
+            en_us: "Software Engineering",
+        },
+        course_type: {
+            pt_br: "Bacharelado",
+            en_us: "Bachelor",
+        },
+        period: {
+            start: new Date("1/1/2022"),
+            end: new Date("12/12/2025"),
+        },
+        logo_changable: true,
+        logo_path: {
+            light: "education-estacio-light.png",
+            dark: "education-estacio-dark.png",
+        },
+        duration: {
+            length: 4,
+            type: {
+                en_us: "years",
+                pt_br: "anos",
+            } as {
+                pt_br: "anos" | "meses";
+                en_us: "years" | "months";
+            },
+        },
+    },
+    {
+        school: {
+            name: "The Odin Project",
+            description: {
+                pt_br: [
+                    "The Odin Project é uma grade open source de desenvolvimento web.",
+                    "Graças aos recursos oferecidos dentro do ensino, pude criar projetos cada vez mais complexos com tecnologias de frontend e backend.",
+                ],
+                en_us: [
+                    "The Odin Project is a open source web development curriculum.",
+                    "Thanks to its resources I could create even more complex projetos with technologies used in frontend and backend.",
+                ],
+            },
+        },
+        course: {
+            pt_br: "Javascript Fullstack Web Devolpment",
+            en_us: "Javascript Fullstack Web Devolpment",
+        },
+        course_type: {
+            pt_br: "Grade Curricular",
+            en_us: "Curriculum",
+        },
+        period: {
+            start: new Date("11/11/2022"),
+            end: new Date("11/11/2022"),
+        },
+        logo_changable: false,
+        logo_path: {
+            default: "education-theodinproject-default.png",
+            light: "",
+            dark: "",
         },
     },
 ];
