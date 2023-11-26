@@ -34,27 +34,30 @@ interface ICertificate {
     completition_date: string;
     length: number;
 }
+interface MultiLangData {[key: string]: string };
+interface MultiLandArrayData {[key: string]: string[] }
 
 interface JobExperience {
-    role: string;
+    role: MultiLangData;
     company: {
         name: string;
-        description: Languages;
+        description: MultiLangData;
     };
     location: {
-        state: string;
-        country: string;
+        state: MultiLangData;
+        country: MultiLangData;
     };
     period: {
-        start: string;
-        end: string;
+        start: Date
+        end?: Date
     };
     description: {
-        text: Languages;
-        featured: string[];
+        text: MultiLangData;
+        featured?: MultiLangData[];
     };
-    quantifiable_results: Languages;
+    quantifiable_results: MultiLandArrayData;
     tools: string[];
+    active: boolean
 }
 
 interface Participations {
@@ -92,4 +95,41 @@ interface Languages {
 {
     pt_br: string;
     en_US: string;
+}
+
+interface GithubUser {
+    login: string;
+    id: number;
+    avatar_url: string;
+}
+
+interface GithubRepository {
+    id: string;
+    name: string;
+    full_name: string;
+    private: false;
+    owner: GithubUser;
+    description: string;
+    homepage: string;
+    size: number;
+    stargazers_count: number;
+    watchers_count: number;
+    language: string;
+    has_issues: boolean;
+    has_projects: boolean;
+    has_downloads: boolean;
+    has_wiki: boolean;
+    has_pages: boolean;
+    has_discussions: boolean;
+    forks_count: number;
+    archived: boolean;
+    disabled: boolean;
+    open_issues_count: number;
+    license: string;
+    allow_forking: boolean;
+    is_template: boolean;
+    topics: string[];
+    forks: number;
+    open_issues: number;
+    watchers: number;
 }

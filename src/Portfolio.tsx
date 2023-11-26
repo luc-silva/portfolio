@@ -12,6 +12,7 @@ import { Project } from "./pages/Project";
 
 import "./global.css";
 import { LanguageContext } from "./Utils/LanguageContext";
+import { JobExperience } from "./pages/JobExperience";
 
 function Portfolio() {
     let lang = useContext(LanguageContext);
@@ -58,6 +59,7 @@ function Portfolio() {
                         }
                     />
                     <Route path="/projects" element={<Project />} />
+                    <Route path="/career" element={<JobExperience />} />
                 </Routes>
             </LanguageContext.Provider>
         </Router>

@@ -21,12 +21,12 @@ export const Project = () => {
             <section className={styles["projects-main"]}>
                 <MainProjectsDisplay />
             </section>
-            <section className={styles["projects-extra"]}>
+            {/* <section className={styles["projects-extra"]}>
                 <div className={styles["projects-extra-title"]}>
                     <h2>{projectText.misc_projects[lang]}</h2>
                 </div>
                 <OtherProjectsDisplay />
-            </section>
+            </section> */}
         </main>
     );
 };

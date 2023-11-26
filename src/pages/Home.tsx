@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import { HomeLinks } from "../components/Misc/HomeLinks";
 import { ArrowRight, FileArrowDown } from "phosphor-react";
 
-import styles from "./Home.module.css";
 import { useContext } from "react";
 import { LanguageContext } from "../Utils/LanguageContext";
 import { homeText } from "../constants/page-texts";
 import { CurriculumDownloadBtn } from "../components/Misc/CurriculumDownloadBtn";
+import styles from "./Home.module.css";
 
 export const Home = () => {
     let { lang } = useContext(LanguageContext);

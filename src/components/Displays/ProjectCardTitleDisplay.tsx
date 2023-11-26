@@ -15,13 +15,7 @@ export const ProjectCardTitleDisplay = ({
     let {lang} = useContext(LanguageContext)
     return (
         <>
-            <div>
-                <div className={styles["title"]}>{title}</div>
-                <div className={styles["tags"]}>{tags.join(", ")}</div>
-            </div>
-            {containsApi && (
-                <div className={styles["api-mark"]}>{projectCardTitleDisplayText.api[lang]}</div>
-            )}
+            
         </>
     );
 };

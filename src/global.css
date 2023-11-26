@@ -49,20 +49,23 @@ table {
 :root {
     --main-color: #1bac0b;
     --translucid-main-color: #1bac0b10;
-    --background:#ffffff;
-    --background-faded: #f5f5f5;
+    --background:#fffdff;
+    --background-faded: #f3f4f6;
+    --background-faded-hover: #f3f4f6;
     --text-color: #363735;
     --title-color: #1b1b1a;
 }
 [data-theme="light"]{
     --background:#fffdff;
-    --background-faded: #f4f4f4;
+    --background-faded: #f3f4f6;
+    --background-faded-hover: #f3f4f6;
     --text-color: #363735;
     --title-color: #1b1b1a;
 }
 [data-theme="dark"]{
     --background: #202124;
     --background-faded: #303134;
+    --background-faded-hover: #3d3f42;
     --text-color: #bdc1c6;
     --title-color:#e8eaed;
 }

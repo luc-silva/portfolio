@@ -33,13 +33,13 @@
 }
 @media (min-width: 769px) and (max-width: 1024px) {
     .projects-main {
-        padding: 0 2rem;
+        padding: 0 2rem 2rem 2rem;
         width: 80%;
     }
 }
 @media (min-width: 1025px) {
     .projects-main {
-        padding: 0 2rem;
+        padding: 0 2rem 2rem 2rem;
         width: 80%;
     }
     .projects-title h2 {
