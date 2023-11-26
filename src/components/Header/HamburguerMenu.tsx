@@ -3,62 +3,56 @@ import styles from "./HamburguerMenu.module.css";
 import { headerText } from "../../constants/page-texts";
 import { useContext } from "react";
 import { LanguageContext } from "../../Utils/LanguageContext";
+import { portfolioPages } from "../../constants/portfolioPages";
 
 export const HamburguerMenu = ({
     isActive,
     toggleMenu,
 }: {
     isActive: boolean;
-    toggleMenu: Function;
+    toggleMenu: React.Dispatch<boolean>;
 }) => {
-    let {lang} = useContext(LanguageContext)
+    let { lang } = useContext(LanguageContext);
+    function closeMenu(e: React.MouseEvent) {
+        toggleMenu(false);
+    }
 
-    if (isActive) {
-        return (
-            <div className={styles["header-menu"]}>
+    return (
+        <div
+            className={styles["header-menu__background"]}
+            style={{ display: isActive ? "flex" : "none" }}
+            onClick={closeMenu}
+        >
+            <div
+                className={styles["header-menu"]}
+                style={{ width: isActive ? "85%" : "0%" }}
+                onClick={(e) => {
+                    e.stopPropagation();
+                }}
+            >
                 <ul>
-                    <li>
-                        <NavLink
-                            className={({ isActive }) =>
-                                isActive ? styles["nav-active"] : undefined
-                            }
-                            to="/"
-                            onClick={() => {
-                                toggleMenu(!isActive);
-                            }}
-                        >
-                            {headerText["home"][lang]}
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink
-                            className={({ isActive }) =>
-                                isActive ? styles["nav-active"] : undefined
-                            }
-                            to="/about-me"
-                            onClick={() => {
-                                toggleMenu(!isActive);
-                            }}
-                        >
-                            {headerText["about"][lang]}
-                        </NavLink>
-                    </li>
-                    <li>
-                        <NavLink
-                            className={({ isActive }) =>
-                                isActive ? styles["nav-active"] : undefined
-                            }
-                            to="/projects"
-                            onClick={() => {
-                                toggleMenu(!isActive);
-                            }}
-                        >
-                            {headerText["projects"][lang]}
-                        </NavLink>
-                    </li>
+                    {portfolioPages.map(({ path, text }) => {
+                        return (
+                            <li>
+                                <NavLink
+                                    className={({ isActive }) =>
+                                        isActive
+                                            ? styles["nav-active"]
+                                            : undefined
+                                    }
+                                    to={path}
+                                    onClick={() => {
+                                        toggleMenu(!isActive);
+                                    }}
+                                >
+                                    {text[lang]}
+                                </NavLink>
+                            </li>
+                        );
+                    })}
                 </ul>
             </div>
-        );
-    }
+        </div>
+    );
     return null;
 };

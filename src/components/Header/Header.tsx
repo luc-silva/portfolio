@@ -10,7 +10,7 @@ export const Header = ({
     toggleMenu,
     isHeaderMenuActive,
 }: {
-    toggleMenu: Function;
+    toggleMenu: React.Dispatch<boolean>;
     isHeaderMenuActive: boolean;
 }) => {
 
@@ -48,7 +48,6 @@ export const Header = ({
                 <div className={styles["change-theme__button"]}>
                     <ChangeTheme />
                 </div>
-
                 <div className={styles["language-selector"]}>
                     <LanguageSelector />
                 </div>

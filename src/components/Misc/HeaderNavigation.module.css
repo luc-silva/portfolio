@@ -2,6 +2,7 @@
     display: none;
     align-items: center;
     justify-content: center;
+    text-wrap: nowrap;
 }
 .header-navigation ul {
     display: flex;

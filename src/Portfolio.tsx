@@ -16,7 +16,6 @@ import { JobExperience } from "./pages/JobExperience";
 import { ThemeProvider } from "./context/ThemeProvider";
 
 function Portfolio() {
-    let lang = useContext(LanguageContext);
     const [langState, changeLang] = useState("pt_br");
 
     const langDummy = {
