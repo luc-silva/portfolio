@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.70a3e8a3.css",
-    "main.js": "/portfolio/static/js/main.7ed83f1b.js",
+    "main.css": "/portfolio/static/css/main.d75a52f4.css",
+    "main.js": "/portfolio/static/js/main.8c4c98d8.js",
     "static/media/project-restaurant-1.png": "/portfolio/static/media/project-restaurant-1.0eb9cfb5acf20d8a7b62.png",
     "static/media/project-restaurant-4.png": "/portfolio/static/media/project-restaurant-4.be242dd336b83e36e3e8.png",
     "static/media/project-weatherapp-1.png": "/portfolio/static/media/project-weatherapp-1.ffed2289f6bc632b0db0.png",
@@ -50,11 +50,11 @@
     "static/media/logo-ubuntu.png": "/portfolio/static/media/logo-ubuntu.f9fb429d4d7fe4a84005.png",
     "static/media/logo-javascript.png": "/portfolio/static/media/logo-javascript.266bd9fb2663dcc057b4.png",
     "index.html": "/portfolio/index.html",
-    "main.70a3e8a3.css.map": "/portfolio/static/css/main.70a3e8a3.css.map",
-    "main.7ed83f1b.js.map": "/portfolio/static/js/main.7ed83f1b.js.map"
+    "main.d75a52f4.css.map": "/portfolio/static/css/main.d75a52f4.css.map",
+    "main.8c4c98d8.js.map": "/portfolio/static/js/main.8c4c98d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.70a3e8a3.css",
-    "static/js/main.7ed83f1b.js"
+    "static/css/main.d75a52f4.css",
+    "static/js/main.8c4c98d8.js"
   ]
 }
