@@ -6,12 +6,11 @@ import { ArrowRight, FileArrowDown } from "phosphor-react";
 import { useContext } from "react";
 import { LanguageContext } from "../Utils/LanguageContext";
 import { homeText } from "../constants/page-texts";
-import { CurriculumDownloadBtn } from "../components/Misc/CurriculumDownloadBtn";
+import {  CurriculumButton } from "../components/Misc/CurriculumButton";
 import styles from "./Home.module.css";
 
 export const Home = () => {
     let { lang } = useContext(LanguageContext);
-    let url = `${process.env.PUBLIC_URL}/lucas-silva-resume.pdf`;
 
     return (
         <main role={"main"} className={styles["home"]}>
@@ -30,8 +29,7 @@ export const Home = () => {
                     </Link>
 
                     <div className={styles["curriculum-button"]}>
-                        <CurriculumDownloadBtn text={homeText.ctc_cv[lang]} />
-                        <FileArrowDown size={20} weight="bold" />
+                        <CurriculumButton text={homeText.ctc_cv[lang]} />
                     </div>
                 </div>
                 <div className={styles["social-accounts"]}>

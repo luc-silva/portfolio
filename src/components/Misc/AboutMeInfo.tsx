@@ -6,10 +6,10 @@ import { LanguageContext } from "../../Utils/LanguageContext";
 
 import { Download } from "phosphor-react";
 import styles from "./AboutMeInfo.module.css";
-import { CurriculumDownloadBtn } from "./CurriculumDownloadBtn";
 
 export const AboutMeInfo = () => {
     let { lang } = useContext(LanguageContext);
+    let url = `${process.env.PUBLIC_URL}/lucas-silva-resume.pdf`;
 
     return (
         <>
@@ -25,10 +25,10 @@ export const AboutMeInfo = () => {
                         })}
                     </div>
                     <div className={styles["about-resume"]}>
-                        <Download size={24}/>
-                        <CurriculumDownloadBtn
-                            text={aboutMeInfoText.ctc_cv[lang]}
-                        />
+                        <Download size={24} />
+                        <a href={url} download="lucas-silva-resume.pdf">
+                            {aboutMeInfoText.ctc_cv[lang]}
+                        </a>
                     </div>
                 </div>
             </div>
