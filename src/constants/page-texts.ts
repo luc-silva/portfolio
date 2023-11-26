@@ -11,6 +11,10 @@ export const headerText: LangObject = {
         pt_br: "Projetos",
         en_us: "Projects",
     },
+    career: {
+        pt_br: "Experiência",
+        en_us: "Career",
+    },
 };
 
 export const homeText: LangObject = {
@@ -46,6 +50,13 @@ export const projectText: LangObject = {
         en_us: "Other Projects",
     },
 };
+
+export const experienceText: LangObject = {
+    page_title: {
+        pt_br:"Experiência de Trabalho",
+        en_us:"Career Experience"
+    }
+}
 
 //components
 export const aboutMeInfoText: LangObject = {

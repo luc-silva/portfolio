@@ -10,6 +10,10 @@ export const portfolioPages = [
         path: "about-me"
     },
     {
+        text: headerText["career"],
+        path: "career"
+    },
+    {
         text: headerText["projects"],
         path: "projects"
     },

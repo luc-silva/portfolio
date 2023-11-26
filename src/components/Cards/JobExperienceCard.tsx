@@ -1,35 +1,36 @@
+import { FormatedDateDisplay } from "../Displays/FormatedDateDisplay";
+import { LanguageContext } from "../../Utils/LanguageContext";
+import { useContext } from "react";
+
 import styles from "./JobExperienceCard.module.css";
 
-export const JobExperienceCard = () => {
+export const JobExperienceCard = ({ data }: { data: JobExperience }) => {
+    const { lang } = useContext(LanguageContext);
+
     return (
         <div className={styles["card"]}>
             <div className={styles["card__title"]}>
-                <strong>Software Engineer</strong>
+                <strong>{data.role[lang]}</strong>
                 <div className={styles["card__title__display"]}>
-                    <strong>Microsoft</strong>
+                    <strong>{data.company.name}</strong>
                     <div className={styles["display__period"]}>
-                        <p>12/3/2000</p>
-                        <span>•</span>
-                        <p>12/3/2000</p>
+                        <FormatedDateDisplay period={data.period} />
                     </div>
                 </div>
             </div>
             <div className={styles["card__about"]}>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Minima aut, dolorum optio aliquid nostrum recusandae est!
-                    Placeat perferendis earum repellendus ratione tempore, sunt
-                    unde? Accusamus voluptas suscipit architecto illum cum?
-                </p>
+                <div className={styles["card__about__description"]}>
+                    <p>{data.description.text[lang]}</p>
+                </div>
                 <ul className={styles["card__about__featured"]}>
-                    <li>Accusamus voluptas suscipit architecto illum</li>
-                    <li>Accusamus voluptas suscipit architecto illum</li>
-                    <li>Accusamus voluptas suscipit architecto illum</li>
-                    <li>Accusamus voluptas suscipit architecto illum</li>
-                    <li>Accusamus voluptas suscipit architecto illum</li>
+                    {data.quantifiable_results[lang].map((item) => (
+                        <li>{item}</li>
+                    ))}
                 </ul>
                 <div className={styles["card__about__skills"]}>
-                    Javascript, React, Java, Spring
+                    {data.tools.map((item) => (
+                        <p>{item}</p>
+                    ))}
                 </div>
             </div>
         </div>
