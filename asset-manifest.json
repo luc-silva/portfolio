@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d75a52f4.css",
-    "main.js": "/portfolio/static/js/main.8c4c98d8.js",
+    "main.css": "/portfolio/static/css/main.6aa53ffa.css",
+    "main.js": "/portfolio/static/js/main.1fcf51db.js",
     "static/media/project-restaurant-1.png": "/portfolio/static/media/project-restaurant-1.0eb9cfb5acf20d8a7b62.png",
     "static/media/project-restaurant-4.png": "/portfolio/static/media/project-restaurant-4.be242dd336b83e36e3e8.png",
     "static/media/project-weatherapp-1.png": "/portfolio/static/media/project-weatherapp-1.ffed2289f6bc632b0db0.png",
@@ -41,20 +41,23 @@
     "static/media/logo-java.png": "/portfolio/static/media/logo-java.ddf8676bd569fe01ab44.png",
     "static/media/project-weatherapp-4.png": "/portfolio/static/media/project-weatherapp-4.97489a43f33bc4c36dcc.png",
     "static/media/project-bookwise-2.png": "/portfolio/static/media/project-bookwise-2.5c2a9c3243574b769806.png",
+    "static/media/education-estacio-light.png": "/portfolio/static/media/education-estacio-light.db2b2ecde78c7e150278.png",
     "static/media/logo-nodejs.png": "/portfolio/static/media/logo-nodejs.07d152a8a036951b8d14.png",
     "static/media/project-etchasketch-1.png": "/portfolio/static/media/project-etchasketch-1.f436c32562e27e795ed0.png",
     "static/media/logo-css.png": "/portfolio/static/media/logo-css.bc75ccc78e3bf74f8aed.png",
+    "static/media/education-estacio-dark.png": "/portfolio/static/media/education-estacio-dark.d5f15bebe8860105b498.png",
     "static/media/project-etchasketch-2.png": "/portfolio/static/media/project-etchasketch-2.193e1d24cb0bef2d7dc2.png",
     "static/media/logo-python.png": "/portfolio/static/media/logo-python.28e52a361de170d28787.png",
+    "static/media/education-theodinproject-default.png": "/portfolio/static/media/education-theodinproject-default.b6b77c8efa7ef6dce31c.png",
     "static/media/logo-docker.png": "/portfolio/static/media/logo-docker.d208be815be3e2453832.png",
     "static/media/logo-ubuntu.png": "/portfolio/static/media/logo-ubuntu.f9fb429d4d7fe4a84005.png",
     "static/media/logo-javascript.png": "/portfolio/static/media/logo-javascript.266bd9fb2663dcc057b4.png",
     "index.html": "/portfolio/index.html",
-    "main.d75a52f4.css.map": "/portfolio/static/css/main.d75a52f4.css.map",
-    "main.8c4c98d8.js.map": "/portfolio/static/js/main.8c4c98d8.js.map"
+    "main.6aa53ffa.css.map": "/portfolio/static/css/main.6aa53ffa.css.map",
+    "main.1fcf51db.js.map": "/portfolio/static/js/main.1fcf51db.js.map"
   },
   "entrypoints": [
-    "static/css/main.d75a52f4.css",
-    "static/js/main.8c4c98d8.js"
+    "static/css/main.6aa53ffa.css",
+    "static/js/main.1fcf51db.js"
   ]
 }
