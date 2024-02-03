@@ -1,11 +1,11 @@
-import { useContext, useEffect, useState } from "react";
-import { LanguageContext } from "../../Utils/LanguageContext";
-import { certificates } from "../../data"; 
+import { useContext, useEffect, useState } from "react"; 
+import { certificates } from "../../data";
 import { certificatesText } from "../../constants/page-texts";
 
 import { CertificateItem } from "../CertificateItem";
-import { CaretRight, CaretLeft } from "phosphor-react"; 
-import styles from "./AboutMeCertificates.module.css"; 
+import { CaretRight, CaretLeft } from "phosphor-react";
+import styles from "./AboutMeCertificates.module.css";
+import { LanguageContext } from "../../context/LanguageProvider";
 
 export const AboutMeCertificates = ({
     toggleImageModal,
@@ -15,7 +15,7 @@ export const AboutMeCertificates = ({
     setModalImage: Function;
 }) => {
     let [counter, setCounter] = useState(0);
-    let {lang} = useContext(LanguageContext)
+    let { lang } = useContext(LanguageContext);
 
     useEffect(() => {
         setModalImage(certificates[counter].certImage);
@@ -33,8 +33,8 @@ export const AboutMeCertificates = ({
     return (
         <section className={styles["aboutme-certificates"]}>
             <div className={styles["certificates-main"]}>
-                <h2>{certificatesText.page_title[lang]}</h2>
-                <p>{certificatesText.page_subtitle[lang]}</p>
+                <h2>{certificatesText.page_title[lang.value]}</h2>
+                <p>{certificatesText.page_subtitle[lang.value]}</p>
             </div>
             <div className={styles["certificates-container"]}>
                 <div

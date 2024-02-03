@@ -1,9 +1,8 @@
 import { useContext } from "react"; 
 import { tools } from "../../data";
-import { skillsText } from "../../constants/page-texts";
-
-import { LanguageContext } from "../../Utils/LanguageContext";  
+import { skillsText } from "../../constants/page-texts";  
 import styles from "./Skills.module.css"; 
+import { LanguageContext } from "../../context/LanguageProvider";
 
 export const Skills = () => {
     let { lang } = useContext(LanguageContext);
@@ -11,8 +10,8 @@ export const Skills = () => {
     return (
         <section className={styles["skills"]}>
             <div className={styles["skills-title"]}>
-                <h2>{skillsText.page_title[lang]}</h2>
-                <p>{skillsText.page_subtitle[lang]}</p>
+                <h2>{skillsText.page_title[lang.value]}</h2>
+                <p>{skillsText.page_subtitle[lang.value]}</p>
             </div>
             <ul className={styles["skills-container"]}>
                 {tools.map(
@@ -35,7 +34,7 @@ export const Skills = () => {
                                 />
                                 <p>{name}</p>
                                 {info_active && (
-                                    <em>{additional_info[lang]}</em>
+                                    <em>{additional_info[lang.value]}</em>
                                 )}
                             </li>
                         );

@@ -1,8 +1,8 @@
 import { FormatedDateDisplay } from "../Displays/FormatedDateDisplay";
-import { LanguageContext } from "../../Utils/LanguageContext";
 import { useContext } from "react";
 
 import styles from "./JobExperienceCard.module.css";
+import { LanguageContext } from "../../context/LanguageProvider";
 
 export const JobExperienceCard = ({ data }: { data: JobExperience }) => {
     const { lang } = useContext(LanguageContext);
@@ -10,7 +10,7 @@ export const JobExperienceCard = ({ data }: { data: JobExperience }) => {
     return (
         <div className={styles["card"]}>
             <div className={styles["card__title"]}>
-                <strong>{data.role[lang]}</strong>
+                <strong>{data.role[lang.value]}</strong>
                 <div className={styles["card__title__display"]}>
                     <strong>{data.company.name}</strong>
                     <div className={styles["display__period"]}>
@@ -20,10 +20,10 @@ export const JobExperienceCard = ({ data }: { data: JobExperience }) => {
             </div>
             <div className={styles["card__about"]}>
                 <div className={styles["card__about__description"]}>
-                    <p>{data.description.text[lang]}</p>
+                    <p>{data.description.text[lang.value]}</p>
                 </div>
                 <ul className={styles["card__about__featured"]}>
-                    {data.quantifiable_results[lang].map((item) => (
+                    {data.quantifiable_results[lang.value].map((item) => (
                         <li>{item}</li>
                     ))}
                 </ul>

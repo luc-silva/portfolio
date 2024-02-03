@@ -1,8 +1,8 @@
 import styles from "./HeaderNavigation.module.css";
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
-import { portfolioPages } from "../../constants/portfolioPages";
-import { LanguageContext } from "../../Utils/LanguageContext";
+import { portfolioPages } from "../../constants/portfolioPages"; 
+import { LanguageContext } from "../../context/LanguageProvider";
 
 export const HeaderNavigation = () => {
     let color = styles["nav-active"];
@@ -19,7 +19,7 @@ export const HeaderNavigation = () => {
                             }
                             to={path}
                         >
-                            {text[lang]}
+                            {text[lang.value]}
                         </NavLink>
                     </li>
                 ))}

@@ -97,19 +97,26 @@ export const aboutMeInfoText: LangObject = {
 export const aboutMeText: { [key: string]: { [key: string]: string[] } } = {
     about: {
         pt_br: [
-            "Atualmente cursando o terceiro semestre, busco por uma oportunidade de estágio ou posição como júnior na área de desenvolvimento.",
+            "Atualmente cursando o quinto semestre, busco por uma oportunidade de estágio ou posição como júnior na área de desenvolvimento.",
             "Utilizo Typescript, React e MongoDB como minhas principais ferramentas, mas também tenho alguns projetos em Java + MySQL e estudo springboot, como o objetivo de aprofundar os estudos em backend.",
             "Desde pequeno era fã do mundo de desenvolvimento de software, em especial a área de jogos. Em 2016 cheguei a cursar um curso de desenvolvimento de games, tendo o concluido em 2018.",
             "Não possuo experiência de trabalho e nem como freelancer, mas sempre tento me desafiar ao aplicar novas implementações em meus projetos.",
         ],
         en_us: [
-            "Currently studying the fourth semester, I am looking for an internship opportunity or position as a junior in the development area.",
+            "Currently studying the fifth semester, I am looking for an internship opportunity or position as a junior in the development area.",
             "I use Typescript, React and MongoDB as my main tools, but I also have some projects in Java + MySQL and study springboot, with the aim of deepening my studies in backend.",
             "Since I was little, I was a fan of the world of software development, especially the gaming area. In 2016 I took a game development course, having completed it in 2018.",
             "I don't have work or freelance experience, but I always try to challenge myself when applying new implementations to my projects.",
         ],
     },
 };
+
+export const educationText: LangObject = {
+    page_title: {
+        pt_br: "Educação",
+        en_us: "Education",
+    }
+}
 
 export const skillsText: LangObject = {
     page_title: {

@@ -2,8 +2,9 @@ import { educationDetails } from "../../data";
 import { useContext } from "react";
 import styles from "./AboutMeEducation.module.css";
 import { ThemeContext } from "../../context/ThemeProvider";
-import { LanguageContext } from "../../Utils/LanguageContext";
 import { format } from "date-fns";
+import { educationText } from "../../constants/page-texts";
+import { LanguageContext } from "../../context/LanguageProvider";
 
 export const AboutMeEducation = () => {
     const { theme } = useContext(ThemeContext);
@@ -12,7 +13,7 @@ export const AboutMeEducation = () => {
     return (
         <div className={styles["aboutme-education"]}>
             <div className={styles["aboutme-education__title"]}>
-                <h3>Education</h3>
+                <h3>{educationText.page_title[lang.value]}</h3>
             </div>
             <div className={styles["aboutme-education__container"]}>
                 {educationDetails.map(
@@ -40,7 +41,7 @@ export const AboutMeEducation = () => {
                                 <div
                                     className={styles["education__info__main"]}
                                 >
-                                    <strong>{course[lang]}</strong>
+                                    <strong>{course[lang.value]}</strong>
                                     <p>{school.name}</p>
                                 </div>
                                 <div
@@ -53,7 +54,7 @@ export const AboutMeEducation = () => {
                                     {duration &&
                                         `| ${duration?.length} ${
                                             duration?.type[
-                                                lang as "en_us" | "pt_br"
+                                                lang.value as "en_us" | "pt_br"
                                             ]
                                         }`}
                                 </div>
@@ -62,9 +63,11 @@ export const AboutMeEducation = () => {
                                         styles["education__info__description"]
                                     }
                                 >
-                                    {school.description[lang].map((item) => (
-                                        <p>{item}</p>
-                                    ))}
+                                    {school.description[lang.value].map(
+                                        (item) => (
+                                            <p>{item}</p>
+                                        )
+                                    )}
                                 </div>
                             </div>
                         </div>

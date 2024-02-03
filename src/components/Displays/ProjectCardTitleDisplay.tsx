@@ -1,7 +1,5 @@
 import { useContext } from "react";
-import { LanguageContext } from "../../Utils/LanguageContext";  
-import { projectCardTitleDisplayText } from "../../constants/page-texts";
-import styles from "./ProjectCardTitleDisplay.module.css";
+import { LanguageContext } from "../../context/LanguageProvider";
 
 export const ProjectCardTitleDisplay = ({
     tags,
@@ -12,10 +10,6 @@ export const ProjectCardTitleDisplay = ({
     tags: string[];
     containsApi?: boolean;
 }) => {
-    let {lang} = useContext(LanguageContext)
-    return (
-        <>
-            
-        </>
-    );
+    let { lang } = useContext(LanguageContext);
+    return <></>;
 };

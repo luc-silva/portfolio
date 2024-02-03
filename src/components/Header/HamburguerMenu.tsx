@@ -1,9 +1,8 @@
 import { NavLink } from "react-router-dom";
-import styles from "./HamburguerMenu.module.css";
-import { headerText } from "../../constants/page-texts";
-import { useContext } from "react";
-import { LanguageContext } from "../../Utils/LanguageContext";
+import styles from "./HamburguerMenu.module.css"; 
+import { useContext } from "react"; 
 import { portfolioPages } from "../../constants/portfolioPages";
+import { LanguageContext } from "../../context/LanguageProvider";
 
 export const HamburguerMenu = ({
     isActive,
@@ -45,7 +44,7 @@ export const HamburguerMenu = ({
                                         toggleMenu(!isActive);
                                     }}
                                 >
-                                    {text[lang]}
+                                    {text[lang.value]}
                                 </NavLink>
                             </li>
                         );

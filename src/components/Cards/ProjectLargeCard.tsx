@@ -1,17 +1,15 @@
-import { useContext, useEffect, useState } from "react";
-import { LanguageContext } from "../../Utils/LanguageContext";
+import { useContext, useEffect, useState } from "react"; 
 import {
     projectCardTitleDisplayText,
     projectLargeCardtext,
-} from "../../constants/page-texts";
-
-import { ProjectCardTitleDisplay } from "../Displays/ProjectCardTitleDisplay";
+} from "../../constants/page-texts"; 
 import { ProjectImageDisplay } from "../Displays/ProjectImageDisplay";
 
 import styles from "./ProjectLargeCard.module.css";
 import { Eye, GitFork, Star } from "phosphor-react";
 import GithubService from "../../services/GithubService";
 import { repositoryDefaulValue } from "../../constants/default-values";
+import { LanguageContext } from "../../context/LanguageProvider";
 
 export const ProjectLargeCard = ({ project }: { project: IProjectData }) => {
     let { lang } = useContext(LanguageContext);
@@ -42,16 +40,16 @@ export const ProjectLargeCard = ({ project }: { project: IProjectData }) => {
                     </div>
                     {project.containsApi && (
                         <div className={styles["api-mark"]}>
-                            {projectCardTitleDisplayText.api[lang]}
+                            {projectCardTitleDisplayText.api[lang.value]}
                         </div>
                     )}
                 </div>
                 <div className={styles["main-text"]}>
-                    <p>{project.introduction[lang]}</p>
+                    <p>{project.introduction[lang.value]}</p>
                     <div>
                         <div
                             dangerouslySetInnerHTML={{
-                                __html: project.description[lang].replace(
+                                __html: project.description[lang.value].replace(
                                     /\n/g,
                                     "<br/>"
                                 ),
@@ -59,7 +57,7 @@ export const ProjectLargeCard = ({ project }: { project: IProjectData }) => {
                         />
                         <div className={styles["project-links"]}>
                             <p>
-                                {projectLargeCardtext.ctc_repository[lang]}
+                                {projectLargeCardtext.ctc_repository[lang.value]}
                                 <a
                                     href={project.link}
                                     target="_blank"
@@ -67,7 +65,7 @@ export const ProjectLargeCard = ({ project }: { project: IProjectData }) => {
                                 >
                                     {
                                         projectLargeCardtext.ctc_repository_btn[
-                                            lang
+                                            lang.value
                                         ]
                                     }
                                 </a>

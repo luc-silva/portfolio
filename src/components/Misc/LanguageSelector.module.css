@@ -1,7 +1,6 @@
 .language-selector {
     position: relative;
     width: 150px;
-    padding: 0.5rem;
     color: var(--text-color);
     background-color: var(--background-faded);
 }

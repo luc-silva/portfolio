@@ -1,9 +1,9 @@
-import { useContext } from "react";
-import { LanguageContext } from "../Utils/LanguageContext"; 
+import { useContext } from "react"; 
 import { certifacateDisplayText } from "../constants/page-texts";
 
 import { ArrowSquareOut } from "phosphor-react";
 import styles from "./CertificateItem.module.css";
+import { LanguageContext } from "../context/LanguageProvider";
 
 export const CertificateItem = ({
     cert,
@@ -31,7 +31,7 @@ export const CertificateItem = ({
             <div className={styles["certificate-details"]}>
                 <div>
                     <div className={styles["details-title"]}>
-                        <h3>{name[lang]}</h3>
+                        <h3>{name[lang.value]}</h3>
                         <em>{company}</em>
                     </div>
                     <div className={styles["details-tags"]}>
@@ -47,18 +47,18 @@ export const CertificateItem = ({
                     </div>
                     <div className={styles["details-info"]}>
                         <div>
-                            <strong>{certifacateDisplayText.date[lang]}</strong>
+                            <strong>{certifacateDisplayText.date[lang.value]}</strong>
                             <em>{completition_date}</em>
                         </div>
                         <div>
                             <strong>
-                                {certifacateDisplayText.course_length[lang]}
+                                {certifacateDisplayText.course_length[lang.value]}
                             </strong>
                             <em>{length}h</em>
                         </div>
                         {info_active && (
                             <div>
-                                <em>{additional_info[lang]}</em>
+                                <em>{additional_info[lang.value]}</em>
                             </div>
                         )}
                     </div>
@@ -70,7 +70,7 @@ export const CertificateItem = ({
                     target="_blank"
                     rel="noreferrer"
                 >
-                    {certifacateDisplayText.external_link_btn[lang]}
+                    {certifacateDisplayText.external_link_btn[lang.value]}
                     <ArrowSquareOut size={20} />
                 </a>
             </div>

@@ -1,11 +1,9 @@
 import { useContext } from "react";
-import { projectText } from "../constants/page-texts";
-
-import { MainProjectsDisplay } from "../components/Displays/MainProjectsDisplay";
-import { OtherProjectsDisplay } from "../components/Displays/OtherProjectsDisplay";
-import { LanguageContext } from "../Utils/LanguageContext";
+import { projectText } from "../constants/page-texts"; 
+import { MainProjectsDisplay } from "../components/Displays/MainProjectsDisplay";  
 
 import styles from "./Project.module.css";
+import { LanguageContext } from "../context/LanguageProvider";
 
 export const Project = () => {
     let { lang } = useContext(LanguageContext);
@@ -14,8 +12,8 @@ export const Project = () => {
             {/* page for detail projects, articles and activities (hackatons, CTF and so on). statistics should be in about me */}
             <section className={styles["projects-about"]}>
                 <div className={styles["projects-title"]}>
-                    <h2>{projectText.page_title[lang]}</h2>
-                    <p>{projectText.page_subtitle[lang]}</p>
+                    <h2>{projectText.page_title[lang.value]}</h2>
+                    <p>{projectText.page_subtitle[lang.value]}</p>
                 </div>
             </section>
             <section className={styles["projects-main"]}>
