@@ -1,13 +1,11 @@
-import { Link } from "react-router-dom";
-
-import { HomeLinks } from "../components/Misc/HomeLinks";
-import { ArrowRight, FileArrowDown } from "phosphor-react";
-
-import { useContext } from "react"; 
-import { homeText } from "../constants/page-texts";
-import {  CurriculumButton } from "../components/Misc/CurriculumButton";
-import styles from "./Home.module.css";
+import { CurriculumButton } from "../components/Misc/CurriculumButton";
 import { LanguageContext } from "../context/LanguageProvider";
+import { useContext } from "react";
+import { ArrowRight } from "phosphor-react";
+import { HomeLinks } from "../components/Misc/HomeLinks";
+import { homeText } from "../constants/page-texts";
+import { Link } from "react-router-dom";
+import styles from "./Home.module.css";
 
 export const Home = () => {
     let { lang } = useContext(LanguageContext);

@@ -1,8 +1,8 @@
 import { FormatedDateDisplay } from "../Displays/FormatedDateDisplay";
-import { useContext } from "react";
-
-import styles from "./JobExperienceCard.module.css";
 import { LanguageContext } from "../../context/LanguageProvider";
+import { useContext } from "react";
+import styles from "./JobExperienceCard.module.css";
+
 
 export const JobExperienceCard = ({ data }: { data: JobExperience }) => {
     const { lang } = useContext(LanguageContext);

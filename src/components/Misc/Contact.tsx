@@ -1,8 +1,8 @@
 import { ChangeEvent, useContext, useState } from "react";
 import { contactByEmailText } from "../../constants/page-texts";
-import styles from "./Contact.module.css";
-import EmailService from "../../services/EmailService";
 import { LanguageContext } from "../../context/LanguageProvider";
+import EmailService from "../../services/EmailService";
+import styles from "./Contact.module.css";
 
 export const Contact = () => {
     let [form, setForm] = useState({ email: "", subject: "", message: "" });
@@ -81,7 +81,9 @@ export const Contact = () => {
                         <div className={styles["input-container"]}>
                             <input
                                 type="submit"
-                                value={contactByEmailText.submit_input[lang.value]}
+                                value={
+                                    contactByEmailText.submit_input[lang.value]
+                                }
                                 className={styles["submit"]}
                                 disabled={!submitActive}
                             />

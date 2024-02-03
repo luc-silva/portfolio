@@ -1,11 +1,9 @@
-import { useContext } from "react";
 import { aboutMeInfoText, aboutMeText } from "../../constants/page-texts";
-
-import { AboutMeContactInfo } from "../Texts/AboutMeContactInfo"; 
-
+import { AboutMeContactInfo } from "../Texts/AboutMeContactInfo";
+import { LanguageContext } from "../../context/LanguageProvider";
+import { useContext } from "react";
 import { Download } from "phosphor-react";
 import styles from "./AboutMeInfo.module.css";
-import { LanguageContext } from "../../context/LanguageProvider";
 
 export const AboutMeInfo = () => {
     let { lang } = useContext(LanguageContext);

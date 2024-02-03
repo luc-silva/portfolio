@@ -53,10 +53,10 @@ export const projectText: LangObject = {
 
 export const experienceText: LangObject = {
     page_title: {
-        pt_br:"Experiência de Trabalho",
-        en_us:"Career Experience"
-    }
-}
+        pt_br: "Experiência de Trabalho",
+        en_us: "Career Experience",
+    },
+};
 
 //components
 export const aboutMeInfoText: LangObject = {
@@ -115,8 +115,8 @@ export const educationText: LangObject = {
     page_title: {
         pt_br: "Educação",
         en_us: "Education",
-    }
-}
+    },
+};
 
 export const skillsText: LangObject = {
     page_title: {
@@ -129,13 +129,12 @@ export const skillsText: LangObject = {
     },
 };
 
-export const timelineDisplayText: LangObject =
-    {
-        page_title: {
-            pt_br: "Experiência",
-            en_us: "Experience",
-        },
-    };
+export const timelineDisplayText: LangObject = {
+    page_title: {
+        pt_br: "Experiência",
+        en_us: "Experience",
+    },
+};
 
 export const certificatesText: LangObject = {
     page_title: {
@@ -165,29 +164,28 @@ export const certifacateDisplayText: {
     },
 };
 
-export const contactByEmailText: LangObject =
-    {
-        title: {
-            pt_br: "Entre em contato",
-            en_us: "Contact me",
-        },
-        subject_input: {
-            pt_br: "Assunto",
-            en_us: "Subject",
-        },
-        email_input: {
-            pt_br: "Seu Email",
-            en_us: "Your Email",
-        },
-        message_input: {
-            pt_br: "Mensagem",
-            en_us: "Message",
-        },
-        submit_input: {
-            pt_br: "Enviar",
-            en_us: "Submit",
-        },
-    };
+export const contactByEmailText: LangObject = {
+    title: {
+        pt_br: "Entre em contato",
+        en_us: "Contact me",
+    },
+    subject_input: {
+        pt_br: "Assunto",
+        en_us: "Subject",
+    },
+    email_input: {
+        pt_br: "Seu Email",
+        en_us: "Your Email",
+    },
+    message_input: {
+        pt_br: "Mensagem",
+        en_us: "Message",
+    },
+    submit_input: {
+        pt_br: "Enviar",
+        en_us: "Submit",
+    },
+};
 
 export const projectLargeCardtext: {
     [key: string]: { [key: string]: string };

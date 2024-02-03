@@ -1,15 +1,14 @@
-import { useContext, useEffect, useState } from "react"; 
+import { useContext, useEffect, useState } from "react";
 import {
     projectCardTitleDisplayText,
     projectLargeCardtext,
-} from "../../constants/page-texts"; 
-import { ProjectImageDisplay } from "../Displays/ProjectImageDisplay";
-
-import styles from "./ProjectLargeCard.module.css";
-import { Eye, GitFork, Star } from "phosphor-react";
-import GithubService from "../../services/GithubService";
+} from "../../constants/page-texts";
 import { repositoryDefaulValue } from "../../constants/default-values";
+import { ProjectImageDisplay } from "../Displays/ProjectImageDisplay";
+import { Eye, GitFork, Star } from "phosphor-react";
 import { LanguageContext } from "../../context/LanguageProvider";
+import GithubService from "../../services/GithubService";
+import styles from "./ProjectLargeCard.module.css";
 
 export const ProjectLargeCard = ({ project }: { project: IProjectData }) => {
     let { lang } = useContext(LanguageContext);
@@ -57,7 +56,11 @@ export const ProjectLargeCard = ({ project }: { project: IProjectData }) => {
                         />
                         <div className={styles["project-links"]}>
                             <p>
-                                {projectLargeCardtext.ctc_repository[lang.value]}
+                                {
+                                    projectLargeCardtext.ctc_repository[
+                                        lang.value
+                                    ]
+                                }
                                 <a
                                     href={project.link}
                                     target="_blank"

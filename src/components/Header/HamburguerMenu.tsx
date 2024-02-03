@@ -1,8 +1,8 @@
-import { NavLink } from "react-router-dom";
-import styles from "./HamburguerMenu.module.css"; 
-import { useContext } from "react"; 
-import { portfolioPages } from "../../constants/portfolioPages";
 import { LanguageContext } from "../../context/LanguageProvider";
+import { portfolioPages } from "../../constants/portfolioPages";
+import { useContext } from "react";
+import { NavLink } from "react-router-dom";
+import styles from "./HamburguerMenu.module.css";
 
 export const HamburguerMenu = ({
     isActive,

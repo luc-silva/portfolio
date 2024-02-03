@@ -3,18 +3,18 @@ import { headerText } from "./page-texts";
 export const portfolioPages = [
     {
         text: headerText["home"],
-        path: ""
+        path: "",
     },
     {
         text: headerText["about"],
-        path: "about-me"
+        path: "about-me",
     },
     {
         text: headerText["career"],
-        path: "career"
+        path: "career",
     },
     {
         text: headerText["projects"],
-        path: "projects"
+        path: "projects",
     },
-]
+];

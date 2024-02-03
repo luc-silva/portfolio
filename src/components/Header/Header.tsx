@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
-import { List, X } from "phosphor-react";
-
-import { ChangeTheme } from "./ChangeTheme"; 
-import { LanguageSelector } from "../Misc/LanguageSelector";
-import styles from "./Header.module.css";
 import { HeaderNavigation } from "../Misc/HeaderNavigation";
+import { LanguageSelector } from "../Misc/LanguageSelector";
+import { ChangeTheme } from "./ChangeTheme";
+import { List, X } from "phosphor-react";
+import { Link } from "react-router-dom";
+
+import styles from "./Header.module.css";
 
 export const Header = ({
     toggleMenu,
@@ -13,7 +13,6 @@ export const Header = ({
     toggleMenu: React.Dispatch<boolean>;
     isHeaderMenuActive: boolean;
 }) => {
-
     return (
         <header className={styles["header"]}>
             <div className={styles["header-main"]}>

@@ -1,13 +1,12 @@
+import { useEffect, useContext } from "react";
 import { FormatedDateDisplay } from "../components/Displays/FormatedDateDisplay";
 import { JobExperienceCard } from "../components/Cards/JobExperienceCard";
+import { LanguageContext } from "../context/LanguageProvider";
 import { jobExperiences } from "../constants/jobExperiences";
 import { experienceText } from "../constants/page-texts";
 import GithubService from "../services/GithubService";
-import { useEffect, useContext } from "react";
 import { Briefcase } from "phosphor-react";
-
 import styles from "./JobExperience.module.css";
-import { LanguageContext } from "../context/LanguageProvider";
 
 export const JobExperience = () => {
     const { lang } = useContext(LanguageContext);

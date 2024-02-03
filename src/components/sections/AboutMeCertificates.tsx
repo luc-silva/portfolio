@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react"; 
+import { useContext, useEffect, useState } from "react";
 import { certificates } from "../../data";
 import { certificatesText } from "../../constants/page-texts";
 

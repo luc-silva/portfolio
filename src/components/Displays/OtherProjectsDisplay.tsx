@@ -1,5 +1,5 @@
-import { projects } from "../../data";
 import { ProjectCard } from "../Cards/ProjectCard";
+import { projects } from "../../data";
 import styles from "./OtherProjectsDisplay.module.css";
 
 export const OtherProjectsDisplay = () => {

@@ -14,7 +14,6 @@
     z-index: 2;
     height: 100%;
     padding: 1rem;
-
     background-color: var(--background-faded);
     border-bottom: 1px solid var(--text-color);
 }

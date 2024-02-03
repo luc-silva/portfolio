@@ -1,18 +1,18 @@
-import { Children, createContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { setLanguage } from "../features/languageSlice";
 import { languageOptions } from "../constants/languagesOptions";
+import { setLanguage } from "../features/languageSlice";
 
 export const LanguageContext = createContext({
-    lang: {...languageOptions[0]},
+    lang: { ...languageOptions[0] },
     changeLang: (value: LanguageOptionObject) => {},
 });
 
 export const LanguageProvider = ({ children }: { children: JSX.Element }) => {
     let dispatch = useDispatch();
-    let [currentLangOption, setCurrentLangOption] = useState(
-        {...languageOptions[0]}
-    );
+    let [currentLangOption, setCurrentLangOption] = useState({
+        ...languageOptions[0],
+    });
 
     let lang = useSelector(
         (state: { language: LanguageOptionObject }) => state.language
@@ -24,7 +24,7 @@ export const LanguageProvider = ({ children }: { children: JSX.Element }) => {
     };
 
     useEffect(() => {
-        console.log(currentLangOption)
+        console.log(currentLangOption);
         dispatch(setLanguage(currentLangOption));
     }, [currentLangOption]);
 

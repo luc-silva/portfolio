@@ -1,8 +1,8 @@
-import { Moon, Sun } from "phosphor-react";
 import { useEffect, useState, useContext } from "react";
+import { ThemeContext } from "../../context/ThemeProvider";
+import { Moon, Sun } from "phosphor-react";
 
 import styles from "./ChangeTheme.module.css";
-import { ThemeContext } from "../../context/ThemeProvider";
 
 export const ChangeTheme = () => {
     let [isDarkThemeIconActive, toggleIcon] = useState(false);

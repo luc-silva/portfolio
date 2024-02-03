@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import styles from "./LanguageOption.module.css";
 import { BR, US } from "country-flag-icons/react/3x2";
+import styles from "./LanguageOption.module.css";
 
 export const LanguageOption = ({
     langObject,

@@ -7,5 +7,4 @@ export const languageOptions = [
         value: "en_us",
         text: "ENG",
     },
-    
-]
+];

@@ -10,13 +10,13 @@
     background-color: var(--background);
     color: var(--text-color);
 }
-.language-selector__current{
+.language-selector__current {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
-.language-selector__container{
+.language-selector__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +29,7 @@
     left: 0;
     gap: 0.5rem;
     width: 100%;
-    
+
     position: absolute;
     z-index: 10;
     background-color: var(--background);

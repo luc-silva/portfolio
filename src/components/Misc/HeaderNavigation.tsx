@@ -1,8 +1,8 @@
-import styles from "./HeaderNavigation.module.css";
+import { portfolioPages } from "../../constants/portfolioPages";
+import { LanguageContext } from "../../context/LanguageProvider";
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
-import { portfolioPages } from "../../constants/portfolioPages"; 
-import { LanguageContext } from "../../context/LanguageProvider";
+import styles from "./HeaderNavigation.module.css";
 
 export const HeaderNavigation = () => {
     let color = styles["nav-active"];

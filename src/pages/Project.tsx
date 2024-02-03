@@ -1,9 +1,8 @@
-import { useContext } from "react";
-import { projectText } from "../constants/page-texts"; 
-import { MainProjectsDisplay } from "../components/Displays/MainProjectsDisplay";  
-
-import styles from "./Project.module.css";
+import { MainProjectsDisplay } from "../components/Displays/MainProjectsDisplay";
 import { LanguageContext } from "../context/LanguageProvider";
+import { projectText } from "../constants/page-texts";
+import { useContext } from "react";
+import styles from "./Project.module.css";
 
 export const Project = () => {
     let { lang } = useContext(LanguageContext);

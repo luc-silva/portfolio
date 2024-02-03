@@ -21,9 +21,6 @@ export const AboutMe = ({
             <section className={styles["skills"]}>
                 <Skills />
             </section>
-            {/* <section className={styles["timeline"]}>
-                <TimelineDisplay />
-            </section> */}
             <section className={styles["education"]}>
                 <AboutMeEducation />
             </section>

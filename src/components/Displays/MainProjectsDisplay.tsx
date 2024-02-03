@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { projects } from "../../data";
 import { ProjectLargeCard } from "../Cards/ProjectLargeCard";
+import { projects } from "../../data";
 import styles from "./MainProjectsDisplay.module.css";
 
 export const MainProjectsDisplay = () => {

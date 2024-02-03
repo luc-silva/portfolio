@@ -1,13 +1,11 @@
 import { useState, useEffect, useContext } from "react";
-
-import styles from "./LanguageSelector.module.css";
-import { LanguageOption } from "../Cards/LanguageOption";
-import { languageOptions } from "../../constants/languagesOptions";
 import { CaretDown, CaretUp } from "phosphor-react";
+import { languageOptions } from "../../constants/languagesOptions";
 import { LanguageContext } from "../../context/LanguageProvider";
+import { LanguageOption } from "../Cards/LanguageOption";
+import styles from "./LanguageSelector.module.css";
 
 export const LanguageSelector = () => {
-    //preciso por o lang em outros cantos tam
     let { lang: currentLangOption, changeLang: setCurrentLangOption } =
         useContext(LanguageContext);
 

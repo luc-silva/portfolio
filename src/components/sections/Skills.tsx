@@ -1,7 +1,7 @@
-import { useContext } from "react"; 
+import { useContext } from "react";
 import { tools } from "../../data";
-import { skillsText } from "../../constants/page-texts";  
-import styles from "./Skills.module.css"; 
+import { skillsText } from "../../constants/page-texts";
+import styles from "./Skills.module.css";
 import { LanguageContext } from "../../context/LanguageProvider";
 
 export const Skills = () => {

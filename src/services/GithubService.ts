@@ -1,7 +1,9 @@
 class GithuService {
     private base_url = "https://api.github.com";
 
-    public async getRepositoryInfo(repository_name: string):Promise<GithubRepository> {
+    public async getRepositoryInfo(
+        repository_name: string
+    ): Promise<GithubRepository> {
         return await fetch(
             `${this.base_url}/repos/luc-silva/${repository_name}`
         ).then((data) => {
@@ -9,7 +11,7 @@ class GithuService {
         });
     }
 
-    public async getUserInfo(user_name: string):Promise<GithubUser> {
+    public async getUserInfo(user_name: string): Promise<GithubUser> {
         return await fetch(`${this.base_url}/users/${user_name}`).then(
             (data) => {
                 return data.json();

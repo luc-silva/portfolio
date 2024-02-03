@@ -1,9 +1,8 @@
-import { useContext } from "react"; 
 import { certifacateDisplayText } from "../constants/page-texts";
-
-import { ArrowSquareOut } from "phosphor-react";
-import styles from "./CertificateItem.module.css";
 import { LanguageContext } from "../context/LanguageProvider";
+import { ArrowSquareOut } from "phosphor-react";
+import { useContext } from "react";
+import styles from "./CertificateItem.module.css";
 
 export const CertificateItem = ({
     cert,
@@ -47,12 +46,18 @@ export const CertificateItem = ({
                     </div>
                     <div className={styles["details-info"]}>
                         <div>
-                            <strong>{certifacateDisplayText.date[lang.value]}</strong>
+                            <strong>
+                                {certifacateDisplayText.date[lang.value]}
+                            </strong>
                             <em>{completition_date}</em>
                         </div>
                         <div>
                             <strong>
-                                {certifacateDisplayText.course_length[lang.value]}
+                                {
+                                    certifacateDisplayText.course_length[
+                                        lang.value
+                                    ]
+                                }
                             </strong>
                             <em>{length}h</em>
                         </div>
@@ -74,7 +79,7 @@ export const CertificateItem = ({
                     <ArrowSquareOut size={20} />
                 </a>
             </div>
-            <img 
+            <img
                 alt="Certificate"
                 className={styles["certificate-image"]}
                 onClick={() => {

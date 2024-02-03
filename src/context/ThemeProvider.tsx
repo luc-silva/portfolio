@@ -1,4 +1,4 @@
-import React, { createContext, useState, Dispatch } from "react";
+import React, { createContext, useState } from "react";
 
 interface IThemeContext {
     theme: string;
