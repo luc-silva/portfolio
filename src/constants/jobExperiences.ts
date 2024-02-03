@@ -9,14 +9,14 @@ export const jobExperiences: JobExperience[] = [
         },
         description: {
             text: {
-                pt_br: `Até o momento, fui responsável por realizar alterações e manuteção em um sistema que é usado por toda a empresa`,
-                en_us: "Until now I have been responsible to make changes and maintein a system that's used by the whole company.",
+                pt_br: `Minha principal função é dar manutenção e fazer algumas melhorias a sistemas já existentes dentro da empresa.`,
+                en_us: "My main role is to maintain and make some improvements to existing systems within the company.",
             },
         },
         location: {
             country: {
                 pt_br: "Brasil",
-                en_us: "Brasil",
+                en_us: "Brazil",
             },
             state: {
                 pt_br: "São Paulo",
@@ -34,7 +34,7 @@ export const jobExperiences: JobExperience[] = [
             pt_br: "Desenvolvedor Fullstack Estagiário",
             en_us: "Intern Fullstack Developer",
         },
-        tools: ["Typescript", "React", "SASS"],
+        tools: ["Typescript", "React", "Node", "NestJS", "OracleDB", "SASS"],
         active: true,
     },
 ];
