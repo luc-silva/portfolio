@@ -56,14 +56,14 @@
     display: flex;
     max-width: 100%;
 }
-.job-timeline__detail{
+.job-timeline__detail {
     display: flex;
     height: 100%;
     width: 0;
     transition: width 0.5s linear;
     background-color: var(--main-color);
 }
-.job-container:hover .job-timeline__detail{
+.job-container:hover .job-timeline__detail {
     width: 5px;
 }
 @media (min-width: 769px) and (max-width: 1024px) {

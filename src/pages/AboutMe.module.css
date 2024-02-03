@@ -32,11 +32,11 @@
 @media (min-width: 769px) and (max-width: 1024px) {
     .aboutme-main {
         flex-direction: row;
-    } 
+    }
 }
 @media (min-width: 1025px) {
     .aboutme-main {
         flex-direction: row;
         padding: 4rem 4rem;
-    } 
+    }
 }

@@ -64,7 +64,7 @@
     gap: 0.5rem;
     align-items: center;
 }
-@media (min-width: 769px) and (max-width: 1024px) { 
+@media (min-width: 769px) and (max-width: 1024px) {
     .aboutme-info {
         width: 70%;
     }
@@ -76,7 +76,7 @@
         width: 30%;
     }
 }
-@media (min-width: 1025px) { 
+@media (min-width: 1025px) {
     .aboutme-info {
         width: 55%;
     }
