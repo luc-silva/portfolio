@@ -23,7 +23,7 @@ export const JobExperienceCard = ({ data }: { data: JobExperience }) => {
                     <p>{data.description.text[lang.value]}</p>
                 </div>
                 <ul className={styles["card__about__featured"]}>
-                    {data.quantifiable_results[lang.value].map((item) => (
+                    {data.quantifiable_results[lang.value] && data.quantifiable_results[lang.value].map((item) => (
                         <li>{item}</li>
                     ))}
                 </ul>
