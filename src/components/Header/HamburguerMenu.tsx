@@ -3,28 +3,24 @@ import { portfolioPages } from "../../constants/portfolioPages";
 import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./HamburguerMenu.module.css";
+import { PortfolioContext } from "../../context/PortfolioProvider";
 
-export const HamburguerMenu = ({
-    isActive,
-    toggleMenu,
-}: {
-    isActive: boolean;
-    toggleMenu: React.Dispatch<boolean>;
-}) => {
-    let { lang } = useContext(LanguageContext);
-    function closeMenu(e: React.MouseEvent) {
-        toggleMenu(false);
-    }
+export const HamburguerMenu = () => {
+    const { lang } = useContext(LanguageContext);
+    const { handleMenuModal, isHeaderMenuActive } =
+        useContext(PortfolioContext);
+
+    if (!isHeaderMenuActive) return null;
 
     return (
         <div
             className={styles["header-menu__background"]}
-            style={{ display: isActive ? "flex" : "none" }}
-            onClick={closeMenu}
+            style={{ display: isHeaderMenuActive ? "flex" : "none" }}
+            onClick={handleMenuModal}
         >
             <div
                 className={styles["header-menu"]}
-                style={{ width: isActive ? "85%" : "0%" }}
+                style={{ width: isHeaderMenuActive ? "85%" : "0%" }}
                 onClick={(e) => {
                     e.stopPropagation();
                 }}
@@ -40,9 +36,7 @@ export const HamburguerMenu = ({
                                             : undefined
                                     }
                                     to={path}
-                                    onClick={() => {
-                                        toggleMenu(!isActive);
-                                    }}
+                                    onClick={handleMenuModal}
                                 >
                                     {text[lang.value]}
                                 </NavLink>
@@ -53,5 +47,4 @@ export const HamburguerMenu = ({
             </div>
         </div>
     );
-    return null;
 };

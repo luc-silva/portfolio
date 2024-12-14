@@ -3,7 +3,6 @@ import {
     projectCardTitleDisplayText,
     projectLargeCardtext,
 } from "../../constants/page-texts";
-import { repositoryDefaulValue } from "../../constants/default-values";
 import { ProjectImageDisplay } from "../Displays/ProjectImageDisplay";
 import { Eye, GitFork, Star } from "phosphor-react";
 import { LanguageContext } from "../../context/LanguageProvider";
@@ -11,10 +10,8 @@ import GithubService from "../../services/GithubService";
 import styles from "./ProjectLargeCard.module.css";
 
 export const ProjectLargeCard = ({ project }: { project: IProjectData }) => {
-    let { lang } = useContext(LanguageContext);
-    let [repoData, setRepoData] = useState<GithubRepository>(
-        repositoryDefaulValue
-    );
+    const { lang } = useContext(LanguageContext);
+    const [repoData, setRepoData] = useState<GithubRepository | null>(null);
 
     useEffect(() => {
         GithubService.getRepositoryInfo(project.title)
@@ -23,6 +20,8 @@ export const ProjectLargeCard = ({ project }: { project: IProjectData }) => {
                 console.log("erro");
             });
     }, []);
+
+    if (!repoData) return null;
 
     return (
         <div className={styles["project-large-card"]}>

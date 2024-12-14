@@ -5,14 +5,11 @@ import { AboutMeCertificates } from "../components/sections/AboutMeCertificates"
 
 import styles from "./AboutMe.module.css";
 import { AboutMeEducation } from "../components/sections/AboutMeEducation";
+import { useContext } from "react";
+import { PortfolioContext } from "../context/PortfolioProvider";
 
-export const AboutMe = ({
-    setModalImage,
-    toggleImageModal,
-}: {
-    setModalImage: Function;
-    toggleImageModal: Function;
-}) => {
+export const AboutMe = () => {
+    const { setModalImage, handleImageModal } = useContext(PortfolioContext);
     return (
         <main role="main" className={styles["aboutme"]}>
             <section className={styles["aboutme-main"]}>
@@ -26,7 +23,7 @@ export const AboutMe = ({
             </section>
             <section className={styles["certificates"]}>
                 <AboutMeCertificates
-                    toggleImageModal={toggleImageModal}
+                    toggleImageModal={handleImageModal}
                     setModalImage={setModalImage}
                 />
             </section>

@@ -1,4 +1,4 @@
-class GithuService {
+class GithubService {
     private base_url = "https://api.github.com";
 
     public async getRepositoryInfo(
@@ -20,4 +20,4 @@ class GithuService {
     }
 }
 
-export default new GithuService();
+export default new GithubService();

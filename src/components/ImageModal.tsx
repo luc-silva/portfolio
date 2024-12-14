@@ -1,45 +1,35 @@
 import { X } from "phosphor-react";
 import styles from "./ImageModal.module.css";
+import { useContext } from "react";
+import { PortfolioContext } from "../context/PortfolioProvider";
 
-export const ImageModal = ({
-    isActive,
-    toggleModal,
-    image,
-}: {
-    isActive: boolean;
-    toggleModal: Function;
-    image: string;
-}) => {
-    function getImage(image: string) {
-        return require(`../assets/images/${image}`);
+export const ImageModal = () => {
+    const { importImageFromPath } = useContext(PortfolioContext);
+
+    const { isCertificateModalActive, handleImageModal } =
+        useContext(PortfolioContext);
+
+    if (!isCertificateModalActive) {
+        return null;
     }
-    if (isActive) {
-        return (
+
+    return (
+        <div className={styles["image-modal"]} onClick={handleImageModal}>
             <div
-                className={styles["image-modal"]}
-                onClick={() => {
-                    toggleModal();
-                }}
+                className={styles["image-container"]}
+                onClick={(e) => e.stopPropagation()}
             >
-                <div
-                    className={styles["image-container"]}
-                    onClick={(e) => e.stopPropagation()}
-                >
-                    <X
-                        className={styles["close-btn"]}
-                        size={30}
-                        onClick={() => {
-                            toggleModal();
-                        }}
-                    />
-                    <img
-                        src={getImage(image)}
-                        alt="Certificate"
-                        className={styles["zoomed-certificate"]}
-                    />
-                </div>
+                <X
+                    className={styles["close-btn"]}
+                    size={30}
+                    onClick={handleImageModal}
+                />
+                <img
+                    src={importImageFromPath()}
+                    alt="Certificate"
+                    className={styles["zoomed-certificate"]}
+                />
             </div>
-        );
-    }
-    return null;
+        </div>
+    );
 };

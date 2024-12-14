@@ -5,14 +5,13 @@ import { List, X } from "phosphor-react";
 import { Link } from "react-router-dom";
 
 import styles from "./Header.module.css";
+import { useContext } from "react";
+import { PortfolioContext } from "../../context/PortfolioProvider";
 
-export const Header = ({
-    toggleMenu,
-    isHeaderMenuActive,
-}: {
-    toggleMenu: React.Dispatch<boolean>;
-    isHeaderMenuActive: boolean;
-}) => {
+export const Header = () => {
+    const { isHeaderMenuActive, handleImageModal } =
+        useContext(PortfolioContext);
+
     return (
         <header className={styles["header"]}>
             <div className={styles["header-main"]}>
@@ -21,18 +20,14 @@ export const Header = ({
                         className={styles["mobile-btn"]}
                         color="var(--text-color)"
                         size={30}
-                        onClick={() => {
-                            toggleMenu(!isHeaderMenuActive);
-                        }}
+                        onClick={handleImageModal}
                     />
                 )) || (
                     <List
                         className={styles["mobile-btn"]}
                         color="var(--text-color)"
                         size={35}
-                        onClick={() => {
-                            toggleMenu(!isHeaderMenuActive);
-                        }}
+                        onClick={handleImageModal}
                     />
                 )}
                 <div className={styles["header-logo"]}>
