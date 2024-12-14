@@ -1,17 +1,17 @@
 import { homeText } from "../../../constants/page-texts";
 import { useContext } from "react";
-import { LanguageContext } from "../../../context/LanguageProvider";
 import styles from "./styles.module.css";
+import { PortfolioContext } from "../../../context/PortfolioProvider";
 
 export const HomeGreetings = () => {
-    const { lang } = useContext(LanguageContext);
-
+    const { language } = useContext(PortfolioContext);
+    console.log({ language });
     return (
         <>
-            <strong>{homeText.greeting[lang.value]}</strong>
+            <strong>{homeText.greeting[language]}</strong>
             <div className={styles["greetings-title"]}>
                 <h2>Lucas da Silva Santos</h2>
-                <p>{homeText.role[lang.value]}</p>
+                <p>{homeText.role[language]}</p>
             </div>
         </>
     );

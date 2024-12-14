@@ -1,4 +1,5 @@
-import { useCallback, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
+import { languageOptions } from "../constants/languagesOptions";
 
 export const usePortfolio = () => {
     const [isCertificateModalActive, setIsCertificateModal] = useState(false);
@@ -17,6 +18,18 @@ export const usePortfolio = () => {
         return `${process.env.PUBLIC_URL}/images/${modalImage}`;
     }, [modalImage]);
 
+    const [currentLanguageData, setCurrentLanguage] = useState<
+        (typeof languageOptions)[0] | null
+    >(languageOptions[0]);
+
+    const language = useMemo(() => {
+        if (currentLanguageData) {
+            return currentLanguageData.value;
+        }
+
+        return "pt_br";
+    }, [currentLanguageData]);
+
     return {
         isCertificateModalActive,
         importImageFromPath,
@@ -25,5 +38,8 @@ export const usePortfolio = () => {
         setModalImage,
         handleImageModal,
         handleMenuModal,
+        currentLanguageData,
+        setCurrentLanguage,
+        language,
     };
 };

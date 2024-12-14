@@ -1,0 +1,8 @@
+.cert-button {
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+}

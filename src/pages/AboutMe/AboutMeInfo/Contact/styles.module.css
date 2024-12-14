@@ -1,0 +1,15 @@
+.contact-title h3 {
+    color: var(--title-color);
+}
+.contact-title p {
+    color: var(--main-color);
+}
+.contact-info {
+    color: var(--text-color);
+}
+.contact-info > div {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+}

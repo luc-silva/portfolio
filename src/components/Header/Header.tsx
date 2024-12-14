@@ -1,12 +1,12 @@
-import { HeaderNavigation } from "./HeaderNavigation/HeaderNavigation";
+import { HeaderNavigation } from "./HeaderNavigation";
 import { List, X } from "phosphor-react";
 import { Link } from "react-router-dom";
 
-import styles from "./Header.module.css";
+import styles from "./styles.module.css";
 import { useContext } from "react";
 import { PortfolioContext } from "../../context/PortfolioProvider";
-import { ChangeTheme } from "./ChangeTheme/ChangeTheme";
-import { LanguageSelector } from "./LanguageSelector/LanguageSelector";
+import { ChangeTheme } from "./ChangeTheme";
+import { LanguageSelector } from "./LanguageSelector";
 
 export const Header = () => {
     const { isHeaderMenuActive, handleImageModal } =
