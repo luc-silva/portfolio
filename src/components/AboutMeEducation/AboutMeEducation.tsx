@@ -29,11 +29,11 @@ export const AboutMeEducation = () => {
                         <div className={styles["education-card"]}>
                             <div className={styles["logo"]}>
                                 <img
-                                    src={require(`../../assets/images/${
+                                    src={`/images/${
                                         logo_changable
                                             ? logo_path[theme]
                                             : logo_path.default
-                                    }`)}
+                                    }`}
                                     alt="Estacio logo"
                                 />
                             </div>

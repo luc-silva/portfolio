@@ -3,23 +3,22 @@ import styles from "./ProjectImageDisplay.module.css";
 import { Circle } from "phosphor-react";
 
 export const ProjectImageDisplay = ({ images }: { images: string[] }) => {
-    let loadedImages = images.map((image) => getImage(image));
-
-    let [counter, setCounter] = useState(0);
-    let [actualImage, setActualImage] = useState(loadedImages[0]);
-    let [isMouseHovering, toggleMouseHovering] = useState(false);
+    const loadedImages = images.map((image) => getImage(image));
+    const [counter, setCounter] = useState(0);
+    const [actualImage, setActualImage] = useState(loadedImages[0]);
+    const [isMouseHovering, toggleMouseHovering] = useState(false);
 
     function getImage(item: string) {
-        return require(`../../assets/images/` + item);
+        return `${process.env.PUBLIC_URL}/images/${item}`;
     }
     function handleImageChange(index: number) {
         setCounter(index);
     }
 
     useEffect(() => {
-        let timer = setInterval(() => {
+        const timer = setInterval(() => {
             setCounter((prev) => {
-                let nextCount = prev + 1;
+                const nextCount = prev + 1;
                 if (nextCount === images.length) {
                     return 0;
                 } else {

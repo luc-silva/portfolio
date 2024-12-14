@@ -6,8 +6,8 @@ import { Download } from "phosphor-react";
 import styles from "./AboutMeInfo.module.css";
 
 export const AboutMeInfo = () => {
-    let { lang } = useContext(LanguageContext);
-    let url = `${process.env.PUBLIC_URL}/lucas-silva-resume.pdf`;
+    const { lang } = useContext(LanguageContext);
+    const url = `${process.env.PUBLIC_URL}/lucas-silva-resume.pdf`;
 
     return (
         <>

@@ -12,7 +12,7 @@ export const JobExperience = () => {
     const { lang } = useContext(LanguageContext);
 
     useEffect(() => {
-        GithubService.getRepositoryInfo("electroware").then(console.log);
+        GithubService.getRepositoryInfo("electroware");
     }, []);
 
     return (

@@ -14,7 +14,7 @@ export const usePortfolio = () => {
     }, [isHeaderMenuActive]);
 
     const importImageFromPath = useCallback(() => {
-        return require(`../assets/images/${modalImage}`);
+        return `${process.env.PUBLIC_URL}/images/${modalImage}`;
     }, [modalImage]);
 
     return {

@@ -24,7 +24,6 @@ export const LanguageProvider = ({ children }: { children: JSX.Element }) => {
     };
 
     useEffect(() => {
-        console.log(currentLangOption);
         dispatch(setLanguage(currentLangOption));
     }, [currentLangOption]);
 

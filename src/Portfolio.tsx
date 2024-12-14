@@ -11,7 +11,7 @@ import "./global.css";
 import { JobExperience } from "./pages/JobExperience/JobExperience";
 import { ThemeProvider } from "./context/ThemeProvider";
 import { LanguageProvider } from "./context/LanguageProvider";
-import { ImageModal } from "./components/ImagemModal/ImageModal";
+import { ImageModal } from "./pages/AboutMe/ImagemModal/ImageModal";
 import { Home } from "./pages/Home/Home";
 
 function Portfolio() {

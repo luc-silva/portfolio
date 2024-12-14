@@ -1,5 +1,5 @@
 import { ArrowSquareOut } from "phosphor-react";
-import { useContext } from "react";
+import { useContext, useMemo } from "react";
 import styles from "./CertificateItem.module.css";
 import { LanguageContext } from "../../../../context/LanguageProvider";
 import { certifacateDisplayText } from "../../../../constants/page-texts";
@@ -11,7 +11,7 @@ export const CertificateItem = ({
     toggleImageModal: Function;
     cert: ICertificate;
 }) => {
-    let {
+    const {
         tags,
         certImage,
         name,
@@ -23,7 +23,13 @@ export const CertificateItem = ({
         length,
     } = cert;
 
-    let { lang } = useContext(LanguageContext);
+    const { lang } = useContext(LanguageContext);
+
+    const image = useMemo(() => {
+        if (certImage) {
+            return `${process.env.PUBLIC_URL}/images/${certImage}`;
+        }
+    }, [certImage]);
 
     return (
         <div className={styles["certificate"]}>
@@ -85,7 +91,7 @@ export const CertificateItem = ({
                 onClick={() => {
                     toggleImageModal();
                 }}
-                src={require(`../assets/images/${certImage}`)}
+                src={image}
             />
         </div>
     );
