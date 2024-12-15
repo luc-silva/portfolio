@@ -11,7 +11,7 @@
     height: 100%;
 }
 .selector-btn {
-    color: black;
+    color: var(--main-color);
     filter: drop-shadow(3px 5px 2px #00000066);
     cursor: pointer;
 }

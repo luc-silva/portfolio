@@ -8,8 +8,7 @@ export const ProjectImageDisplay = ({ images }: { images: string[] }) => {
         [images]
     );
     const [counter, setCounter] = useState(0);
-    const [actualImage, setActualImage] = useState(loadedImages[0]);
-    const [isMouseHovering, toggleMouseHovering] = useState(false);
+    const [isMouseHovering, setMouseHovering] = useState(false);
 
     function getImage(item: string) {
         return `${process.env.PUBLIC_URL}/images/${item}`;
@@ -19,29 +18,28 @@ export const ProjectImageDisplay = ({ images }: { images: string[] }) => {
     }
 
     useEffect(() => {
-        const timer = setInterval(() => {
-            setCounter((prev) => {
-                const nextCount = prev + 1;
-                if (nextCount === images.length) {
-                    return 0;
-                } else {
-                    return nextCount;
-                }
-            });
+        let timer: NodeJS.Timer;
 
-            setActualImage(loadedImages[counter]);
-        }, 1000);
-
-        if (!isMouseHovering) {
-            setCounter(0);
-            setActualImage(loadedImages[counter]);
-            clearInterval(timer);
+        if (isMouseHovering) {
+            timer = setInterval(() => {
+                setCounter((prev) => (prev + 1) % images.length);
+            }, 1000);
         }
+
         return () => clearInterval(timer);
-    }, [isMouseHovering, images, counter, loadedImages]);
+    }, [images.length, isMouseHovering]);
+
+    const imagePath = useMemo(
+        () => loadedImages[counter],
+        [counter, loadedImages]
+    );
+
+    const handleMouseEnter = () => setMouseHovering(true);
+    const handleMouseLeave = () => setMouseHovering(false);
 
     return (
-        <>
+        <div onMouseOver={handleMouseEnter} onMouseOut={handleMouseLeave}>
+            <img src={imagePath} alt="Project" className={styles["image"]} />
             <span className={styles["buttons"]}>
                 {loadedImages.map((path, index) => (
                     <Circle
@@ -49,27 +47,10 @@ export const ProjectImageDisplay = ({ images }: { images: string[] }) => {
                         weight={counter === index ? "fill" : "regular"}
                         onClick={() => handleImageChange(index)}
                         className={styles["selector-btn"]}
-                        onMouseOver={() => {
-                            toggleMouseHovering(true);
-                        }}
-                        onMouseOut={() => {
-                            toggleMouseHovering(false);
-                        }}
                         key={index}
                     />
                 ))}
             </span>
-            <img
-                src={actualImage}
-                alt="Project"
-                className={styles["image"]}
-                onMouseOver={() => {
-                    toggleMouseHovering(true);
-                }}
-                onMouseOut={() => {
-                    toggleMouseHovering(false);
-                }}
-            />
-        </>
+        </div>
     );
 };
