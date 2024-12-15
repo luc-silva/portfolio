@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { PortfolioContext } from "../../../context/PortfolioProvider";
 
 export const ImageModal = () => {
-    const { importImageFromPath } = useContext(PortfolioContext);
+    const { importModalImage } = useContext(PortfolioContext);
 
     const { isCertificateModalActive, handleImageModal } =
         useContext(PortfolioContext);
@@ -25,7 +25,7 @@ export const ImageModal = () => {
                     onClick={handleImageModal}
                 />
                 <img
-                    src={importImageFromPath()}
+                    src={importModalImage()}
                     alt="Certificate"
                     className={styles["zoomed-certificate"]}
                 />

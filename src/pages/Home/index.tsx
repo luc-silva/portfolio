@@ -5,7 +5,7 @@ import styles from "./styles.module.css";
 
 export const Home = () => {
     return (
-        <main role={"main"} className={styles.home}>
+        <main className={styles.home}>
             <section className={styles["greetings"]}>
                 <div className={styles["greetings-main"]}>
                     <HomeGreetings />

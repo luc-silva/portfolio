@@ -14,8 +14,12 @@ export const usePortfolio = () => {
         setIsHeaderMenuActive(!isHeaderMenuActive);
     }, [isHeaderMenuActive]);
 
-    const importImageFromPath = useCallback(() => {
-        return `${process.env.PUBLIC_URL}/images/${modalImage}`;
+    const importImageFromPath = (path: string) => {
+        return `${process.env.PUBLIC_URL}/images/${path}`;
+    };
+
+    const importModalImage = useCallback(() => {
+        return importImageFromPath(modalImage || "");
     }, [modalImage]);
 
     const [currentLanguageData, setCurrentLanguage] = useState<
@@ -41,5 +45,6 @@ export const usePortfolio = () => {
         currentLanguageData,
         setCurrentLanguage,
         language,
+        importModalImage,
     };
 };

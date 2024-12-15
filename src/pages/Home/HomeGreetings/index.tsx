@@ -5,7 +5,6 @@ import { PortfolioContext } from "../../../context/PortfolioProvider";
 
 export const HomeGreetings = () => {
     const { language } = useContext(PortfolioContext);
-    console.log({ language });
     return (
         <>
             <strong>{homeText.greeting[language]}</strong>

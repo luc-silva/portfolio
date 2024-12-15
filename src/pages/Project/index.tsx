@@ -8,7 +8,6 @@ export const Project = () => {
     const { language } = useContext(PortfolioContext);
     return (
         <main className={styles["projects"]}>
-            {/* page for detail projects, articles and activities (hackatons, CTF and so on). statistics should be in about me */}
             <section className={styles["projects-about"]}>
                 <div className={styles["projects-title"]}>
                     <h2>{projectText.page_title[language]}</h2>

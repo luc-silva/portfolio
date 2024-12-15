@@ -1,0 +1,29 @@
+.main-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 0.8rem;
+    color: var(--text-color);
+}
+.main-text > div {
+    display: none;
+}
+.main-text a {
+    color: var(--text-color);
+    font-weight: bolder;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .main-text > div {
+        display: block;
+    }
+}
+@media (min-width: 1025px) {
+    .main-text {
+        position: relative;
+        height: 100%;
+    }
+    .main-text > div {
+        display: block;
+    }
+}

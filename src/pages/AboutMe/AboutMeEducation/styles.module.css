@@ -20,114 +20,13 @@
     text-align: center;
     color: var(--title-color);
 }
-.education-card {
-    background-color: unset;
-    display: flex;
-    width: 100%;
-    box-shadow: unset;
-}
-.logo {
-    background-color: var(--backgorund-color-faded);
-    display: none;
-    width: 200px;
-    height: 200px;
-}
-.logo img {
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-}
-.education__info {
-    background-color: var(--backgorund-color-faded);
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-        rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    padding: 0.5rem;
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-.education__info__main strong {
-    font-size: 1rem;
-    color: var(--title-color);
-}
-.education__info__main p {
-    font-size: 0.8rem;
-    color: var(--text-color);
-    font-style: italic;
-}
-.education__info__period {
-    font-size: 0.8rem;
-    color: var(--text-color);
-}
-.education__info__description {
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
-    color: var(--text-color);
-    font-size: 0.8rem;
-    gap: 0.25rem;
-}
 @media (min-width: 769px) and (max-width: 1024px) {
     .aboutme-education__container {
         padding: 1rem 3rem;
-    }
-    .education-card {
-        background-color: var(--backgorund-color);
-        width: 80%;
-        padding: 1rem;
-        gap: 1rem;
-    }
-    .logo {
-        display: block;
-    }
-    .education__info {
-        background-color: unset;
-        border-radius: unset;
-        box-shadow: unset;
-        padding: 0.5rem;
-        width: max-content;
-    }
-    .education__info__main strong {
-        font-size: 1.4rem;
-    }
-    .education__info__main p {
-        font-size: 1.2rem;
-    }
-    .education__info__description {
-        font-size: 1rem;
     }
 }
 @media (min-width: 1025px) {
     .aboutme-education__container {
         padding: 1rem 3rem;
-    }
-    .education-card {
-        background-color: var(--backgorund-color);
-        width: 80%;
-        padding: 1rem;
-        gap: 1rem;
-    }
-    .logo {
-        display: block;
-        min-width: 200px;
-    }
-    .education__info {
-        background-color: unset;
-        border-radius: unset;
-        box-shadow: unset;
-        padding: 0.5rem;
-        width: max-content;
-    }
-    .education__info__main strong {
-        font-size: 1.4rem;
-    }
-    .education__info__main p {
-        font-size: 1.2rem;
-    }
-    .education__info__description {
-        font-size: 1rem;
     }
 }

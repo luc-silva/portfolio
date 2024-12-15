@@ -21,112 +21,14 @@
     height: 90vh;
     background-color: var(--background);
 }
-.job-container {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 100%;
-}
-.job-timeline__period {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    width: fit-content;
-}
-.job-timeline__period > p {
-    display: none;
-}
-.job-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 33%;
-    left: -8%;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: var(--main-color);
-    color: white;
-}
-.job-icon svg {
-    height: 25px;
-}
-.job-timeline__info {
-    display: flex;
-    max-width: 100%;
-}
-.job-timeline__detail {
-    display: flex;
-    height: 100%;
-    width: 0;
-    transition: width 0.5s linear;
-    background-color: var(--main-color);
-}
-.job-container:hover .job-timeline__detail {
-    width: 5px;
-}
+
 @media (min-width: 769px) and (max-width: 1024px) {
     .career {
         padding: 4rem;
-    }
-    .job-container {
-        position: unset;
-        gap: 2rem;
-    }
-    .job-timeline__period {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .job-timeline__period > p {
-        display: block;
-    }
-    .job-timeline__info {
-        width: 60%;
-    }
-    .job-icon {
-        position: unset;
-        width: 50px;
-        height: 50px;
-    }
-    .job-icon svg {
-        height: auto;
-    }
-
-    .job-experience {
-        justify-content: flex-start;
     }
 }
 @media (min-width: 1025px) {
     .career {
         padding: 4rem;
-    }
-    .job-container {
-        position: unset;
-        gap: 2rem;
-    }
-    .job-timeline__period {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .job-timeline__period > p {
-        display: block;
-    }
-    .job-timeline__info {
-        width: 60%;
-    }
-    .job-icon {
-        position: unset;
-        width: 50px;
-        height: 50px;
-    }
-    .job-icon svg {
-        height: auto;
-    }
-
-    .job-experience {
-        justify-content: flex-start;
     }
 }

@@ -1,0 +1,32 @@
+.repo-icons:hover {
+    transform: scale(1.2);
+    color: var(--main-color);
+    text-shadow: 0 0 3px var(--main-color);
+}
+.repo-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: scale 0.5s, text-shadow 0.5s;
+    cursor: default;
+    gap: 4px;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .repo-statistics {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+        bottom: 0;
+    }
+}
+@media (min-width: 1025px) {
+    .repo-statistics {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        gap: 1rem;
+        bottom: 0;
+    }
+}

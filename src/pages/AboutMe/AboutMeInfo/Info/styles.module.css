@@ -1,0 +1,35 @@
+.aboutme-title h2 {
+    font-size: 1rem;
+    color: var(--title-color);
+}
+.aboutme-title p {
+    color: var(--main-color);
+}
+.aboutme-about {
+    text-align: justify;
+    font-weight: 16px;
+    color: var(--text-color);
+}
+.about-resume {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 8px;
+}
+.about-resume svg {
+    color: var(--main-color);
+}
+.about-resume a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .aboutme-title h2 {
+        font-size: 1.3rem;
+    }
+}
+@media (min-width: 1025px) {
+    .aboutme-title h2 {
+        font-size: 1.3rem;
+    }
+}

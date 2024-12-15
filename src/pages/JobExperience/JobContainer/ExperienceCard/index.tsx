@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import { FormatedDateDisplay } from "../FormatedDateDisplay";
-import { PortfolioContext } from "../../../context/PortfolioProvider";
+import { PortfolioContext } from "../../../../context/PortfolioProvider";
+import { FormatedDateDisplay } from "../../FormatedDateDisplay";
 import styles from "./styles.module.css";
 
-export const JobExperienceCard = ({ data }: { data: JobExperience }) => {
+export const ExperienceCard = ({ data }: { data: JobExperience }) => {
     const { language } = useContext(PortfolioContext);
 
     return (

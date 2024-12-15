@@ -29,21 +29,6 @@
     justify-content: space-between;
     width: 100%;
 }
-.main-text {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    font-size: 0.8rem;
-    color: var(--text-color);
-}
-.main-text > div {
-    display: none;
-}
-.main-text a {
-    color: var(--text-color);
-    font-weight: bolder;
-}
-
 .title {
     color: var(--title-color);
     font-weight: 500;
@@ -71,24 +56,6 @@
     .card-main {
         width: 55%;
         height: 100%;
-    }
-    .main-text > div {
-        display: block;
-    }
-    .repo-statistics {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        margin-top: 1rem;
-        bottom: 0;
-    }
-    .repo-icons {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: scale 0.5s, text-shadow 0.5s;
-        cursor: default;
-        gap: 4px;
     }
 }
 @media (min-width: 1025px) {
@@ -135,34 +102,6 @@
         width: 55%;
         height: 100%;
         padding-top: 2rem;
-    }
-    .main-text {
-        position: relative;
-        height: 100%;
-    }
-    .repo-statistics {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        gap: 1rem;
-        bottom: 0;
-    }
-    .repo-icons {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: scale 0.5s, text-shadow 0.5s;
-        cursor: default;
-        gap: 4px;
-    }
-    .repo-icons:hover {
-        transform: scale(1.2);
-        color: var(--main-color);
-        text-shadow: 0 0 3px var(--main-color);
-    }
-    .main-text > div {
-        display: block;
     }
     .title {
         font-size: 1.5rem;
