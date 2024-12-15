@@ -9,8 +9,10 @@ export const jobExperiences: JobExperience[] = [
         },
         description: {
             text: {
-                pt_br: `Minha principal função é dar manutenção e fazer algumas melhorias a sistemas já existentes dentro da empresa.`,
-                en_us: "My main role is to maintain and make some improvements to existing systems within the company.",
+                pt_br: `Comecei o estágio atuando primariamente em fazer alterações visuais no sistema de gestão usado pelos analistas da empresa. 
+                Com o tempo, fui atuando em tarefas cada vez mais complexas, desde a criação de novas telas, melhoria ou reparo de processos até alteração de regras de negócio e procedures no Oracle. `,
+                en_us: `I began my internship primarily working on making visual changes to the management system used by the company's analysts.
+                Over time, I began working on increasingly complex tasks, from creating new screens, improving or repairing processes, to changing business rules and procedures in Oracle.`,
             },
         },
         location: {
